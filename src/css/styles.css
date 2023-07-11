@@ -37,3 +37,8 @@ body{
  color: var(--white);
  font-family: 'DM Sans', sans-serif;
 }
+
+.container{
+  width: 335px;
+  margin: 0 auto;
+}
