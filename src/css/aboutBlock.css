@@ -52,6 +52,9 @@
 .about-images-block {
 }
 .about-images-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .about-images-item {
 }
