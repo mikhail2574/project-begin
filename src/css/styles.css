@@ -18,26 +18,19 @@
 
 :root {
 
-    --body-bg-color: #11131F;
-    --white: #F6F5EF;
-    --normal-state: #93ABAE;
-    --card-bg: #1F212D;
-    --pressed-state: #88B3B9;
-
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  --body-bg-color: #11131F;
+  --white: #F6F5EF;
+  --normal-state: #93ABAE;
+  --card-bg: #1F212D;
+  --pressed-state: #88B3B9;
+  --secondary-title-color: #BEC7C2;
 }
 
-body{
- background-color: var(--body-bg-color);
- color: var(--white);
- font-family: 'DM Sans', sans-serif;
-}
-
+body {
+  background-color: var(--body-bg-color);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  
 .container{
   width: 335px;
   margin: 0 auto;
