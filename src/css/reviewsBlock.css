@@ -109,7 +109,7 @@
     box-sizing: border-box;
 
     @media screen and (max-width: 767px) {
-        padding: 24px;
+        padding: 24px 17px;
        
         border-radius: 24px;
         background: var(--card-bg);
@@ -160,6 +160,7 @@
     color: rgba(246, 245, 239, 0.50);
 
     @media screen and (max-width: 767px) {
+      
         font-size: 12px;
         letter-spacing: -0.24px;
     }
