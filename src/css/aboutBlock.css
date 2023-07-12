@@ -1,16 +1,16 @@
-.container {
-  /* margin: 0 auto;
+/* .container {
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
   max-width: 320px;
-  max-width: 375px; */
-}
+  max-width: 375px;
+} */
 @media only screen and (min-width: 768px) {
-  .container {
-    /* min-width: 768px;
+  /* .container {
+    min-width: 768px;
     padding-left: 20px;
-    padding-right: 20px; */
-  }
+    padding-right: 20px;
+  } */
 }
 .section-about {
   margin: 0 auto;
@@ -56,8 +56,6 @@
     font-size: 32px;
   }
 }
-@media only screen and (min-width: 768px) {
-}
 .about-list {
   display: flex;
   margin: auto;
@@ -68,6 +66,7 @@
 @media only screen and (min-width: 768px) {
   .about-list {
     margin-right: 0;
+    margin-bottom: 64px;
   }
 }
 .about-item {
@@ -85,7 +84,7 @@
 .about-images-block {
 }
 .about-images-list {
-  position: relative;
+  /* position: relative; */
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -95,15 +94,16 @@
 .about-image {
 }
 .about-images-item-absolute {
-  position: absolute;
+  /* position: absolute;
   bottom: -266px;
   right: 0px;
-  z-index: 0;
+  z-index: 0; */
 }
 .about-image-2 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .about-image-3 {
+  margin-left: auto;
   /* position: absolute;
   bottom: -246px;
   right: 0px; */
@@ -115,13 +115,14 @@
 /* Section example for positioning image */
 
 .section-yacht {
-  position: relative;
+  /* position: relative; */
 }
 .yacht-container {
   max-width: 335px;
 }
 .title-yacht {
   max-width: 310px;
+  margin-top: -268px;
   margin-bottom: 40px;
 
   color: var(--white, #f6f5ef);
