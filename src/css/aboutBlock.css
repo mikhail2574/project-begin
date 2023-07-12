@@ -88,8 +88,6 @@
     font-size: 16px;
   }
 }
-.about-images-block {
-}
 .about-images-list {
   position: relative;
   display: flex;
@@ -110,14 +108,6 @@
   .about-images-list {
     flex-direction: column;
   }
-}
-.about-images-item {
-}
-.about-images-item-absolute {
-  /* position: absolute;
-  bottom: -266px;
-  right: 0px;
-  z-index: 0; */
 }
 @media only screen and (min-width: 1280px) {
   .about-image-1 {
