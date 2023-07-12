@@ -51,14 +51,10 @@
     }
     
     
-    .yablock-card-picture {
+    /* .yablock-card-picture {
     } 
-    
+     */
    
-    .yablock-underpicture-style {
-      
-    }
-    
     .yablock-identification {
         display: flex;
         justify-content: space-between;
@@ -104,8 +100,8 @@
         flex-direction: column;
         gap: 6px;
     }
-    .yablock-atrbt-item {
-    }
+    /* .yablock-atrbt-item {
+    } */
     
     .yablock-text-info {
         color: var(--white, #F6F5EF);
@@ -131,23 +127,23 @@
         letter-spacing: 0.42px;
     }
     
-    .yablock-atrbt-dscrptn-item {
+    /* .yablock-atrbt-dscrptn-item {
     }
-    
+     */
     .yablock-btn-swiper-style{
         display: flex;
         justify-content: center;
         gap: 14px; 
     }
-    .yablock-btn-swiper-list {
-    }
-    .yablock-btn-left-swipper{
+    /* .yablock-btn-swiper-list {
+    } */
+    /* .yablock-btn-left-swipper{
     
-    }
-    .yablock-btn-right-swipper{
+    } */
+    /* .yablock-btn-right-swipper{
     
     .yablock-btn-swiper-style {
-    }
+    } */
     .yablock-btn-swiper {
         display: flex;
         flex-direction: column;
@@ -161,5 +157,5 @@
     .yablock-btns-svg {
        fill: var(--white, #F6F5EF) 
     }
-    }
+    
 
