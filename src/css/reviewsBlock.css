@@ -70,6 +70,8 @@
     border-radius: 8px;
     border-color: transparent;
     background-color: var(--normal-state);
+
+    /* transition: opacity 500ms cubic-bezier(0.25, 0.8, 0.25, 1); */
 }
 .arrow-up {
     fill: currentColor;
