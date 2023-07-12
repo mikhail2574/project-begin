@@ -14,7 +14,6 @@
 
     @media screen and (min-width: 768px) {
         padding: 0 32px;
-        width: 704px;
         outline: 1px solid white;
     }
 }
@@ -114,7 +113,7 @@
     font-size: 12px;
     letter-spacing: -0.24px;
 
-    color: var(--secondary-title-color);
+    color: rgba(246, 245, 239, 0.50);;
 }
 .reviews-icon {
     margin: 0 auto;
@@ -131,6 +130,8 @@
     border-radius: 8px;
     border-color: transparent;
     background-color: var(--normal-state);
+
+    /* transition: opacity 500ms cubic-bezier(0.25, 0.8, 0.25, 1); */
 }
 
 .arrow-up {

@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+@import url('./normalize.css');
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./hero.css');
@@ -13,7 +14,6 @@
 @import url('./rentBlock.css');
 @import url('./reviewsBlock.css');
 @import url('./footer.css');
-@import url('./normalize.css');
 @import url('./fonts.css');
 
 :root {
@@ -49,4 +49,14 @@ body {
     width: 1216px;
   }
   margin: 0 auto;
-} 
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  opacity: 0;
+}
