@@ -4,9 +4,6 @@
 .reviews {
     position: relative;
 }
-.container {
-    padding: 0 20px;
-}
 
 .reviews-title {
     margin-bottom: 24px;
@@ -57,7 +54,7 @@
     line-height: 1.4;
     letter-spacing: -0.24px;
 
-    color: var(--secondary-title-color);
+    color: rgba(246, 245, 239, 0.50);;
 }
 .reviews-icon {
     margin: 0 auto;
