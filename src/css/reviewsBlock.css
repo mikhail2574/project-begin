@@ -1,7 +1,3 @@
-.reviews-section {
-    padding-bottom: 80px;
-}
-
 .reviews {
     position: relative;
 }
@@ -9,45 +5,20 @@
 .container {
     @media screen and (max-width: 767px) {
         outline: 1px solid white;
-<<<<<<< Updated upstream
-        
-        padding: 0 20px;
-        }
-
-=======
-
         padding: 0 20px;
     }
 
->>>>>>> Stashed changes
     @media screen and (min-width: 768px) {
         padding: 0 32px;
         outline: 1px solid white;
     }
 }
 
-.reviews-header {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-    @media screen and (max-width: 767px) {
-            margin-bottom: 40px;
-        }
-    
-    @media screen and (min-width: 768px) {
-            margin-bottom: 64px;
-        }
->>>>>>> Stashed changes
-    @media screen and (min-width: 1280px) {
-        display: flex;
-        justify-content: center;
-        }
+.reviews-section {
+    padding-bottom: 80px;
 }
-.reviews-title {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 24px;
-    
-=======
+
+.reviews-header {
     @media screen and (max-width: 767px) {
         margin-bottom: 40px;
     }
@@ -66,7 +37,6 @@
     @media screen and (max-width: 767px) {
         margin-bottom: 24px;
 
->>>>>>> Stashed changes
         font-size: 24px;
         font-weight: 500;
         line-height: 1.2;
@@ -83,49 +53,22 @@
     }
 }
 
-.reviews-titl-accent {
+.reviews-title-accent {
     font-style: italic;
     color: var(--secondary-title-color);
 }
-<<<<<<< Updated upstream
-
- .reviews-subtitle {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 40px;
-    }
-
-=======
 
 .reviews-subtitle {
     @media screen and (max-width: 767px) {
         margin-bottom: 40px;
     }
 
->>>>>>> Stashed changes
     @media screen and (min-width: 768px) {
         margin-bottom: 64px;
         margin-left: auto;
         width: 273px;
         letter-spacing: -0.32px;
-<<<<<<< Updated upstream
     }
-<<<<<<< Updated upstream
-    
-=======
-    }   
->>>>>>> Stashed changes
-}
-.reviews-set {
-    @media screen and (min-width: 767px) {
-       display: flex;
-       flex-wrap: wrap;
-       gap: 16px;
-    }
-    @media screen and (min-width: 1280px) {
-       gap: 32px;
-    }
-=======
->>>>>>> Stashed changes
 }
 
 .reviews-set {
@@ -144,16 +87,6 @@
     @media screen and (max-width: 767px) {
         padding: 24px;
         margin-bottom: 14px;
-<<<<<<< Updated upstream
-        
-        border-radius: 24px;
-        background: var(--card-bg);
-        text-align: center;
-    }
-
-    @media screen and (min-width: 768px) {
-        width: calc( (100% - 16px) / 2);
-=======
 
         border-radius: 24px;
         background: var(--card-bg);
@@ -162,7 +95,6 @@
 
     @media screen and (min-width: 768px) {
         width: calc((100% - 16px) / 2);
->>>>>>> Stashed changes
 
         padding: 24px 32px;
         border-radius: 24px;
@@ -172,24 +104,13 @@
 
     @media screen and (min-width: 1280px) {
         width: calc((100% - 64px) / 3);
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
         padding: 32px;
->>>>>>> Stashed changes
-=======
-        padding: 32px;
->>>>>>> Stashed changes
     }
 }
 
 .reviews-img {
     margin: 0px auto 18px;
-<<<<<<< Updated upstream
 
-=======
-  
->>>>>>> Stashed changes
     @media screen and (min-width: 768px) {
         width: 56px;
         height: 56px;
@@ -218,10 +139,7 @@
     margin: 0 auto;
     display: block;
 }
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 .btn-up {
     position: absolute;
     bottom: 20px;
@@ -235,10 +153,7 @@
 
     /* transition: opacity 500ms cubic-bezier(0.25, 0.8, 0.25, 1); */
 }
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
 .arrow-up {
     fill: currentColor;
 }
