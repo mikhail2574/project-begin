@@ -89,8 +89,6 @@ padding-bottom: 16px;
     border-bottom: 1px solid var(--white);
 }
 
-.rent-img {
-}
 
 .rent-btnsend {
     display: flex;
@@ -112,8 +110,121 @@ padding-bottom: 16px;
     fill: var(--white);
 }
  
+/***************** 
+RENT MODAL WINDOW 
+*****************/
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
 
+    width: 100%;
+    height: 100%;
 
-/*TABLET*/
+    background-color: transparent;
+    opacity: 1;
+    pointer-events: initial;
+    visibility: visible;
 
-/*DESKTOP*/
+}
+
+/*.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}*/
+
+.rent-modal {
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    
+        width: 335px;
+        height: 396px;
+        padding: 40px 24px;
+    
+        background-color: var(--card-bg);
+        border-radius: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .rent-modal {
+        width: 570px;
+        height: 522px;
+        padding: 97px 64px 64px;
+        border-radius: 40px;
+  }
+}
+
+.rent-modalbtn {
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    
+    top: 14px;
+    right: 14px;
+    
+    width: 20px;
+    height: 20px;
+    
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    
+    fill: var(--white);
+    
+    cursor: pointer;
+}
+
+.rent-modalbtn:hover,
+.rent-modalbtn:focus {
+    fill: var(--normal-state);
+}
+
+.rent-close-icon:hover,
+.rent-close-icon:focus {
+    fill: var(--normal-state);
+}
+
+.rent-imgmodal {
+    display: flex;
+    max-width: 287px;
+    max-height: 149px;
+    margin: 40px 24px 24px 24px;
+}
+
+.rent-modal-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -1.08px;
+
+    padding-bottom: 14px;
+}
+
+/*TABLET AND DESKTOP*/
+@media only screen and (min-width: 786px) {
+.rent-modal-title {
+    font-size: 32px;
+    letter-spacing: -0.32px;
+
+    padding-bottom: 16px;
+  }
+}
+
+.rent-modal-text {
+    width: 287px;
+}
+
+/*TABLET AND DESKTOP*/
+@media only screen and (min-width: 768px) {
+    .rent-modal-text {
+    width: 442px;
+    font-size: 16px;
+    letter-spacing: -0.32px;    
+  }
+}

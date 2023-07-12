@@ -59,23 +59,26 @@
 <!-- RENT MODAL WINDOW -->
 
 <div class="backdrop is-hidden" data-modal>
-    <button class="rent-modalbtn" type="button" aria-label="Close modal window button" data-modal-close>
-        <svg class="rent-close-icon" width="20" height="20">
-            <use href="../public/sprite.svg#close-icon"></use>
-        </svg>
-    </button>
-
-    <picture class="rent-imgmodal">
-        <source srcset="
-        ../img/rent/pop-tablet@1x.webp 1x,
-        ../img/rent/pop-tablet@2x.webp 2x,
-        ../img/rent/pop-mob@1x.webp 1x, 
-        ../img/rent/pop-mob@2x.webp 2x" type="image/webp" />
-        <source srcset="
-        ../img/rent/pop-tablet@1x.png 1x,
-        ../img/rent/pop-tablet@2x.png 2x,
-        ../img/rent/pop-mob@1x.png 1x, 
-        ../img/rent/pop-mob@2x.png 2x" type="image/jpeg" />
-    </picture>
-    <h3 class="rent-modal-title">Thank you</h3>
-    <p class="rent-modal-text">Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in touch shortly to confirm your reservation and provide any additional information or assistance you may need.</p>
+    <div class="rent-modal">
+        <button class="rent-modalbtn" type="button" aria-label="Close modal window button" data-modal-close>
+            <svg class="rent-close-icon" width="20" height="20">
+                <use href="../public/sprite.svg#close-icon"></use>
+            </svg>
+        </button>
+        <picture class="rent-imgmodal">
+            <source srcset="
+            ../img/rent/pop-tablet@1x.webp 1x,
+            ../img/rent/pop-tablet@2x.webp 2x,
+            ../img/rent/pop-mob@1x.webp 1x,
+            ../img/rent/pop-mob@2x.webp 2x" type="image/webp" />
+            <source srcset="
+            ../img/rent/pop-tablet@1x.png 1x,
+            ../img/rent/pop-tablet@2x.png 2x,
+            ../img/rent/pop-mob@1x.png 1x,
+            ../img/rent/pop-mob@2x.png 2x" type="image/jpeg" />
+            <img src="../img/rent/pop-tablet@1x.png" alt="A picture of yacht" />
+        </picture>
+        <h3 class="rent-modal-title">Thank you</h3>
+        <p class="rent-modal-text">Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in touch shortly to confirm your reservation and provide any additional information or assistance you may need.</p>
+    </div>
+</div>
