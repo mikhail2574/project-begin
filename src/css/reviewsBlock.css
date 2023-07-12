@@ -148,21 +148,3 @@
     margin: 0 auto;
     display: block;
 }
-
-.btn-up {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-
-    width: 44px;
-    height: 44px;
-    border-radius: 8px;
-    border-color: transparent;
-    background-color: var(--normal-state);
-
-    /* transition: opacity 500ms cubic-bezier(0.25, 0.8, 0.25, 1); */
-}
-
-.arrow-up {
-    fill: currentColor;
-}
