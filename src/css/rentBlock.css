@@ -3,6 +3,116 @@
 *****************/
 
 /*MOBILE*/
+.section-rent {
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+@media only screen and (min-width: 375px) {
+   .section-rent {
+        margin: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+   .section-rent {
+    margin: 0 32px;
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+   .section-rent {
+    margin-left: 184px;
+    margin-right: 183px;
+    padding-bottom: 164px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+   .rent-all {
+    display: flex;  
+  }
+}
+
+.rent-title-part {
+    display: block;
+    margin-bottom: 80px;
+}
+
+.rent-title{
+font-size: 36px;
+font-weight: 500;
+line-height: 110%;
+letter-spacing: -1.62px;
+padding-bottom: 16px;
+}
+
+/*TABLET AND DESKTOP*/
+
+@media only screen and (min-width: 768px) {
+    .rent-title {
+        font-size: 60px;
+        letter-spacing: -2.7px;
+    }
+}
+
+.rent-request {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rent-form-item {
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.63px;
+}
+
+@media only screen and (min-width: 768px) {
+   .rent-form-item {
+        font-size: 16px;
+        letter-spacing: -0.72px;
+  }
+}
+
+.rent-form-input {
+    width: 100%;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid var(--white);
+}
+
+.rent-form-comment {
+    width: 100%;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 1px solid var(--white);
+}
+
+.rent-img {
+}
+
+.rent-btnsend {
+    display: flex;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    
+    width: 123px;
+    height: 23px;
+    gap: 16px;
+
+    color: var(--white);
+    background-color: transparent;
+    border-radius: 60px;
+    border: 1px solid var(--white);
+}
+
+.rent-send-button {
+    fill: var(--white);
+}
+ 
+
 
 /*TABLET*/
 
