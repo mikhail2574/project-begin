@@ -17,8 +17,8 @@
 @media only screen and (min-width: 1280px) {
   .about-block {
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
+    justify-content: space-between;
   }
 }
 .about-title {
@@ -31,7 +31,7 @@
   line-height: 1.2;
   letter-spacing: -0.045em;
 
-  color: var(-);
+  color: var(--white);
 }
 .about-title-cursive {
   font-style: italic;
@@ -49,7 +49,7 @@
 }
 @media only screen and (min-width: 1280px) {
   .about-title {
-    margin: 0 auto;
+    margin: 0;
   }
 }
 .about-list {
@@ -67,10 +67,6 @@
     max-width: 400px;
   }
 }
-@media only screen and (min-width: 1280px) {
-   {
-  }
-}
 .about-item {
   min-width: 160px;
 }
@@ -79,11 +75,6 @@
     min-width: 185px;
   }
 }
-@media only screen and (min-width: 1280px) {
-   {
-  }
-}
-
 .about-desc {
   font-size: 14px;
   font-weight: 400;
