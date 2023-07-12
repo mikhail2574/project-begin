@@ -1,3 +1,17 @@
+.container {
+  /* margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 320px;
+  max-width: 375px; */
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    /* min-width: 768px;
+    padding-left: 20px;
+    padding-right: 20px; */
+  }
+}
 .section-about {
   margin: 0 auto;
   padding-bottom: 146px;
@@ -7,6 +21,11 @@
 .about-block {
   display: flex;
   flex-direction: column;
+}
+@media only screen and (min-width: 768px) {
+  .about-block {
+    display: block;
+  }
 }
 .about-title {
   margin: auto;
@@ -27,12 +46,29 @@
 
   color: #bec7c2;
 }
+@media only screen and (min-width: 768px) {
+  .about-title {
+    max-width: 514px;
+    max-height: 152px;
+    margin-left: 0;
+    margin-bottom: 32px;
+
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 768px) {
+}
 .about-list {
   display: flex;
   margin: auto;
   gap: 14px;
   max-width: 335px;
   margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .about-list {
+    margin-right: 0;
+  }
 }
 .about-item {
   min-width: 160px;
@@ -77,6 +113,7 @@
 }
 
 /* Section example for positioning image */
+
 .section-yacht {
   position: relative;
 }
