@@ -1,159 +1,165 @@
 .yahtblock {
-padding-bottom: 180px;
-}
-
-.yablock-header-style{
     margin-bottom: 80px;
-}
-.yablock-header {
+    }
+    
+    .yablock-header-style{
+        margin-bottom: 80px;
+    }
+    .yablock-header {
+        color: var(--white, #F6F5EF);
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+        letter-spacing: -1.62px;
+        margin-bottom: 40px;
+    }
+    .yablock-button {
+        padding: 14px 28px;
+        color: var(--white, #F6F5EF);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: -0.63px;
+        border-radius: 60px;
+        border: 1px solid var(--white, #F6F5EF);
+        background-color: transparent;
+    }
+    /* ==========list-to-jawa=========== */
+    
+    .yablock-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        row-gap: 40px;  
+        margin-bottom: 24px;
+    }
+    /* ========================== Y - A - H - T ~~ C - A - R - D ================== */
+
+    .yahtblock-item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        align-items: center;
+        width: 335px;
+        background: var(--blue-2, #1F212D);
+        padding-top: 18px;
+        padding-bottom: 24px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 24px;
+    }
+    
+    
+    .yablock-card-picture {
+    } 
+    
+   
+    .yablock-underpicture-style {
+      
+    }
+    
+    .yablock-identification {
+        display: flex;
+        justify-content: space-between;
+        width: 280px;
+    }
+    /*  =================================  */
+    .yablock-third-header-max {
+        white-space: nowrap; 
+        overflow: hidden; 
+        width: 147px;
+        text-overflow: ellipsis;
+    }
+    /* =================================  */
+    
+    .yablock-name {
     color: var(--white, #F6F5EF);
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -1.62px;
-    margin-bottom: 40px;
-}
-.yablock-button {
-    padding: 14px 28px;
-    color: var(--white, #F6F5EF);
-    font-size: 14px;
-    font-style: normal;
+    font-family: inherit;
+    font-size: 16px;;
     font-weight: 700;
-    line-height: 110%;
-    letter-spacing: -0.63px;
-    border-radius: 60px;
-    border: 1px solid var(--white, #F6F5EF);
-    background-color: transparent;
-}
-/* ==========list-to-jawa=========== */
-.yablock-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    row-gap: 40px;  
-    margin-bottom: 24px;
-}
-/* ========================== Y - A - H - T ~~ C - A - R - D ================== */
-.yahtblock-item {
-    display: flex;
-    flex-direction: column;
-    row-gap: 24px;
-    align-items: center;
-    width: 335px;
-    background: var(--blue-2, #1F212D);
-    padding-top: 18px;
-    padding-bottom: 24px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 24px;
-}
-
-
-.yablock-card-picture {
-} 
-
-.yablock-underpicture-style {
-  
-}
-
-.yablock-identification {
-    display: flex;
-    justify-content: space-between;
-    width: 280px;
-}
-/*  =================================  */
-.yablock-third-header-max {
-    white-space: nowrap; 
-    overflow: hidden; 
-    width: 147px;
-    text-overflow: ellipsis;
-}
-/* =================================  */
-
-.yablock-name {
-color: var(--white, #F6F5EF);
-font-family: inherit;
-font-size: 16px;;
-font-weight: 700;
-line-height: 120%;
-letter-spacing: -0.72px;
-text-transform: uppercase;
-}
-
-.yablock-type {
-color: var(--white, #F6F5EF);
-font-family: inherit;
-font-size: 12px;
-line-height: 118%;
-letter-spacing: 0.36px;
-text-transform: uppercase;
-opacity: 0.5;
-}
-
-.yablock-tech-info-style{
-    display: flex;
-    gap: 34px;
-    width: 280px;
-}
-
-.yablock-attribute-list {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-.yablock-atrbt-item {
-}
-
-.yablock-text-info {
-    color: var(--white, #F6F5EF);
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 118%;
-    letter-spacing: 0.42px;
+    line-height: 120%;
+    letter-spacing: -0.72px;
     text-transform: uppercase;
-}
-.yablock-atrbt-dscrptn {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.yablock-text {
+    }
+    
+    .yablock-type {
     color: var(--white, #F6F5EF);
     font-family: inherit;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
     line-height: 118%;
-    letter-spacing: 0.42px;
-}
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    }
+    
+    .yablock-tech-info-style{
+        display: flex;
+        gap: 34px;
+        width: 280px;
+    }
+    
+    .yablock-attribute-list {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .yablock-atrbt-item {
+    }
+    
+    .yablock-text-info {
+        color: var(--white, #F6F5EF);
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 118%;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
+    .yablock-atrbt-dscrptn {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    
+    .yablock-text {
+        color: var(--white, #F6F5EF);
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 118%;
+        letter-spacing: 0.42px;
+    }
+    
+    .yablock-atrbt-dscrptn-item {
+    }
+    
+    .yablock-btn-swiper-style{
+        display: flex;
+        justify-content: center;
+        gap: 14px; 
+    }
+    .yablock-btn-swiper-list {
+    }
+    .yablock-btn-left-swipper{
+    
+    }
+    .yablock-btn-right-swipper{
+    
+    .yablock-btn-swiper-style {
+    }
+    .yablock-btn-swiper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 14px; 
+        border-radius: 60px;
+        background-color: transparent;
+        border: 1px solid var(--white, #F6F5EF); 
+    }
+    .yablock-btns-svg {
+       fill: var(--white, #F6F5EF) 
+    }
+    }
 
-.yablock-atrbt-dscrptn-item {
-}
-
-.yablock-btn-swiper-style{
-    display: flex;
-    justify-content: center;
-    gap: 14px; 
-}
-.yablock-btn-swiper-list {
-}
-.yablock-btn-left-swipper{
-
-}
-.yablock-btn-right-swipper{
-
-}
-.yablock-btn-swiper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 14px; 
-    border-radius: 60px;
-    background-color: transparent;
-    border: 1px solid var(--white, #F6F5EF); 
-}
-.yablock-btns-svg {
-   fill: var(--white, #F6F5EF) 
-}
