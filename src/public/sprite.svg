@@ -30,11 +30,11 @@
     <symbol id="close-icon" viewBox="0 0 32 32">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.733" d="M24 8 8 24M8 8l16 16" />
     </symbol>
-    <symbol id="right-arrow" viewBox="0 0 32 32">
-      <path d="M22.222 8.302 32 16l-9.778 7.698v-6.365H0v-2.667h22.222V8.301z" />
+    <symbol id="right-arrow" viewBox="0 0 72 32">
+      <path d="M50 0l22 16-22 16v-13.229h-50v-5.543h50v-13.229z"></path>
     </symbol>
-    <symbol id="left-arrow" viewBox="0 0 32 32">
-      <path d="M9.778 8.302 0 16l9.778 7.698v-6.365H32v-2.667H9.778V8.301z" />
+    <symbol id="left-arrow" viewBox="0 0 72 32">
+      <path d="M22 0l-22 16 22 16v-13.229h50v-5.543h-50v-13.229z"></path>
     </symbol>
     <symbol id="arrow-up" viewBox="0 0 17 32">
       <path fill="#f6f5ef" d="M0 9.778 8.533 0l8.533 9.778h-7.055V32H7.055V9.778H0z"
