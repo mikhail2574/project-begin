@@ -33,10 +33,15 @@
 
   .footer-logo-container {
     margin-bottom: 40px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
   }
 
+  .footer-line {
+    border-top: 1px solid rgba(246, 245, 239, 0.2);
+    margin: 0 20px;
+  }
   .list-icon {
     display: flex;
     flex-direction: row;
@@ -54,9 +59,12 @@
   }
 
   .logo-footer {
+    box-sizing: content-box;
     fill: var(--white);
     padding-right: 4px;
     padding-left: 15px;
+    width: 26px;
+    height: 26px;
   }
   .footer-social {
     padding-bottom: 16px;
@@ -75,5 +83,186 @@
     letter-spacing: 0.36px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer-logo-text {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 118%;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+  }
+  .footer-icon-linc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid rgba(246, 245, 239, 0.5);
+    fill: var(--white);
+    stroke-width: 1px;
+    stroke: rgba(246, 245, 239, 0.5);
+  }
+
+  .footer-items {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 118%;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+
+  .logo-footer {
+    box-sizing: content-box;
+    fill: var(--white);
+    padding-right: 4px;
+    padding-left: 15px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .list-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .container-icon {
+    margin-right: 40px;
+    margin-top: 64px;
+  }
+
+  .footer-social {
+    padding-bottom: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: uppercase;
+  }
+  .police-footer {
+    display: block;
+    color: rgba(246, 245, 239, 0.5);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 118%;
+    letter-spacing: 0.42px;
+    margin-bottom: 16px;
+    margin-top: 100px;
+  }
+  .footer-line {
+    border-top: 1px solid rgba(246, 245, 239, 0.2);
+    margin: 0 32px;
+  }
+
+  .container-foot-elemenets {
+    margin-top: 64px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-logo-text {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+  }
+  .logo-footer {
+    width: 32px;
+    height: 32px;
+    fill: var(--white);
+  }
+  .footer-items {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 118%;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+
+  .footer-icon-linc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid rgba(246, 245, 239, 0.5);
+    fill: var(--white);
+    stroke-width: 1px;
+    stroke: rgba(246, 245, 239, 0.5);
+  }
+  .list-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .footer-logo-container{
+    display: flex;
+    align-items: center;
+    margin-left: 26px;
+  }
+
+  .footer-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+
+    .police-footer {
+    display: block;
+    color: rgba(246, 245, 239, 0.5);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 118%;
+    letter-spacing: 0.42px;
+    margin-bottom: 16px;
+   
+  }
+  .footer-social {
+    padding-bottom: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: uppercase;
+  }
+
+  .container-icon{
+    margin-right: 32px;
+    margin-top: 64px;
+  }
+  .container-foot-elemenets{
+    margin-top: 64px;
+  }
+
+  .footer-line{
+    border-top: 1px solid rgba(246, 245, 239, 0.2);
+    margin: 0 33px;
   }
 }
