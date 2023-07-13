@@ -8,7 +8,7 @@
     padding-bottom: 40px;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width: 767px) {
    .section-rent {
         margin: 0 20px;
   }
@@ -16,17 +16,35 @@
 
 @media only screen and (min-width: 768px) {
    .section-rent {
-    margin: 0 32px;
     padding-bottom: 100px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
    .section-rent {
-    margin-left: 184px;
-    margin-right: 183px;
+    padding-left: 184px;
+    padding-right: 183px;
     padding-bottom: 164px;
   }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+   .rent-all.container {   
+    max-width: 704px;
+    margin: 0;
+
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+    .rent-all.container {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.rent-all {
+    margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -37,7 +55,24 @@
 
 .rent-title-part {
     display: block;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
+    
+}
+
+@media only screen and (min-width: 768px) {
+   .rent-title-part {
+    max-width: 259px;
+    padding-right: 80px;
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+   .rent-title-part {
+    max-width: 282px;
+    padding-right: 188px;
+    padding-bottom: 0;
+  }
 }
 
 .rent-title{
@@ -54,7 +89,14 @@ padding-bottom: 16px;
     .rent-title {
         font-size: 60px;
         letter-spacing: -2.7px;
+        padding-bottom: 32px;
     }
+}
+
+@media only screen and (min-width: 1280px) {
+   .rent-title {
+        padding-bottom: 64px;
+  }
 }
 
 .rent-request {
@@ -62,16 +104,39 @@ padding-bottom: 16px;
     flex-wrap: wrap;
 }
 
-.rent-form-item {
+@media only screen and (min-width: 768px) {
+   .rent-request {
+    display: block;
+    width: 364px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+   .rent-request {
+        width: 443px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+   .rent-form {
+    width: 100%;
+    max-height: 266px;
+    padding-bottom: 32px;
+  }
+}
+
+.rent-list-item {
     font-weight: 500;
     line-height: 120%;
     letter-spacing: -0.63px;
 }
 
 @media only screen and (min-width: 768px) {
-   .rent-form-item {
+   .rent-list-item {
         font-size: 16px;
         letter-spacing: -0.72px;
+
+        padding-bottom: 28px;
   }
 }
 
@@ -97,13 +162,20 @@ padding-bottom: 16px;
     align-items: center;
     
     width: 123px;
-    height: 23px;
+    height: 43px;
     gap: 16px;
 
     color: var(--white);
     background-color: transparent;
     border-radius: 60px;
     border: 1px solid var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+   .rent-btnsend {
+    width: 123px;
+    height: 48px;
+  }
 }
 
 .rent-send-button {
@@ -128,11 +200,11 @@ RENT MODAL WINDOW
 
 }
 
-/*.backdrop.is-hidden {
+.backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-}*/
+}
 
 .rent-modal {
     position: absolute;
@@ -152,7 +224,7 @@ RENT MODAL WINDOW
     .rent-modal {
         width: 570px;
         height: 522px;
-        padding: 97px 64px 64px;
+        padding: 97px 64px 64px 64px;
         border-radius: 40px;
   }
 }
@@ -197,6 +269,14 @@ RENT MODAL WINDOW
     margin: 40px 24px 24px 24px;
 }
 
+@media only screen and (min-width: 768px) {
+   .rent-imgmodal {
+    margin: 0 auto;
+    min-width: 338px;
+  }
+}
+
+
 .rent-modal-title {
     font-size: 24px;
     font-weight: 500;
@@ -228,3 +308,4 @@ RENT MODAL WINDOW
     letter-spacing: -0.32px;    
   }
 }
+ 
