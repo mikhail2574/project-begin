@@ -20,24 +20,37 @@
   gap: 8px;
 }
 .logo-text {
-  color: var(--white, #f6f5ef);
-
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  color: var(--white);
+}
+@media only screen and (min-width: 768px) {
+  .log-text {
+    font-size: 18px;
+    line-height: 1.18;
+  }
 }
 .header-nav {
   display: inline-block;
+}
+.header-nav {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .header-nav {
+    display: inline-block;
+    margin-left: auto;
+  }
 }
 .nav-list {
   display: flex;
   gap: 24px;
 }
-.header-nav {
-  display: none;
-}
+
 .menu-toggle {
   display: flex;
   justify-content: center;
@@ -45,6 +58,11 @@
   background-color: transparent;
   margin-left: auto;
   border: none;
+}
+@media only screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 /**
@@ -97,4 +115,11 @@
 .modal-menu-item {
 }
 .modal-menu-link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white);
 }
