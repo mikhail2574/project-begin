@@ -1,177 +1,180 @@
+.reviews-section {
+  display: none;
+}
+
 /**
   |============================
   | Reviews Block
   |============================
 */
 .reviews-container {
-    @media screen and (max-width: 767px) {
-        padding: 0 20px;
-    }
+  @media screen and (max-width: 767px) {
+    padding: 0 20px;
+  }
 
-    @media screen and (min-width: 768px) {
-        padding: 0 32px;
-    }
+  @media screen and (min-width: 768px) {
+    padding: 0 32px;
+  }
 }
 
 .reviews-section {
-    @media screen and (min-width: 1280px) {
-        padding-bottom: 25px;
-    }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 25px;
+  }
 }
 
 .reviews-header {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 40px;
-    }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 64px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        display: flex;
-        justify-content: center;
-    }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .reviews-title {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 1.2;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
 
-    @media screen and (max-width: 767px) {
-        margin-bottom: 24px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
 
-        letter-spacing: -1.08px;
-    }
+    letter-spacing: -1.08px;
+  }
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-        margin-right: auto;
-        width: 497px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    margin-right: auto;
+    width: 497px;
 
-        font-size: 32px;
-        letter-spacing: -1.44px;
-    }
+    font-size: 32px;
+    letter-spacing: -1.44px;
+  }
 }
 
 .reviews-title-accent {
-    font-style: italic;
-    color: var(--secondary-title-color);
+  font-style: italic;
+  color: var(--secondary-title-color);
 }
 
 .reviews-subtitle {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 40px;
-    }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 64px;
-        margin-left: auto;
-        width: 273px;
-        font-size: 16px;
-        letter-spacing: -0.32px;
-    }
-    @media screen and (min-width: 1280px) {
-        line-height: 1.4;
-        font-weight: 400;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
+    margin-left: auto;
+    width: 273px;
+    font-size: 16px;
+    letter-spacing: -0.32px;
+  }
+  @media screen and (min-width: 1280px) {
+    line-height: 1.4;
+    font-weight: 400;
+  }
 }
 
 .reviews-set {
-    display: flex;
-    padding-bottom: 20px;
+  display: flex;
+  padding-bottom: 20px;
 
-    @media screen and (max-width: 767px) {
-        margin-bottom: 14px;
-    }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 14px;
+  }
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px; 
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 
-    @media screen and (min-width: 1280px) {
-       flex-wrap: nowrap;
-       gap: 32px;  
-    }
+  @media screen and (min-width: 1280px) {
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
 }
 
 .swiper-slide.reviews-card {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    @media screen and (max-width: 767px) {
-        padding: 24px 17px;
-       
-        border-radius: 24px;
-        background: var(--card-bg);
-        text-align: center;
-    }
+  @media screen and (max-width: 767px) {
+    padding: 24px 17px;
 
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 16px) / 2);
-        padding: 24px 12px;
-        border-radius: 24px;
-        background: #1F212D;
-        text-align: center;
-    }
+    border-radius: 24px;
+    background: var(--card-bg);
+    text-align: center;
+  }
 
-    @media screen and (min-width: 1280px) {
-        width: calc((100% - 64px) / 3);
-        padding: 32px;
-        margin: 0 !important;
-    }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 16px) / 2);
+    padding: 24px 12px;
+    border-radius: 24px;
+    background: #1f212d;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: calc((100% - 64px) / 3);
+    padding: 32px;
+    margin: 0 !important;
+  }
 }
 
 .reviews-img {
-    margin: 0px auto 18px;
-    
-    @media screen and (min-width: 768px) {
-        width: 56px;
-        height: 56px;
-        margin: 0px auto 24px;
-    }
+  margin: 0px auto 18px;
+
+  @media screen and (min-width: 768px) {
+    width: 56px;
+    height: 56px;
+    margin: 0px auto 24px;
+  }
 }
 
 .reviews-card .card-title {
-    margin-bottom: 8px;
-    font-weight: 500;
-    line-height: 1.1;
-    
-    @media screen and (max-width: 767px) {
-        font-size: 16px;
-        letter-spacing: -0.72px; 
-    }
+  margin-bottom: 8px;
+  font-weight: 500;
+  line-height: 1.1;
 
-    @media screen and (min-width: 768px) {
-        font-size: 18px;
-        letter-spacing: -0.81px;
-    }
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+    letter-spacing: -0.72px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    letter-spacing: -0.81px;
+  }
 }
 
 .reviews-card .card-subtitle {
-    color: rgba(246, 245, 239, 0.50);
-    width: 300px;
-    @media screen and (max-width: 767px) {
-      
-        font-size: 12px;
-        letter-spacing: -0.24px;
-    }
+  color: rgba(246, 245, 239, 0.5);
+  width: 300px;
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    letter-spacing: -0.24px;
+  }
 
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-        letter-spacing: -0.32px;
-        width: 320px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    letter-spacing: -0.32px;
+    width: 320px;
+  }
 }
 
 .swiper-pagination {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .comment-swiper .swiper-pagination-bullet {
-    width: 13px;
-    height: 13px;
-    background-color: var(--pressed-state);
+  width: 13px;
+  height: 13px;
+  background-color: var(--pressed-state);
 }

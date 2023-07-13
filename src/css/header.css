@@ -15,12 +15,9 @@
 .header-logotype {
   display: inline-block;
 }
-
 .header-logo {
   display: flex;
   gap: 8px;
-}
-.header-icon {
 }
 .logo-text {
   color: var(--white, #f6f5ef);
@@ -41,10 +38,6 @@
 .header-nav {
   display: none;
 }
-.nav-item {
-}
-.nav-link {
-}
 .menu-toggle {
   display: flex;
   justify-content: center;
@@ -52,8 +45,6 @@
   background-color: transparent;
   margin-left: auto;
   border: none;
-}
-.menu-icon {
 }
 
 /**
@@ -80,12 +71,28 @@
 }
 .modal-menu-header {
   display: flex;
+  align-items: center;
+  width: 335px;
+  height: 72px;
+
+  border-bottom: 1px solid;
+  border-color: rgba(246, 245, 239, 0.2);
 }
 .modal-menu-btn-close {
-}
-.close-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-left: auto;
+  border: none;
 }
 .modal-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 140px;
 }
 .modal-menu-item {
 }
