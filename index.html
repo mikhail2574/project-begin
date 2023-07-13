@@ -7,11 +7,74 @@
     <title>Yacht Adventure</title>
     
     
-    <link rel="stylesheet" href="/project-begin/assets/index-c53c9fd7.css">
+    <link rel="stylesheet" href="/project-begin/assets/index-597f7c21.css">
   </head>
   <body>
-    <header style="height: 75px"></header>
-    
+    <!-- Header -->
+<header class="header">
+  <div class="header-container container">
+    <div class="header-logotype">
+      <svg class="header-icon" width="160" height="18">
+        <use href="/project-begin/assets/sprite-5879dbec.svg#logo-site"></use>
+      </svg>
+      <a
+        class="header-logo"
+        href="./index.html"
+        aria-label="Yacht Adventure logo"
+      >
+        <svg class="header-icon" width="16" height="18">
+          <use href="../public/sprite(new).svg#logo-site"></use>
+        </svg>
+        <p class="logo-text">yaht adventure</p>
+      </a>
+    </div>
+
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="#ABOUT">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#YAHTS">YAHTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#REVIEWS">REVIEWS</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" type="button" data-menu-open>
+      <svg class="menu-icon" width="24" height="24">
+        <use href="../public/sprite(new).svg#vector-menu"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="modal-menu-container is-open" data-menu>
+  <div>
+    <svg class="" width="" height="">
+      <use href=""></use>
+    </svg>
+  </div>
+  <button class="modal-menu-btn-close" data-menu-close>
+    <svg class="close-icon" width="24" height="24" aria-label="Close button">
+      <use href="../public/sprite(new).svg#close-icon"></use>
+    </svg>
+  </button>
+  <ul class="modal-menu-list">
+    <li class="modal-menu-item">
+      <a class="modal-menu-link" href=""></a>
+    </li>
+    <li class="modal-menu-item">
+      <a class="modal-menu-link" href=""></a>
+    </li>
+    <li class="modal-menu-item">
+      <a class="modal-menu-link" href=""></a>
+    </li>
+  </ul>
+</div>
+
     <main>
       <!-- Loads the specified .html file -->
       <section class="hero">
