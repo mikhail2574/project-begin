@@ -3,6 +3,7 @@
     }
     
     .yablock-header-style{
+        padding-right: 25px;
         margin-bottom: 80px;
     }
 
@@ -61,7 +62,7 @@
    .yablock-card-picture {
         max-width: 300px;
         height: 250px;
-    } 
+     } 
      
    
      .yablock-under-picture-style{
@@ -170,6 +171,124 @@
     .yablock-btns-svg {
       fill: currentColor;
     }
+
+    .yablock-btn-swiper:hover,
+    .yablock-btn-swiper:focus{
+        color: var(--light-green, #93ABAE);
+        border: 1px solid var(--light-green, #93ABAE);}
+
+@media screen and (min-width: 768px){
+    .yahtblock {
+            margin-bottom: 100px;
+                }
+      
+    .yablock-header-style{
+            width: 640px;
+            margin-bottom: 100px;
+                }
+
+    .yablock-header {
+                font-size: 70px;
+                letter-spacing: -3,15px;
+                margin-bottom: 64px;
+                }
+        
+    .yablock-button {
+                font-size: 18px;
+                letter-spacing: -0.81px;
+                }
+    
+    /* ==========list-to-jawa=========== */
+    
+    .yablock-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        gap: 16px;  
+        margin-bottom: 32px;
+                }
+    
+    .yablock-picture-style{
+        padding-top: 16px;
+        padding-right: 16px;
+        padding-left: 16px;
+        margin-bottom: 32px;
+                }         
+    
+    .yablock-card-picture {
+        max-width: 312px;
+        height: 268px;
+                }
+
+    .yablock-btn-swiper-style{
+        display: flex;
+        justify-content: center;
+        gap: 16px; 
+                }
+
+    .yablock-btn-swiper-style{
+        gap: 16px;
+                }
+
+    .yablock-btn-swiper {
+        padding: 14px 16px; 
+                } 
+                
+}
+/* ======================= */
+@media screen and (max-width: 1279px){
+.yablock-btn-swiper-style{
+    display: flex;
+    justify-content: center;
+    gap: 16px; 
+            } 
+}
+/* =================== */
+@media screen and (min-width: 1280px){
+.yahtblock {
+        margin-bottom: 164px;
+            }
+
+.yablock-header-style{
+    padding-right: 0;
+        width: 882px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 164px;
+            }
+.yablock-header {
+        font-size: 100px;
+        letter-spacing: -4,5px;
+         margin-bottom: 64px;
+            }       
+
+.yablock-card-picture {
+        max-width: 332px;
+        height: 268px;
+            }
+
+.yablock-btn-swiper-style{
+         display: block;
+         position: absolute;
+            }
+.yablock-btn-swiper {
+    background-color: tomato;
+            /* background-color: transparent; */
+            }
+
+.yablock-btn-left-swipper{
+    position: relative;
+    top: -300px;
+    left: 0;
+    z-index: 2;         
+}
+.yablock-btn-right-swipper{
+    position: relative;
+    top: -338px;
+    left: 1254px;
+    z-index: 1;  
+}
+}
 
     
 
