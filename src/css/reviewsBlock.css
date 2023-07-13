@@ -100,12 +100,8 @@
     box-sizing: border-box;
 
     @media screen and (max-width: 767px) {
-<<<<<<< Updated upstream
         padding: 24px 17px;
        
-=======
-        padding: 17.5px;
->>>>>>> Stashed changes
         border-radius: 24px;
         background: var(--card-bg);
         text-align: center;
