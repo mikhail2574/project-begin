@@ -3,7 +3,7 @@
 }
 
 @media screen and (min-width:1280px) {
-    .flex-container {
+    .hero-flex-container {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -70,6 +70,12 @@
     }
 }
 
+@media screen and (min-width:1280px) {
+    .hero-buttons {
+        margin-bottom: 0;
+    }
+}
+
 
 .hero-button {
     display: block;
@@ -112,6 +118,14 @@
     border-color: var(--normal-state);
     color: var(--normal-state)
 }
+
+@media screen and (max-width:767px) {
+    .hero-background {
+        width: 343px;
+        height: 427px;
+    }
+}
+
 
 .customers-cuption {
     color: var(--body-bg-color);
@@ -190,18 +204,27 @@
     }
 }
 
-.seo {
+.ceo {
     position: absolute;
     top: 35px;
     right: -12px;
 }
 
 @media screen and (min-width:768px) {
-    .seo {
+    .ceo {
         top: 32px;
-        left: 339px
+        left: 339px;
+        min-width: 100%;
+        min-height: 100%;
     }
 }
+
+@media screen and (min-width:1280px) {
+    .ceo {
+        left: 305px
+    }
+}
+
 
 .hero-image {
     position: absolute;
