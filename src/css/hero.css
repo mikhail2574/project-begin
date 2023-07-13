@@ -103,7 +103,8 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button-light:hover {
+.hero-button-light:hover,
+.hero-button-light:focus {
     background-color: var(--pressed-state);
 }
 
@@ -114,7 +115,8 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button-dark:hover {
+.hero-button-dark:hover,
+.hero-button-dark:focus {
     border-color: var(--normal-state);
     color: var(--normal-state)
 }
