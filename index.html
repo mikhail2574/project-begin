@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yacht Adventure</title>
     
-    <link rel="stylesheet" href="/project-begin/assets/index-a0d41d54.css">
+    
+    <link rel="stylesheet" href="/project-begin/assets/index-e6c92bd2.css">
   </head>
   <body>
     <header style="height: 75px"></header>
@@ -68,11 +69,9 @@
           type="image/png"
         />
         <img
-          class="hero-customer"
+          class="hero-background"
           src="./img/hero/group-tablet@1x.png "
           alt="background group"
-          width="426"
-          height="598"
           loading="lazy"
         />
       </picture>
@@ -114,11 +113,11 @@
                 type="image/png"
               />
               <img
-                class="hero-customer"
+                class="customers-img"
                 src=".img/hero/cus1-tablet@1x.png"
                 alt="man"
-                width="48"
-                height="48"
+                width="56"
+                height="56"
                 loading="lazy"
               />
             </picture>
@@ -159,11 +158,11 @@
                 type="image/jpg"
               />
               <img
-                class="hero-customer"
+                class="customers-img"
                 src="./img/hero/cus2-tablet@1x.png "
                 alt="woman"
-                width="48"
-                height="48"
+                width="56"
+                height="56"
                 loading="lazy"
               />
             </picture>
@@ -204,11 +203,11 @@
                 type="image/png"
               />
               <img
-                class="hero-customer"
+                class="customers-img"
                 src="./img/hero/cus3-tablet@1x.png "
                 alt="man"
-                width="48"
-                height="48"
+                width="56"
+                height="56"
                 loading="lazy"
               />
             </picture>
@@ -252,11 +251,9 @@
             type="image/png"
           />
           <img
-            class="hero-customer"
+            class="ceo-img"
             src="./img/hero/ceo-tablet@1x.png "
             alt="man"
-            width="133"
-            height="133"
             loading="lazy"
           />
         </picture>
@@ -297,11 +294,9 @@
             type="image/png"
           />
           <img
-            class="hero-customer"
+            class="hero-image-yaht"
             src="./img/hero/yaht-tablet@1x.png "
             alt="yaht"
-            width="287"
-            height="167"
             loading="lazy"
           />
         </picture>
@@ -550,8 +545,8 @@
       
       
       
-      <div class="container">
-  <section class="reviews-section">
+      <section class="reviews-section">
+  <div class="container">
     <div class="reviews-header">
       <h4 class="reviews-title">
         <span class="reviews-title-accent">Yaht Adventures</span> take pride in
@@ -563,181 +558,239 @@
         about their journey with us.
       </p>
     </div>
-    <ul class="reviews-set">
-      <li class="reviews-card">
-        <picture>
-          <!-- Tablet+desktop webp+png -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/hero/cus1-tablet@1x.webp 1x,
-              ../img/hero/cus1-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/hero/cus1-tablet@1x.png 1x,
-              ../img/hero/cus1-tablet@2x.png 2x
-            "
-            type="image/jpg"
-          />
-          <!-- Mobile webp+png -->
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ../img/hero/cus1-tablet@1x.webp 1x,
-              ../img/hero/cus1-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ../img/hero/cus1-tablet@1x.png 1x,
-              ../img/hero/cus1-tablet@2x.png 2x
-            "
-            type="image/jpg"
-          />
-          <img
-            class="reviews-img"
-            src="../img/hero/cus1-tablet@1x.png"
-            alt="John Wax"
-            width="48"
-            height="48"
-            loading="lazy"
-          />
-        </picture>
-        <h5 class="card-title">John Wax</h5>
-        <p class="card-subtitle">
-          I rented the Lagoon 620 with my family for a week-long vacation and it
-          was the best decision ever. The yacht was spacious, comfortable, and
-          luxurious, and the crew took care of everything.
-        </p>
-      </li>
-      <li class="reviews-card">
-        <picture>
-          <!-- Tablet+desktop webp+png -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/hero/cus2-tablet@1x.webp 1x,
-              ../img/hero/cus2-tablet@2x.webp 2x
-            "
-            type="image/webp" />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/hero/cus2-tablet@1x.png 1x,
-              ../img/hero/cus2-tablet@2x.png 2x
-            "
-            type="image/jpg" />
-          <!-- Mobile webp+png -->
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ../img/hero/cus2-tablet@1x.webp 1x,
-              ../img/hero/cus2-tablet@2x.webp 2x
-            "
-            type="image/webp" />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ../img/hero/cus2-tablet@1x.png 1x,
-              ../img/hero/cus2-tablet@2x.png 2x
-            "
-            type="image/jpg" />
-          <img
-            class="reviews-img"
-            src="../img/hero/cus2-tablet@1x.png"
-            alt="John Wax"
-            width="48"
-            height="48"
-            loading="lazy"
-        /></picture>
+    <div class="comment-swiper swiper-container">
+      <ul class="reviews-set swiper-wrapper">
+        <li class="reviews-card swiper-slide">
+          <picture>
+            <!-- Tablet+desktop webp+png -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/hero/cus1-tablet@1x.webp 1x,
+                ../img/hero/cus1-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/hero/cus1-tablet@1x.png 1x,
+                ../img/hero/cus1-tablet@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <!-- Mobile webp+png -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/hero/cus1-tablet@1x.webp 1x,
+                ../img/hero/cus1-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/hero/cus1-tablet@1x.png 1x,
+                ../img/hero/cus1-tablet@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              class="reviews-img"
+              src="../img/hero/cus1-tablet@1x.png"
+              alt="John Wax"
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+          </picture>
+          <h5 class="card-title">John Wax</h5>
+          <p class="card-subtitle">
+            I rented the Lagoon 620 with my family for a week-long vacation and
+            it was the best decision ever. The yacht was spacious, comfortable,
+            and luxurious, and the crew took care of everything.
+          </p>
+        </li>
+        <li class="reviews-card swiper-slide">
+          <picture>
+            <!-- Tablet+desktop webp+png -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/hero/cus2-tablet@1x.webp 1x,
+                ../img/hero/cus2-tablet@2x.webp 2x
+              "
+              type="image/webp" />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/hero/cus2-tablet@1x.png 1x,
+                ../img/hero/cus2-tablet@2x.png 2x
+              "
+              type="image/jpg" />
+            <!-- Mobile webp+png -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/hero/cus2-tablet@1x.webp 1x,
+                ../img/hero/cus2-tablet@2x.webp 2x
+              "
+              type="image/webp" />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/hero/cus2-tablet@1x.png 1x,
+                ../img/hero/cus2-tablet@2x.png 2x
+              "
+              type="image/jpg" />
+            <img
+              class="reviews-img"
+              src="../img/hero/cus2-tablet@1x.png"
+              alt="John Wax"
+              width="48"
+              height="48"
+              loading="lazy"
+          /></picture>
 
-        <h5 class="card-title">Victoria Romashenko</h5>
-        <p class="card-subtitle">
-          The Sunseeker Manhattan 66 was the perfect choice for our romantic
-          getaway. The yacht was beautifully designed, with all the amenities we
-          needed, and the crew was attentive and friendly.
-        </p>
-      </li>
-      <li class="reviews-card">
-        <picture>
-          <!-- Tablet+desktop webp+png -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/hero/cus3-tablet@1x.webp 1x,
-              ../img/hero/cus3-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/hero/cus3-tablet@1x.png 1x,
-              ../img/hero/cus3-tablet@2x.png 2x
-            "
-            type="image/jpg"
-          />
-          <!-- Mobile webp+png -->
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ../img/hero/cus3-tablet@1x.webp 1x,
-              ../img/hero/cus3-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ../img/hero/cus3-tablet@1x.png 1x,
-              ../img/hero/cus3-tablet@2x.png 2x
-            "
-            type="image/jpg"
-          />
-          <img
-            class="reviews-img"
-            src="../img/hero/cus3-tablet@1x.png"
-            alt="John Wax"
-            width="48"
-            height="48"
-            loading="lazy"
-          />
-        </picture>
-        <h5 class="card-title">Ihor Trachuk</h5>
-        <p class="card-subtitle">
-          The Azimut 80 was the most luxurious yacht I've ever been on. The
-          cabins were spacious and elegant, and the outdoor areas were perfect
-          for relaxing and entertaining. Worth every penny!
-        </p>
-      </li>
-    </ul>
-    <svg class="reviews-icon" width="59" height="13">
-      <use href="../public/sprite.svg#slider"></use>
-    </svg>
-  </section>
-</div>
+          <h5 class="card-title">Victoria Romashenko</h5>
+          <p class="card-subtitle">
+            The Sunseeker Manhattan 66 was the perfect choice for our romantic
+            getaway. The yacht was beautifully designed, with all the amenities
+            we needed, and the crew was attentive and friendly.
+          </p>
+        </li>
+        <li class="reviews-card swiper-slide">
+          <picture>
+            <!-- Tablet+desktop webp+png -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/hero/cus3-tablet@1x.webp 1x,
+                ../img/hero/cus3-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/hero/cus3-tablet@1x.png 1x,
+                ../img/hero/cus3-tablet@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <!-- Mobile webp+png -->
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/hero/cus3-tablet@1x.webp 1x,
+                ../img/hero/cus3-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ../img/hero/cus3-tablet@1x.png 1x,
+                ../img/hero/cus3-tablet@2x.png 2x
+              "
+              type="image/jpg"
+            />
+            <img
+              class="reviews-img"
+              src="../img/hero/cus3-tablet@1x.png"
+              alt="John Wax"
+              width="48"
+              height="48"
+              loading="lazy"
+            />
+          </picture>
+          <h5 class="card-title">Ihor Trachuk</h5>
+          <p class="card-subtitle">
+            The Azimut 80 was the most luxurious yacht I've ever been on. The
+            cabins were spacious and elegant, and the outdoor areas were perfect
+            for relaxing and entertaining. Worth every penny!
+          </p>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
 
       <div class="uptotop-container">
   <button type="button" class="btn-up" onclick="scrollToTop()" id="back-to-up">
-    <svg class="arrow-up" width="8" height="16">
+    <svg class="arrow-up" width="8" height="16" id="uptotop-svg">
       <use href="../public/sprite.svg#arrow-up"></use>
     </svg>
   </button>
 </div>
 
     </main>
-    
+    <footer>
+  <div class="footer-logo-container">
+    <svg class="logo-footer" width="26" height="26">
+      <use href="../public/sprite.svg#logo-site"></use>
+    </svg>
+    <p class="footer-logo-text">yaht Adventures</p>
+  </div>
+
+  <div class="container-foot-elemenets">
+    <ul class="list footer-items">
+      <li class="footer-list-elements">
+        <a class="footer-link" href="">About</a>
+      </li>
+      <li class="footer-list-elements">
+        <a class="footer-link" href="">Yahts</a>
+      </li>
+      <li class="footer-list-elements">
+        <a class="footer-link" href="">Reviews</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container-icon">
+    <p class="footer-social">We in social</p>
+    <ul class="list-icon">
+      <li class="">
+        <a
+          class="footer-icon-linc"
+          href="https://uk-ua.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="icons-svg" width="15" height="15">
+            <use href="../public/sprite.svg#facebook"></use></svg>
+          </a>
+      </li>
+      <li>
+        <a
+          class="footer-icon-linc"
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer">
+          <svg class="" width="15" height="15">
+            <use href="../public/sprite.svg#instagram"></use></svg>
+          </a>
+      </li>
+      <li>
+        <a class="footer-icon-linc" href="">
+          <svg class="" width="15" height="15">
+            <use href="../public/sprite.svg#youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <span class="police-footer">2023. Yaht Adventures Privacy Police</span>
+</footer>
+
 
     <script type="text/javascript" src="./js/uptotop.js"></script>
     <script type="text/javascript" src="./js/swiper.js"></script>
-    <footer style="height: 300px"></footer>
-
     <script type="text/javascript" src="./js/uptotop.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
