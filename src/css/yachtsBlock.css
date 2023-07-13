@@ -1,7 +1,10 @@
 .yahtblock {
+    display: none;
+
+    position: relative;
+    
     margin-bottom: 80px;
     }
-    
     .yablock-header-style{
         padding-right: 25px;
         margin-bottom: 80px;
@@ -249,6 +252,12 @@
         margin-bottom: 164px;
             }
 
+    .yablock-btn-swiper:hover,
+    .yablock-btn-swiper:focus{
+        color: var(--light-green, #93ABAE);
+        border: 1px solid var(--light-green, #93ABAE);
+    }
+}
 .yablock-header-style{
     padding-right: 0;
         width: 882px;
@@ -276,6 +285,29 @@
             /* background-color: transparent; */
             }
 
+@media screen and (min-width: 1280px) {
+    .mask-group {
+        position: absolute;
+
+        width: 1700px;
+        height: 1590px;
+        transform: rotate(7.5deg);
+        background-color: #F6F5EF;
+        opacity: 0.7;
+
+        -webkit-mask-image: url(../public/mask-group.svg);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: top, left;
+        -webkit-mask-size: contain;
+
+        mask-image: url(../public/mask-group.svg);
+        mask-repeat: no-repeat;
+        mask-position: top, left;
+        mask-size: contain;
+
+        z-index: -10;
+    }
+ }
 .yablock-btn-left-swipper{
     position: relative;
     top: -300px;
@@ -288,9 +320,3 @@
     left: 1254px;
     z-index: 1;  
 }
-}
-
-    
-
-    
-
