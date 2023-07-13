@@ -2,6 +2,19 @@
     padding-bottom: 80px;
 }
 
+@media screen and (min-width:1280px) {
+    .flex-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .hero-content {
+        max-width: 554px;
+        padding-top: 79px;
+    }
+}
+
 .hero-title {
     max-width: 324px;
     font-size: 36px;
@@ -20,6 +33,7 @@
     }
 }
 
+
 .secondary-color-title {
     color: var(--secondary-title-color)
 }
@@ -31,6 +45,8 @@
     letter-spacing: -0.28px;
     margin-bottom: 24px;
 }
+
+
 
 @media screen and (min-width:768px) {
     .hero-description {
