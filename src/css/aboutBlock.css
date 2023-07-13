@@ -148,36 +148,3 @@
     left: 28%;
   }
 }
-/* Section example for positioning image */
-
-/* .section-yacht {
-  position: relative;
-}
-@media only screen and (min-width: 768px) {
-  .section-yacht {
-    min-width: 768px;
-  }
-}
-.yacht-container {
-  max-width: 335px;
-}
-
-.title-yacht {
-  max-width: 310px;
-  margin-top: -20px;
-  margin-bottom: 40px;
-
-  color: var(--white, #f6f5ef);
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: -0.042em;
-}
-@media only screen and (min-width: 768px) {
-  .title-yacht {
-    min-width: 641px;
-    font-size: 70px;
-
-    letter-spacing: -0.045em;
-  }
-} */
