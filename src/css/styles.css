@@ -41,9 +41,6 @@ body {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-
   @media screen and (max-width: 768px) {
     max-width: 335px;
   }
