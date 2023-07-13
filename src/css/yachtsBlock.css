@@ -5,6 +5,7 @@
     .yablock-header-style{
         margin-bottom: 80px;
     }
+
     .yablock-header {
         color: var(--white, #F6F5EF);
         font-size: 36px;
@@ -14,6 +15,7 @@
         letter-spacing: -1.62px;
         margin-bottom: 40px;
     }
+
     .yablock-button {
         padding: 14px 28px;
         color: var(--white, #F6F5EF);
@@ -26,6 +28,13 @@
         border: 1px solid var(--white, #F6F5EF);
         background-color: transparent;
     }
+    .yablock-button:hover,
+    .yablock-button:focus{
+    color: var(--light-green, #93ABAE);
+    border: 1px solid var(--light-green, #93ABAE);
+
+    }
+
     /* ==========list-to-jawa=========== */
     
     .yablock-list {
@@ -107,7 +116,6 @@
         color: var(--white, #F6F5EF);
         font-family: inherit;
         font-size: 14px;
-        font-weight: 400;
         line-height: 118%;
         letter-spacing: 0.42px;
         text-transform: uppercase;
@@ -146,6 +154,7 @@
     } */
     .yablock-btn-swiper {
         display: flex;
+        color: var(--white, #F6F5EF);
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -154,8 +163,82 @@
         background-color: transparent;
         border: 1px solid var(--white, #F6F5EF); 
     }
+
     .yablock-btns-svg {
-       fill: var(--white, #F6F5EF) 
+      fill: currentColor;
     }
+
+@media screen and (min-width: 768px){
+    .yahtblock {
+        margin-bottom: 100px;
+         }
+
+    .yablock-centered {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+         
+    .yablock-header-style{
+        width: 640px;
+        margin-bottom: 100px;
+         }
+    .yablock-header {
+        font-size: 70px;
+        letter-spacing: -3,15px;
+        margin-bottom: 64px;
+        }
+
+    .yablock-button {
+        font-size: 18px;
+        letter-spacing: -0.81px;
+        }
+
+        /* ============list-to-jawa======= */
+
+    .yablock-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 16px;  
+        margin-bottom: 32px;
+        }
+
+    .yahtblock-item {
+        row-gap: 32px;
+        width: 335px;
+        padding-top: 16px;
+        padding-bottom: 32px;
+        }
+
+    .yablock-card-picture {
+        width: 312px;
+        height: 268px;
+        }
+
+    .yablock-btn-swiper-style{
+        display: flex;
+        justify-content: center;
+        gap: 16px; 
+    }
+    .yablock-btn-swiper {
+        padding: 14px 16px; 
+        } 
+
+    .yablock-btn-swiper:hover,
+    .yablock-btn-swiper:focus{
+        color: var(--light-green, #93ABAE);
+        border: 1px solid var(--light-green, #93ABAE);
+    }
+
+
+
+
+
+
+
+    }
+
     
 
