@@ -64,7 +64,6 @@
     display: none;
   }
 }
-
 /**
   |============================
   | Mobile menu
@@ -111,8 +110,6 @@
   justify-content: center;
   gap: 14px;
   margin-top: 140px;
-}
-.modal-menu-item {
 }
 .modal-menu-link {
   font-size: 14px;
