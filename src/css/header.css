@@ -55,18 +55,7 @@
 }
 .menu-icon {
 }
-.modal-menu-container {
-}
-.modal-menu-btn-close {
-}
-.close-icon {
-}
-.modal-menu-list {
-}
-.modal-menu-item {
-}
-.modal-menu-link {
-}
+
 /**
   |============================
   | Mobile menu
@@ -79,16 +68,19 @@
 }
 .modal-menu-container {
   position: fixed;
-  display: flex;
+
   flex-direction: column;
   width: 100%;
   height: 100%;
+  z-index: 200;
   top: 0;
   left: 0;
 
   background-color: var(--body-bg-color);
 }
-
+.modal-menu-header {
+  display: flex;
+}
 .modal-menu-btn-close {
 }
 .close-icon {

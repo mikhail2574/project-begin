@@ -37,16 +37,26 @@
 
 <!-- Mobile menu -->
 <div class="modal-menu-container is-open" data-menu>
-  <div>
-    <svg class="" width="" height="">
-      <use href=""></use>
-    </svg>
+  <div class="modal-menu-header container">
+    <div class="modal-menu-logo">
+      <a
+        class="header-logo"
+        href="./index.html"
+        aria-label="Yacht Adventure logo"
+      >
+        <svg class="header-icon" width="16" height="18">
+          <use href="../public/sprite(new).svg#logo-site"></use>
+        </svg>
+        <p class="logo-text">yaht adventure</p>
+      </a>
+    </div>
+    <button class="modal-menu-btn-close" data-menu-close>
+      <svg class="close-icon" width="24" height="24" aria-label="Close button">
+        <use href="../public/sprite(new).svg#close-icon"></use>
+      </svg>
+    </button>
   </div>
-  <button class="modal-menu-btn-close" data-menu-close>
-    <svg class="close-icon" width="24" height="24" aria-label="Close button">
-      <use href="../public/sprite(new).svg#close-icon"></use>
-    </svg>
-  </button>
+
   <ul class="modal-menu-list">
     <li class="modal-menu-item">
       <a class="modal-menu-link" href=""></a>
@@ -59,3 +69,5 @@
     </li>
   </ul>
 </div>
+
+<script src="../js/menu.js" type="module"></script>
