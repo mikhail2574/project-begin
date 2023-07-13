@@ -31,10 +31,10 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.733" d="M24 8 8 24M8 8l16 16" />
     </symbol>
     <symbol id="right-arrow" viewBox="0 0 72 32">
-      <path d="M50 0l22 16-22 16v-13.229h-50v-5.543h50v-13.229z"></path>
+      <path d="m50 0 22 16-22 16V18.771H0v-5.543h50V-.001z" />
     </symbol>
     <symbol id="left-arrow" viewBox="0 0 72 32">
-      <path d="M22 0l-22 16 22 16v-13.229h50v-5.543h-50v-13.229z"></path>
+      <path d="M22 0 0 16l22 16V18.771h50v-5.543H22V-.001z" />
     </symbol>
     <symbol id="arrow-up" viewBox="0 0 17 32">
       <path fill="#f6f5ef" d="M0 9.778 8.533 0l8.533 9.778h-7.055V32H7.055V9.778H0z"
