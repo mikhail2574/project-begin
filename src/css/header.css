@@ -1,21 +1,31 @@
 .header {
   padding-top: 24px;
-  padding-bottom: 64px;
+  padding-bottom: 40px;
+  outline: 1px solid tomato;
 }
 .header-container {
   display: flex;
   align-items: center;
-  min-width: 375px;
+
   height: 72px;
+
+  outline: 1px solid tomato;
 }
 .header-logotype {
+  display: flex;
+  gap: 8px;
+
+  outline: 1px solid tomato;
+}
+.under-line {
+  stroke-width: 1px;
+  stroke: rgba(246, 245, 239, 0.2);
 }
 .header-logo {
 }
 .header-icon {
 }
 .logo-icon {
-  fill: red;
 }
 .logo-text {
   color: var(--white, #f6f5ef);
@@ -26,20 +36,26 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.logo-text::before {
-  content: '';
-  width: 16px;
-  height: 18px;
-}
 .header-nav {
+  display: inline-block;
 }
 .nav-list {
+  display: flex;
+  gap: 24px;
+}
+.header-nav {
+  display: none;
 }
 .nav-item {
 }
 .nav-link {
 }
 .menu-toggle {
+  display: block;
+  border: none;
+  align-items: center;
+  background-color: transparent;
+  margin-left: auto;
 }
 .menu-icon {
 }
