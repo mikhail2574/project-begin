@@ -1,4 +1,6 @@
 .yahtblock {
+    display: none;
+
     position: relative;
     
     margin-bottom: 80px;
