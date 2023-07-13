@@ -216,14 +216,15 @@
     .ceo {
         top: 32px;
         left: 339px;
-        min-width: 100%;
-        min-height: 100%;
+
     }
 }
 
 @media screen and (min-width:1280px) {
     .ceo {
-        left: 305px
+        left: 305px;
+        min-width: 100%;
+        min-height: 100%;
     }
 }
 
