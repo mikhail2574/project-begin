@@ -4,6 +4,7 @@
     margin-bottom: 80px;
     }
     .yablock-header-style{
+        padding-right: 25px;
         margin-bottom: 80px;
     }
 
@@ -40,37 +41,45 @@
     
     .yablock-list {
         display: flex;
-        flex-direction: column;
-        align-items: center; 
-        row-gap: 40px;  
+        flex-direction: row;
+        justify-content: center; 
+        gap: 35px;  
         margin-bottom: 24px;
     }
     /* ========================== Y - A - H - T ~~ C - A - R - D ================== */
 
     .yahtblock-item {
-        display: flex;
-        flex-direction: column;
-        row-gap: 24px;
-        align-items: center;
-        width: 335px;
         background: var(--blue-2, #1F212D);
-        padding-top: 18px;
-        padding-bottom: 24px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        border-radius: 24px;
+        border-radius: 24px; 
     }
     
-    
-    /* .yablock-card-picture {
-    } 
-     */
+    .yablock-picture-style{
+        padding-top: 18px;
+        padding-right: 18px;
+        padding-left: 18px;
+        margin-bottom: 24px;
+    }
+   .yablock-card-picture {
+        max-width: 300px;
+        height: 250px;
+     } 
+     
    
+     .yablock-under-picture-style{
+        padding-right: 24px;
+        padding-bottom: 24px;
+        padding-left: 24px;
+     }
+
     .yablock-identification {
-        display: flex;
+       display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 280px;
+        margin-bottom: 24px;
     }
-    /*  =================================  */
+    /*  ============= hidden~header====================  */
     .yablock-third-header-max {
         white-space: nowrap; 
         overflow: hidden; 
@@ -98,7 +107,7 @@
     text-transform: uppercase;
     opacity: 0.5;
     }
-    
+
     .yablock-tech-info-style{
         display: flex;
         gap: 34px;
@@ -110,8 +119,6 @@
         flex-direction: column;
         gap: 6px;
     }
-    /* .yablock-atrbt-item {
-    } */
     
     .yablock-text-info {
         color: var(--white, #F6F5EF);
@@ -136,9 +143,6 @@
         letter-spacing: 0.42px;
     }
     
-    /* .yablock-atrbt-dscrptn-item {
-    }
-     */
     .yablock-btn-swiper-style{
         display: flex;
         justify-content: center;
@@ -169,63 +173,82 @@
       fill: currentColor;
     }
 
+    .yablock-btn-swiper:hover,
+    .yablock-btn-swiper:focus{
+        color: var(--light-green, #93ABAE);
+        border: 1px solid var(--light-green, #93ABAE);}
+
 @media screen and (min-width: 768px){
     .yahtblock {
-        margin-bottom: 100px;
-         }
-
-    .yablock-centered {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-    }
-         
+            margin-bottom: 100px;
+                }
+      
     .yablock-header-style{
-        width: 640px;
-        margin-bottom: 100px;
-         }
+            width: 640px;
+            margin-bottom: 100px;
+                }
+
     .yablock-header {
-        font-size: 70px;
-        letter-spacing: -3,15px;
-        margin-bottom: 64px;
-        }
-
+                font-size: 70px;
+                letter-spacing: -3,15px;
+                margin-bottom: 64px;
+                }
+        
     .yablock-button {
-        font-size: 18px;
-        letter-spacing: -0.81px;
-        }
-
-        /* ============list-to-jawa======= */
-
+                font-size: 18px;
+                letter-spacing: -0.81px;
+                }
+    
+    /* ==========list-to-jawa=========== */
+    
     .yablock-list {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center; 
         gap: 16px;  
         margin-bottom: 32px;
-        }
-
-    .yahtblock-item {
-        row-gap: 32px;
-        width: 335px;
+                }
+    
+    .yablock-picture-style{
         padding-top: 16px;
-        padding-bottom: 32px;
-        }
-
+        padding-right: 16px;
+        padding-left: 16px;
+        margin-bottom: 32px;
+                }         
+    
     .yablock-card-picture {
-        width: 312px;
+        max-width: 312px;
         height: 268px;
-        }
+                }
 
     .yablock-btn-swiper-style{
         display: flex;
         justify-content: center;
         gap: 16px; 
-    }
+                }
+
+    .yablock-btn-swiper-style{
+        gap: 16px;
+                }
+
     .yablock-btn-swiper {
         padding: 14px 16px; 
-        } 
+                } 
+                
+}
+/* ======================= */
+@media screen and (max-width: 1279px){
+.yablock-btn-swiper-style{
+    display: flex;
+    justify-content: center;
+    gap: 16px; 
+            } 
+}
+/* =================== */
+@media screen and (min-width: 1280px){
+.yahtblock {
+        margin-bottom: 164px;
+            }
 
     .yablock-btn-swiper:hover,
     .yablock-btn-swiper:focus{
@@ -233,8 +256,32 @@
         border: 1px solid var(--light-green, #93ABAE);
     }
 }
+.yablock-header-style{
+    padding-right: 0;
+        width: 882px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 164px;
+            }
+.yablock-header {
+        font-size: 100px;
+        letter-spacing: -4,5px;
+         margin-bottom: 64px;
+            }       
 
+.yablock-card-picture {
+        max-width: 332px;
+        height: 268px;
+            }
 
+.yablock-btn-swiper-style{
+         display: block;
+         position: absolute;
+            }
+.yablock-btn-swiper {
+    background-color: tomato;
+            /* background-color: transparent; */
+            }
 
 @media screen and (min-width: 1280px) {
     .mask-group {
@@ -259,3 +306,15 @@
         z-index: -10;
     }
  }
+.yablock-btn-left-swipper{
+    position: relative;
+    top: -300px;
+    left: 0;
+    z-index: 2;         
+}
+.yablock-btn-right-swipper{
+    position: relative;
+    top: -338px;
+    left: 1254px;
+    z-index: 1;  
+}
