@@ -17,6 +17,8 @@
 @media only screen and (min-width: 768px) {
    .section-rent {
     padding-bottom: 100px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
@@ -31,17 +33,11 @@
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
    .rent-all.container {   
     max-width: 704px;
-    margin: 0;
+    margin: 0 auto;
 
   }
 }
 
-@media only screen and (min-width: 1280px) {
-    .rent-all.container {
-    margin: 0 0;
-    padding: 0;
-  }
-}
 
 .rent-all {
     margin: 0 auto;
@@ -55,7 +51,7 @@
 
 .rent-title-part {
     display: block;
-    padding-bottom: 40px;
+    padding-bottom: 16px;
     
 }
 
@@ -120,30 +116,34 @@ padding-bottom: 16px;
 
 .rent-form {
   width: 100%;
+  margin-bottom: 24px;
 }
 
 @media only screen and (min-width: 768px) {
    .rent-form {
     width: 100%;
     max-height: 266px;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+   .rent-form {
+    margin-bottom: 64px;
   }
 }
 
 .rent-list-item {
-  position: relative;
+    position: relative;
     font-weight: 500;
     line-height: 120%;
     letter-spacing: -0.63px;
-    padding-bottom: 24px;
 }
 
 @media only screen and (min-width: 768px) {
    .rent-list-item {
         font-size: 16px;
         letter-spacing: -0.72px;
-
-        padding-bottom: 28px;
   }
 }
 
@@ -151,32 +151,64 @@ padding-bottom: 16px;
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 16px;
+  padding-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.63px;
   pointer-events: none;
-  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: .5s;
+}
+
+@media only screen and (min-width: 768px) {
+   .rent-form-label {
+    font-size: 16px;
+    letter-spacing: -0.72px;
+  }
+}
+
+.rent-form-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-color: transparent;
+  border-bottom: 1px solid var(--white);
+  padding-top: 24px;
+  outline: none;
+  color: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+   .rent-form-input {
+    padding-top: 28px;
+  }
 }
 
 .rent-form-input:focus ~ .rent-form-label,
 .rent-form-input:valid ~ .rent-form-label {
-  top: -10px;
+  top: -18px;
   left: 0;
   color: var(--normal-state);
   font-size: 10px;
 }
 
-.rent-form-input {
-    width: 100%;
-    background-color: transparent;
-    border-color: transparent;
-    border-bottom: 1px solid var(--white);
-}
-
 .rent-form-comment {
     width: 100%;
     background-color: transparent;
+    border: none;
     border-color: transparent;
     border-bottom: 1px solid var(--white);
-    width: 100%;
+    padding-top: 24px;
+    outline: none;
+    color: var(--white);
+}
+
+.rent-form-comment:focus ~ .rent-form-label,
+.rent-form-comment:valid ~ .rent-form-label {
+  top: -18px;
+  left: 0;
+  color: var(--normal-state);
+  font-size: 10px;
 }
 
 
