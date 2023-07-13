@@ -3,11 +3,21 @@
 }
 
 .hero-title {
+    max-width: 324px;
     font-size: 36px;
     font-weight: 500;
     line-height: 110%;
-    letter-spacing: -0.045em;
+    letter-spacing: -1.62px;
     margin-bottom: 14px;
+}
+
+@media screen and (min-width:768px) {
+    .hero-title {
+        max-width: 698px;
+        font-size: 60px;
+        letter-spacing: -2.7px;
+        margin-bottom: 16px;
+    }
 }
 
 .secondary-color-title {
@@ -15,10 +25,20 @@
 }
 
 .hero-description {
+    max-width: 332px;
     font-size: 14px;
     line-height: 140%;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.28px;
     margin-bottom: 24px;
+}
+
+@media screen and (min-width:768px) {
+    .hero-description {
+        max-width: 539px;
+        font-size: 16px;
+        letter-spacing: -0.32px;
+        margin-bottom: 32px;
+    }
 }
 
 .hero-buttons {
@@ -27,16 +47,33 @@
     margin-bottom: 40px;
 }
 
+@media screen and (min-width:768px) {
+    .hero-buttons {
+        gap: 11px;
+        margin-bottom: 64px;
+    }
+}
+
+
 .hero-button {
     display: block;
     font-size: 14px;
     font-weight: 700;
     line-height: 110%;
-    letter-spacing: -0.045em;
+    letter-spacing: -0.63px;
     border-radius: 60px;
     padding: 14px 28px;
     border: none;
 }
+
+@media screen and (min-width:768px) {
+    .hero-button {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.81px;
+    }
+}
+
 
 .hero-button-light {
     color: var(--white);
@@ -51,7 +88,8 @@
 .hero-button-dark {
     border: 1px solid var(--white);
     background-color: var(--body-bg-color);
-    color: var(--white)
+    color: var(--white);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button-dark:hover {
@@ -64,7 +102,7 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 110%;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.56px;
     text-transform: uppercase;
 }
 
@@ -84,6 +122,26 @@
     top: 24px;
 }
 
+@media screen and (min-width:768px) {
+    .customers-block {
+        width: 149px;
+        left: 32px;
+        top: 32px;
+    }
+}
+
+.customers-img {
+    width: 48px;
+    height: 48px;
+}
+
+@media screen and (min-width:768px) {
+    .customers-img {
+        width: 56px;
+        height: 56px;
+    }
+}
+
 .customers-item:first-child {
     z-index: 3;
 }
@@ -95,11 +153,23 @@
     z-index: 2;
 }
 
+@media screen and (min-width:768px) {
+    .customers-item:nth-child(2) {
+        left: 48px;
+    }
+}
+
 .customers-item:nth-child(3) {
     position: absolute;
     top: 0;
     left: 82px;
     z-index: 1;
+}
+
+@media screen and (min-width:768px) {
+    .customers-item:nth-child(3) {
+        left: 93px;
+    }
 }
 
 .seo {
@@ -108,10 +178,23 @@
     right: -12px;
 }
 
+@media screen and (min-width:768px) {
+    .seo {
+        top: 32px;
+        left: 339px
+    }
+}
+
 .hero-image {
     position: absolute;
     top: 152px;
     left: 24px;
+}
+
+@media screen and (min-width:768px) {
+    .hero-image {
+        top: 225px;
+    }
 }
 
 .hero-advertising {
@@ -123,18 +206,42 @@
     gap: 14px;
 }
 
+@media screen and (min-width:768px) {
+    .hero-advertising {
+        left: 32px;
+        bottom: 64px;
+    }
+}
+
 .hero-advertising-sum {
     color: var(--body-bg-color);
     font-size: 48px;
     line-height: 110%;
-    letter-spacing: -0.045em;
+    letter-spacing: -2.16px;
     text-transform: uppercase;
 }
+
+@media screen and (min-width:768px) {
+    .hero-advertising-sum {
+        font-size: 60px;
+        letter-spacing: -2.7px;
+    }
+}
+
 
 .hero-advertising-cta {
     color: var(--body-bg-color);
     max-width: 169px;
     font-size: 14px;
     line-height: 140%;
-    letter-spacing: -0.045em;
+    letter-spacing: -0.63px;
+}
+
+@media screen and (min-width:768px) {
+    .hero-advertising-cta {
+        max-width: 208px;
+        font-size: 18px;
+        line-height: 110%;
+        letter-spacing: -0.81px;
+    }
 }
