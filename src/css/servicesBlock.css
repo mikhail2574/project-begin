@@ -1,0 +1,45 @@
+@media only screen and (max-width: 767px) {
+   .services {
+    max-width: 335px;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+   .services {
+    max-width: 704px;
+    padding: 0 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+   .services {
+    max-width: 1216px;
+  }
+}
+
+.services-list {
+    padding-bottom: 80px;
+}
+
+.services-sample {
+    position: relative;
+    border-radius: 40px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.services-sample > .services-text {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    margin: 0;
+    padding: 14px 28px;
+    border-radius: 60px;
+    background-color: var(--white);
+    color: var(--body-bg-color);
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.63px;
+}
+
