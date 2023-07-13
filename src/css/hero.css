@@ -149,6 +149,8 @@
 .customers-img {
     width: 48px;
     height: 48px;
+    border: 2px solid var(--normal-state);
+    border-radius: 56px;
 }
 
 @media screen and (min-width:768px) {
