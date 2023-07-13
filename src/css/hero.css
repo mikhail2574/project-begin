@@ -10,7 +10,7 @@
     }
 
     .hero-content {
-        max-width: 554px;
+        max-width: 541px;
         padding-top: 79px;
     }
 }
@@ -187,14 +187,14 @@
 
 @media screen and (min-width:768px) {
     .customers-item:nth-child(2) {
-        left: 48px;
+        left: 45px;
     }
 }
 
 .customers-item:nth-child(3) {
     position: absolute;
     top: 0;
-    left: 82px;
+    left: 83px;
     z-index: 1;
 }
 
