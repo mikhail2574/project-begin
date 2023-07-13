@@ -36,16 +36,6 @@
     border: 1px solid var(--light-green, #93ABAE);
 
     }
-
-    /* ==========list-to-jawa=========== */
-    
-    .yablock-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: center; 
-        gap: 35px;  
-        margin-bottom: 24px;
-    }
     /* ========================== Y - A - H - T ~~ C - A - R - D ================== */
 
     .yahtblock-item {
@@ -64,8 +54,7 @@
         max-width: 300px;
         height: 250px;
      } 
-     
-   
+
      .yablock-under-picture-style{
         padding-right: 24px;
         padding-bottom: 24px;
@@ -142,12 +131,6 @@
         line-height: 118%;
         letter-spacing: 0.42px;
     }
-    
-    .yablock-btn-swiper-style{
-        display: flex;
-        justify-content: center;
-        gap: 14px; 
-    }
     /* .yablock-btn-swiper-list {
     } */
     /* .yablock-btn-left-swipper{
@@ -157,26 +140,10 @@
     
     .yablock-btn-swiper-style {
     } */
-    .yablock-btn-swiper {
-        display: flex;
-        color: var(--white, #F6F5EF);
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 14px; 
-        border-radius: 60px;
-        background-color: transparent;
-        border: 1px solid var(--white, #F6F5EF); 
-    }
 
     .yablock-btns-svg {
       fill: currentColor;
     }
-
-    .yablock-btn-swiper:hover,
-    .yablock-btn-swiper:focus{
-        color: var(--light-green, #93ABAE);
-        border: 1px solid var(--light-green, #93ABAE);}
 
 @media screen and (min-width: 768px){
     .yahtblock {
@@ -199,13 +166,10 @@
                 letter-spacing: -0.81px;
                 }
     
-    /* ==========list-to-jawa=========== */
+    /* ==========list-to-javascript=========== */
     
     .yablock-list {
         display: flex;
-        flex-direction: row;
-        justify-content: center; 
-        gap: 16px;  
         margin-bottom: 32px;
                 }
     
@@ -220,29 +184,6 @@
         max-width: 312px;
         height: 268px;
                 }
-
-    .yablock-btn-swiper-style{
-        display: flex;
-        justify-content: center;
-        gap: 16px; 
-                }
-
-    .yablock-btn-swiper-style{
-        gap: 16px;
-                }
-
-    .yablock-btn-swiper {
-        padding: 14px 16px; 
-                } 
-                
-}
-/* ======================= */
-@media screen and (max-width: 1279px){
-.yablock-btn-swiper-style{
-    display: flex;
-    justify-content: center;
-    gap: 16px; 
-            } 
 }
 /* =================== */
 @media screen and (min-width: 1280px){
@@ -255,6 +196,11 @@
         color: var(--light-green, #93ABAE);
         border: 1px solid var(--light-green, #93ABAE);
     }
+
+    .yablock-button {
+        width: 153px;
+    }
+
 }
 .yablock-header-style{
     padding-right: 0;
@@ -264,7 +210,12 @@
         margin-bottom: 164px;
             }
 .yablock-header {
+    @media screen and (max-width: 767px) {
+        font-size: 36px;
+    }
+    @media screen and (min-width: 1280px) {
         font-size: 100px;
+    }
         letter-spacing: -4,5px;
          margin-bottom: 64px;
             }       
@@ -317,4 +268,26 @@
     top: -338px;
     left: 1254px;
     z-index: 1;  
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    display: none;
+}
+
+.slider-buttons{
+    margin-top: 44px;
+    height: 46px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    padding: 14px;
+    width: 46px !important;
+    height: 36px !important;
+    border: 1px solid var(--white);
+    border-radius: 60px;
+    fill: white;
+    position: static !important;
 }
