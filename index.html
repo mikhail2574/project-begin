@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yacht Adventure</title>
     
-    
-    <script type="module" crossorigin src="/project-begin/assets/index-0d53c779.js"></script>
-    <link rel="stylesheet" href="/project-begin/assets/index-160490f1.css">
+    <script type="module" crossorigin src="/project-begin/assets/index-74a33f24.js"></script>
+    <link rel="stylesheet" href="/project-begin/assets/index-9a3a54b4.css">
   </head>
   <body>
     <!-- Header -->
 <header class="header">
   <div class="container header-container">
+    <!-- blure -->
+    <ul>
+      <li class="blure blure-header-one"></li>
+      <li class="blure blure-header-two"></li>
+      <li class="blure blure-yacht-one"></li>
+      <li class="blure blure-yacht-two"></li>
+      <li class="blure blure-services"></li>
+      <li class="blure blure-form"></li>
+      <li class="blure blure-footer"></li>
+    </ul>
     <div class="header-logotype">
       <a
         class="header-logo"
@@ -39,7 +48,7 @@
         </li>
       </ul>
     </nav>
-    <button class="hamburger" type="button" data-menu-open>
+    <button class="hamburger js-open-menu" type="button">
       <svg class="menu-icon" width="24" height="24">
         <use href="/project-begin/assets/sprite-261beb2c.svg#vector-menu"></use>
       </svg>
@@ -57,7 +66,7 @@
   </div>
 </header>
 <!-- Mobile menu -->
-<div class="modal-menu-container is-open" data-menu>
+<div class="modal-menu-container is-open js-menu-container">
   <div class="modal-menu-header container">
     <div class="modal-menu-logo">
       <a
@@ -71,7 +80,7 @@
         <p class="logo-text">yaht adventure</p>
       </a>
     </div>
-    <button class="modal-menu-btn-close" data-menu-close>
+    <button class="modal-menu-btn-close js-close-menu">
       <svg class="close-icon" width="24" height="24" aria-label="Close button">
         <use href="/project-begin/assets/sprite-261beb2c.svg#menu-close"></use>
       </svg>
@@ -79,13 +88,13 @@
   </div>
   <ul class="modal-menu-list">
     <li class="modal-menu-item">
-      <a class="modal-menu-link" href="index.html#about">ABOUT</a>
+      <a class="modal-menu-link" href="#about">ABOUT</a>
     </li>
     <li class="modal-menu-item">
-      <a class="modal-menu-link" href="index.html#yahts">YAHTS</a>
+      <a class="modal-menu-link" href="#yahts">YAHTS</a>
     </li>
     <li class="modal-menu-item">
-      <a class="modal-menu-link" href="index.html#reviews">REVIEWS</a>
+      <a class="modal-menu-link" href="#reviews">REVIEWS</a>
     </li>
   </ul>
   <!-- Blure Mobile Menu -->
@@ -94,6 +103,7 @@
     <li class="blure blure-mobile-two"></li>
   </ul>
 </div>
+
 
 
 
@@ -115,42 +125,10 @@
         <button class="hero-button hero-button-light" type="button">
           Get Started
         </button>
-        <a href="#services" class="hero-button hero-button-dark" type="button">
-          Explore
-        </a>
+        <a href="#services" class="hero-button hero-button-dark"> Explore </a>
       </div>
     </div>
     <div class="hero-wrapper">
-      <picture>
-        <!-- Tablet and Desktop  screen -->
-        <source
-          media="(min-width: 768px)"
-          srcset="/project-begin/assets/group-tablet@1x-47979c27.webp 1x, /project-begin/assets/group-tablet@2x-2c634973.webp 2x"
-          type="image/webp"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="/project-begin/assets/group-tablet@1x-2b0ab9fa.png 1x, /project-begin/assets/group-tablet@2x-1c9ea792.png 2x"
-          type="image/png"
-        />
-        <!-- Mobile screen -->
-        <source
-          media="(max-width: 767px)"
-          srcset="/project-begin/assets/group-mobile@1x-37b8391b.webp 1x, /project-begin/assets/group-mobile@2x-fb2a4ad2.webp 2x"
-          type="image/webp"
-        />
-        <source
-          media="(max-width: 767px)"
-          srcset="/project-begin/assets/group-mobile@1x-2f7a53e0.png 1x, /project-begin/assets/group-mobile@2x-7b52f1d0.png 2x"
-          type="image/png"
-        />
-        <img
-          class="hero-background"
-          src="/project-begin/assets/group-tablet@1x-2b0ab9fa.png"
-          alt="background group"
-          loading="lazy"
-        />
-      </picture>
       <div class="customers-block">
         <ul class="customers-list">
           <li class="customers-item">
@@ -500,18 +478,18 @@
   </div>
 </section>
 
-      <section class="yahtblock">
+      <section class="yahtblock" id="yahts">
   <div class="yablock-centered container">
-    <div class="mask-group"></div>
+    <div class="mask-group">
     <div class="yablock-header-style">
       <h2 class="yablock-header">
         Choose your dream yacht and sail away into the sunset
       </h2>
       <button class="yablock-button" type="button">Yaht rental</button>
     </div>
-    <div class="yachts-slider swiper-container">
+    <div class="yachts-slider swiper swiper-container">
       <ul class="yablock-list list swiper-wrapper">
-        <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ I ~~~ ================== -->
+        <!-- ========================== Y - A - H - T ~ C - A - R - D ~~~ I ~~~ ================== -->
         <li class="yahtblock-item swiper-slide">
           <picture>
             <!-- =========== D - E - S - K - T - O - P =========== -->
@@ -533,7 +511,7 @@
             />
             <source
               media="(min-width: 768px)"
-              srcset="/project-begin/assets/yaht1-tablet@1x-cf3d62d0.png 2x, /project-begin/assets/yaht1-tablet@2x-43d32f4a.png 2x"
+              srcset="/project-begin/assets/yaht1-tablet@1x-cf3d62d0.png 1x, /project-begin/assets/yaht1-tablet@2x-43d32f4a.png 2x"
               type="image/webp"
             />
             <!-- =========== M - O - B - I - L - E =============== -->
@@ -582,19 +560,19 @@
             </ul>
             <ul class="yablock-atrbt-dscrptn">
               <li class="yablock-atrbt-dscrptn-item">
-                <p class="yablock-text-info">48m(115ft)</p>
+                <p class="yablock-text">48m(115ft)</p>
               </li>
               <li class="yablock-atrbt-dscrptn-item">
-                <p class="yablock-text-info">Admiral</p>
+                <p class="yablock-text">Admiral</p>
               </li>
               <li class="yablock-atrbt-dscrptn-item">
-                <p class="yablock-text-info">2021</p>
+                <p class="yablock-text">2021</p>
               </li>
               <li class="yablock-atrbt-dscrptn-item">
-                <p class="yablock-text-info">11 in 5 cabins</p>
+                <p class="yablock-text">11 in 5 cabins</p>
               </li>
               <li class="yablock-atrbt-dscrptn-item">
-                <p class="yablock-text-info">&#8364;33,500,000</p>
+                <p class="yablock-text">&#8364;33,500,000</p>
               </li>
             </ul>
           </div>
@@ -621,7 +599,7 @@
             />
             <source
               media="(min-width: 768px)"
-              srcset="/project-begin/assets/yaht2-tablet@1x-3a01cda8.png 2x, /project-begin/assets/yaht2-tablet@2x-7e3d96fc.png 2x"
+              srcset="/project-begin/assets/yaht2-tablet@1x-3a01cda8.png 1x, /project-begin/assets/yaht2-tablet@2x-7e3d96fc.png 2x"
               type="image/webp"
             />
             <!-- =========== M - O - B - I - L - E =============== -->
@@ -711,7 +689,7 @@
             />
             <source
               media="(min-width: 768px)"
-              srcset="/project-begin/assets/yaht3-tablet@1x-1d7d5132.png 2x, /project-begin/assets/yaht3-tablet@2x-4eda396c.png 2x"
+              srcset="/project-begin/assets/yaht3-tablet@1x-1d7d5132.png 1x, /project-begin/assets/yaht3-tablet@2x-4eda396c.png 2x"
               type="image/webp"
             />
             <!-- =========== M - O - B - I - L - E =============== -->
@@ -800,7 +778,7 @@
             />
             <source
               media="(min-width: 768px)"
-              srcset="/project-begin/assets/yaht4-tablet@1x-eb6711e5.png 2x, /project-begin/assets/yaht4-tablet@2x-ccb9a17e.png 2x"
+              srcset="/project-begin/assets/yaht4-tablet@1x-eb6711e5.png 1x, /project-begin/assets/yaht4-tablet@2x-ccb9a17e.png 2x"
               type="image/webp"
             />
             <!-- =========== M - O - B - I - L - E =============== -->
@@ -889,7 +867,7 @@
             />
             <source
               media="(min-width: 768px)"
-              srcset="/project-begin/assets/yaht5-tablet@1x-2f5ad9ab.png 2x, /project-begin/assets/yaht5-tablet@2x-c3d85680.png 2x"
+              srcset="/project-begin/assets/yaht5-tablet@1x-2f5ad9ab.png 1x, /project-begin/assets/yaht5-tablet@2x-c3d85680.png 2x"
               type="image/webp"
             />
             <!-- =========== M - O - B - I - L - E =============== -->
@@ -942,7 +920,7 @@
                 <p class="yablock-text">38m(125ft)</p>
               </li>
               <li class="yablock-atrbt-dscrptn-item">
-                <p class="yablock-text">Gianetti Custom Yachts</p>
+                <p class="yablock-text small">Gianetti Custom Yachts</p>
               </li>
               <li class="yablock-atrbt-dscrptn-item">
                 <p class="yablock-text">2024</p>
@@ -978,7 +956,7 @@
             />
             <source
               media="(min-width: 768px)"
-              srcset="/project-begin/assets/yaht6-tablet@1x-d0c243bb.png 2x, /project-begin/assets/yaht6-tablet@2x-f8f87baa.png 2x"
+              srcset="/project-begin/assets/yaht6-tablet@1x-d0c243bb.png 1x, /project-begin/assets/yaht6-tablet@2x-f8f87baa.png 2x"
               type="image/webp"
             />
             <!-- =========== M - O - B - I - L - E =============== -->
@@ -1020,7 +998,7 @@
                 <p class="yablock-text-info">built</p>
               </li>
               <li class="yablock-atrbt-item">
-                <p class="yablock-text-info">guests/p></p>
+                <p class="yablock-text-info">guests</p>
               </li>
 
               <li class="yablock-atrbt-item">
@@ -1035,7 +1013,7 @@
                 <p class="yablock-text">Overmarine</p>
               </li>
               <li class="yablock-atrbt-dscrptn-item">
-                <p class="yablock-text">2004 / 2018 (refitted)</p>
+                <p class="yablock-text small">2004 / 2018 (refitted)</p>
               </li>
               <li class="yablock-atrbt-dscrptn-item">
                 <p class="yablock-text">9 in 4 cabins</p>
@@ -1068,7 +1046,7 @@
             />
             <source
               media="(min-width: 768px)"
-              srcset="/project-begin/assets/yaht7-tablet@1x-07cbd28a.png 2x, /project-begin/assets/yaht7-tablet@2x-1f713d07.png 2x"
+              srcset="/project-begin/assets/yaht7-tablet@1x-07cbd28a.png 1x, /project-begin/assets/yaht7-tablet@2x-1f713d07.png 2x"
               type="image/webp"
             />
             <!-- =========== M - O - B - I - L - E =============== -->
@@ -1157,7 +1135,7 @@
             />
             <source
               media="(min-width: 768px)"
-              srcset="/project-begin/assets/yaht8-tablet@1x-6410c240.png 2x, /project-begin/assets/yaht8-tablet@2x-02afefc9.png 2x"
+              srcset="/project-begin/assets/yaht8-tablet@1x-6410c240.png 1x, /project-begin/assets/yaht8-tablet@2x-02afefc9.png 2x"
               type="image/webp"
             />
             <!-- =========== M - O - B - I - L - E =============== -->
@@ -1207,19 +1185,19 @@
             </ul>
             <ul class="yablock-atrbt-dscrptn">
               <li class="yablock-atrbt-dscrptn-item">
-                <p class="yablock-text-info">32m(103ft)</p>
+                <p class="yablock-text">32m(103ft)</p>
               </li>
               <li class="yablock-atrbt-dscrptn-item">
-                <p class="yablock-text-info">overmarine</p>
+                <p class="yablock-text">overmarine</p>
               </li>
               <li class="yablock-atrbt-dscrptn-item">
-                <p class="yablock-text-info">2005 / 2022 (refitted)</p>
+                <p class="yablock-text small">2005 / 2022 (refitted)</p>
               </li>
               <li class="yablock-atrbt-dscrptn-item">
-                <p class="yablock-text-info">9 in 4 cabins</p>
+                <p class="yablock-text">9 in 4 cabins</p>
               </li>
               <li class="yablock-atrbt-dscrptn-item">
-                <p class="yablock-text-info">&#8364;2,900,000</p>
+                <p class="yablock-text">&#8364;2,900,000</p>
               </li>
             </ul>
           </div>
@@ -1246,7 +1224,7 @@
             />
             <source
               media="(min-width: 768px)"
-              srcset="/project-begin/assets/yaht9-tablet@1x-75433a9b.png 2x, /project-begin/assets/yaht9-tablet@2x-5a2bd53b.png 2x"
+              srcset="/project-begin/assets/yaht9-tablet@1x-75433a9b.png 1x, /project-begin/assets/yaht9-tablet@2x-5a2bd53b.png 2x"
               type="image/webp"
             />
             <!-- =========== M - O - B - I - L - E =============== -->
@@ -1314,14 +1292,14 @@
           </div>
         </li>
       </ul>
-      <div class="slider-buttons">
+      <div class="yablock-btn-swiper-style slider-buttons">
         <div class="swiper-button-prev">
-          <svg width="18px" height="8px">
+          <svg class="yablock-btns-svg" width="18px" height="8px">
             <use href="/project-begin/assets/sprite-261beb2c.svg#left-arrow" />
           </svg>
         </div>
         <div class="swiper-button-next">
-          <svg width="18px" height="8px">
+          <svg class=".yablock-btns-svg" width="18px" height="8px">
             <use href="/project-begin/assets/sprite-261beb2c.svg#right-arrow" />
           </svg>
         </div>
@@ -1330,68 +1308,78 @@
   </div>
 </section>
 
-      <!-----------------------
+      <!-- ---------------------
     BLOCK SERVICES
-------------------------->
+----------------------- -->
 <section class="services" id="services">
-  <div class="services-container">
-    <ul class="services-list">
-      <li class="services-sample sample-diving">
-        <picture class="services-img services-fishing">
-          <source
-            srcset="/project-begin/assets/ser1-desktop@1x-f8cee912.webp 1x, /project-begin/assets/ser1-desktop@2x-6eb0c490.webp 2x, /project-begin/assets/ser1-tablet@1x-4fe6f30b.webp 1x, /project-begin/assets/ser1-tablet@2x-9495f90c.webp 2x, /project-begin/assets/ser1-mob@1x-a6439854.webp 1x, /project-begin/assets/ser1-mob@2x-affc20d8.webp 2x"
-            type="image/webp"
-          />
-          <source
-            srcset="/project-begin/assets/ser1-desktop@1x-91a9bcbe.png 1x, /project-begin/assets/ser1-desktop@2x-606e4df2.png 2x, /project-begin/assets/ser1-tablet@1x-600b3ea0.png 1x, /project-begin/assets/ser1-tablet@2x-2a8f9194.png 2x, /project-begin/assets/ser1-mob@1x-d77eb5fa.png 1x, /project-begin/assets/ser1-mob@2x-229c8bee.png 2x"
-            type="image/png"
-          />
-          <img
-            class="img-diving"
-            src="/project-begin/assets/ser1-desktop@1x-91a9bcbe.png"
-            alt="a diving man wearing diving mask under the water"
-          />
-        </picture>
-        <p class="services-text">Diving</p>
-      </li>
-      <li class="services-sample sample-fishing">
-        <picture class="services-img services-fishing">
-          <source
-            srcset="/project-begin/assets/ser2-desktop@1x-676466d6.png 1x, /project-begin/assets/ser2-desktop@2x-3193e932.png 2x, /project-begin/assets/ser2-tablet@1x-5b9a9c9f.png 1x, /project-begin/assets/ser2-tablet@2x-888c29e7.png 2x, /project-begin/assets/ser2-mob@1x-b18d70e3.png 1x, /project-begin/assets/ser2-mob@2x-c72895a7.png 2x"
-            type="image/png"
-          />
-          <source
-            srcset="/project-begin/assets/ser2-desktop@1x-676466d6.png 1x, /project-begin/assets/ser2-desktop@2x-3193e932.png 2x, /project-begin/assets/ser2-tablet@1x-5b9a9c9f.png 1x, /project-begin/assets/ser2-tablet@2x-888c29e7.png 2x, /project-begin/assets/ser2-mob@1x-b18d70e3.png 1x, /project-begin/assets/ser2-mob@2x-c72895a7.png 2x"
-            type="image/png"
-          />
+    <div class="services-container">
+        <h2 class="visually-hidden"> Our services</h2>
+        <ul class="services-list">
+            <li class="services-sample sample-diving">
+                <picture class="services-img services-fishing">
+                     <source srcset="/project-begin/assets/ser1-desktop@1x-f8cee912.webp 1x, /project-begin/assets/ser1-desktop@2x-6eb0c490.webp 2x" media="(min-width: 1280px)" type="image/webp" />
 
-          <img
-            src="/project-begin/assets/ser2-desktop@1x-676466d6.png"
-            alt="Hands of man holding a fishing rod in the sea"
-          />
-        </picture>
-        <p class="services-text text-fishing">Fishing</p>
-      </li>
-      <li class="services-sample sample-sunbathing">
-        <picture class="services-img services-sunbathing">
-          <source
-            srcset="/project-begin/assets/ser3-desktop@1x-052abc4f.webp 1x, /project-begin/assets/ser3-desktop@2x-6caea69b.webp 2x, /project-begin/assets/ser3-tablet@1x-14f38fa1.webp 1x, /project-begin/assets/ser3-tablet@2x-4160ca32.webp 2x, data:image/webp;base64,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 1x, /project-begin/assets/ser3-mob@2x-3b962141.webp 2x"
-            type="image/webp"
-          />
-          <source
-            srcset="/project-begin/assets/ser3-desktop@1x-a4eea381.png 1x, /project-begin/assets/ser3-desktop@2x-402e4870.png 2x, /project-begin/assets/ser3-tablet@1x-fc191221.png 1x, /project-begin/assets/ser3-tablet@2x-c290f7f6.png 2x, /project-begin/assets/ser3-mob@1x-27cba3f4.png 1x, /project-begin/assets/ser3-mob@2x-e48e44f6.png 2x"
-            type="image/png"
-          />
+                    <source srcset="/project-begin/assets/ser1-tablet@1x-4fe6f30b.webp 1x, /project-begin/assets/ser1-tablet@2x-9495f90c.webp 2x" media="(min-width: 768px)" type="image/webp" />
 
-          <img
-            src="/project-begin/assets/ser3-desktop@1x-a4eea381.png"
-            alt="Pink sun umbrellas against blue sky"
-          />
-        </picture>
-        <p class="services-text text-sunbathing">Sunbathing</p>
-      </li>
-    </ul>
-  </div>
+                    <source srcset="/project-begin/assets/ser1-mob@1x-a6439854.webp 1x, /project-begin/assets/ser1-mob@2x-affc20d8.webp 2x" media="(min-width: 375px)" type="image/webp" />
+
+                    <source srcset="/project-begin/assets/ser1-desktop@1x-91a9bcbe.png 1x, /project-begin/assets/ser1-desktop@2x-606e4df2.png 2x" media="(min-width: 1280px)" type="image/png" />
+
+                    <source srcset="/project-begin/assets/ser1-tablet@1x-600b3ea0.png 1x, /project-begin/assets/ser1-tablet@2x-2a8f9194.png 2x" media="(min-width: 768px)" type="image/png" />
+
+                    <source srcset="/project-begin/assets/ser1-mob@1x-d77eb5fa.png 1x, /project-begin/assets/ser1-mob@2x-229c8bee.png 2x" media="(min-width: 375px)"
+                    type="image/png" />
+                    <img class= "img-diving" src="/project-begin/assets/ser1-desktop@1x-91a9bcbe.png" alt="a diving man wearing diving mask under the water" />
+                </picture>
+                <p class="services-text">Diving</p>
+            </li>
+
+            <li class="services-sample sample-fishing">
+                <picture class="services-img services-fishing">
+                    <source srcset="/project-begin/assets/ser2-desktop@1x-2d7415d6.webp 1x, /project-begin/assets/ser2-desktop@2x-60e0b5aa.webp 2x" media="(min-width: 1280px)" type="image/webp" />
+
+                    <source srcset="/project-begin/assets/ser2-tablet@1x-512a8c59.webp 1x, /project-begin/assets/ser2-tablet@2x-a524f850.webp 2x" media="(min-width: 768px)" type="image/webp" />
+
+                    <source srcset="/project-begin/assets/ser2-mob@1x-5b774aa7.webp 1x, /project-begin/assets/ser2-mob@2x-c7d968a4.webp 2x" media="(min-width: 375px)" 
+                    type="image/webp" />
+
+                    <source srcset="/project-begin/assets/ser2-desktop@1x-676466d6.png 1x, /project-begin/assets/ser2-desktop@2x-3193e932.png 2x" media="(min-width: 1280px)" type="image/png" />
+
+                    <source srcset="/project-begin/assets/ser2-tablet@1x-5b9a9c9f.png 1x, /project-begin/assets/ser2-tablet@2x-888c29e7.png 2x" media="(min-width: 768px)" type="image/png" />
+
+                    <source srcset="/project-begin/assets/ser2-mob@1x-b18d70e3.png 1x, /project-begin/assets/ser2-mob@2x-c72895a7.png 2x"
+                    media="(min-width: 375px)" type="image/png" />
+        
+                <img src="/project-begin/assets/ser2-desktop@1x-676466d6.png" alt="Hands of man holding a fishing rod in the sea" />
+
+                </picture>
+                <p class="services-text text-fishing">Fishing</p>
+
+            </li>
+            <li class="services-sample sample-sunbathing">
+                <picture class="services-img services-sunbathing">
+                    <source srcset="/project-begin/assets/ser3-desktop@1x-052abc4f.webp 1x, /project-begin/assets/ser3-desktop@2x-6caea69b.webp 2x" media="(min-width: 1280px)" 
+                    type="image/webp" />
+
+                    <source srcset="/project-begin/assets/ser3-tablet@1x-14f38fa1.webp 1x, /project-begin/assets/ser3-tablet@2x-4160ca32.webp 2x" media="(min-width: 768px)"
+                    type="image/webp" />
+
+                    <source srcset="data:image/webp;base64,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 1x, /project-begin/assets/ser3-mob@2x-3b962141.webp 2x" media="(min-width: 375px)"
+                    type="image/webp" />
+
+                    <source srcset="/project-begin/assets/ser3-desktop@1x-a4eea381.png 1x, /project-begin/assets/ser3-desktop@2x-402e4870.png 2x" media="(min-width: 1280px)" type="image/png" />
+
+                    <source srcset="/project-begin/assets/ser3-tablet@1x-fc191221.png 1x, /project-begin/assets/ser3-tablet@2x-c290f7f6.png 2x" media="(min-width: 768px)" type="image/png" />
+
+
+                    <source srcset="/project-begin/assets/ser3-mob@1x-27cba3f4.png 1x, /project-begin/assets/ser3-mob@2x-e48e44f6.png 2x" media="(min-width: 768px)" type="image/png" />
+        
+                    <img src="../img/services/ser3-desktop@1x.png" alt="Pink sun umbrellas against blue sky" />
+                </picture>
+                <p class="services-text text-sunbathing">Sunbathing</p>
+            </li>
+        </ul>
+    </div>
 </section>
 
       <!------------
@@ -1514,7 +1502,7 @@
   </div>
 </div>
 
-      <section class="reviews-section">
+      <section class="reviews-section" id="reviews">
   <div class="container reviews-container">
     <div class="reviews-header">
       <h4 class="reviews-title">
@@ -1527,7 +1515,7 @@
         about their journey with us.
       </p>
     </div>
-    <div class="comment-swiper swiper-container">
+    <div class="comment-swiper swiper swiper-container">
       <ul class="reviews-set swiper-wrapper">
         <li class="reviews-card swiper-slide">
           <picture>
@@ -1726,9 +1714,6 @@
 </footer>
 
 
-    <script src="./js/uptotop.js"></script>
-    <script src="./js/swiper.js"></script>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/swiper.js"></script>
+    
   </body>
 </html>
