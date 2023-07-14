@@ -4,8 +4,8 @@
 .header-container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 26px;
+  padding-bottom: 26px;
   height: 72px;
   width: 335px;
 
@@ -14,10 +14,20 @@
 }
 .header-logotype {
   display: inline-block;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 .header-logo {
   display: flex;
+  align-items: center;
+
   gap: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .header-icon {
+    width: 20px;
+    height: 23px;
+  }
 }
 .logo-text {
   font-size: 14px;
@@ -50,7 +60,16 @@
   display: flex;
   gap: 24px;
 }
+.nav-link {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--secondary-title-color);
 
+  transition-duration: 250ms;
+}
 .menu-toggle {
   display: flex;
   justify-content: center;
@@ -119,4 +138,9 @@
   text-transform: uppercase;
 
   color: var(--white);
+}
+.modal-menu-link:hover,
+.modal-menu-link:focus {
+  color: var(--secondary-title-color);
+  transition-duration: 250ms;
 }
