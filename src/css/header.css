@@ -66,7 +66,6 @@
   padding-top: 26px;
   padding-bottom: 26px;
 }
-
 .nav-link:hover,
 .nav-link:focus {
   color: var(--secondary-title-color);
@@ -101,9 +100,9 @@
   transform: rotate(-45deg);
   background-color: var(--normal-state);
   opacity: 0.6;
-  border-radius: 420px;
-  filter: blur(100px);
-  /* backdrop-filter: blur(200px); */
+  /* border-radius: 420px; */
+  /* filter: blur(100px); */
+  backdrop-filter: blur(200px);
 }
 
 .blure-header-one {
@@ -132,15 +131,15 @@
 
 .blure-yacht-two {
   top: 2380px;
-  left: 200px;
+  left: 195px;
 
   width: 195px;
   height: 195px;
 }
 
 .blure-services {
-  top: 3519px;
-  right: 205px;
+  top: 3560px;
+  right: 265px;
 
   width: 323px;
   height: 323px;
@@ -148,7 +147,7 @@
 
 .blure-form {
   top: 4754px;
-  right: -179px;
+  left: 121px;
 
   width: 283px;
   height: 283px;
@@ -161,7 +160,6 @@
   width: 420px;
   height: 420px;
 }
-
 
 /**
   |============================
