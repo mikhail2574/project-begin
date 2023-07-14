@@ -195,22 +195,23 @@
 /* =================== */
 @media screen and (min-width: 1280px){
     .mask-group {
+        display: none;
         position: absolute;
 
         width: 1700px;
         height: 1590px;
-        transform: rotate(7.5deg);
+        /* transform: rotate(7.5deg); */
         background-color: #F6F5EF;
         opacity: 0.7;
 
         -webkit-mask-image: url(../public/mask-group.svg);
         -webkit-mask-repeat: no-repeat;
-        -webkit-mask-position: top, left;
+        -webkit-mask-position: left top;
         -webkit-mask-size: contain;
 
         mask-image: url(../public/mask-group.svg);
         mask-repeat: no-repeat;
-        mask-position: top, left;
+        mask-position: left top;
         mask-size: contain;
 
         z-index: -10;
