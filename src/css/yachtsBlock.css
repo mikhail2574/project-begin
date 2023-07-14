@@ -228,13 +228,10 @@
 /* .yablock-btn-left-swipper{
         /* z-index: -10; */
 
-        transition: opacity 500ms cubic-bezier(.17, .67, .83, .67);
-    }
 
     .mask-group:hover {
         opacity: 1;
     }
- }
 .yablock-btn-left-swipper{
     position: relative;
     top: -300px;
