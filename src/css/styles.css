@@ -38,19 +38,18 @@ body {
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: -0.28px;
-  overflow-x: hidden;
 }
 
 .container {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     max-width: 335px;
   }
 
-  @media screen and (min-width: 769px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 704px;
   }
 
-  @media screen and (min-width: 1281px) {
+  @media screen and (min-width: 1280px) {
     width: 1216px;
   }
 
