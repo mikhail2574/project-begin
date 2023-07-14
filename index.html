@@ -7,73 +7,94 @@
     <title>Yacht Adventure</title>
     
     
-    <link rel="stylesheet" href="/project-begin/assets/index-72c7691d.css">
+    <script type="module" crossorigin src="/project-begin/assets/index-33ae8042.js"></script>
+    <link rel="stylesheet" href="/project-begin/assets/index-21b7105b.css">
   </head>
   <body>
     <!-- Header -->
 <header class="header">
-  <div class="header-container container">
+  <div class="container header-container ">
     <div class="header-logotype">
-      <svg class="header-icon" width="160" height="18">
-        <use href="/project-begin/assets/sprite-5879dbec.svg#logo-site"></use>
-      </svg>
       <a
         class="header-logo"
         href="./index.html"
         aria-label="Yacht Adventure logo"
       >
         <svg class="header-icon" width="16" height="18">
-          <use href="../public/sprite(new).svg#logo-site"></use>
+          <use href="../public/sprite.svg#logo-site"></use>
         </svg>
         <p class="logo-text">yaht adventure</p>
       </a>
     </div>
-
     <nav class="header-nav">
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link" href="#ABOUT">ABOUT</a>
+          <a class="nav-link" href="#about">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#YAHTS">YAHTS</a>
+          <a class="nav-link" href="#yahts">YAHTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#REVIEWS">REVIEWS</a>
+          <a class="nav-link" href="#reviews">REVIEWS</a>
         </li>
       </ul>
     </nav>
-    <button class="menu-toggle" type="button" data-menu-open>
+    <button class="hamburger" type="button" data-menu-open>
       <svg class="menu-icon" width="24" height="24">
-        <use href="../public/sprite(new).svg#vector-menu"></use>
+        <use href="../public/sprite.svg#vector-menu"></use>
+      </svg>
+    </button>
+    <!-- Blure -->
+  <ul>
+    <li class="blure blure-header-one"></li>
+    <li class="blure blure-header-two"></li>
+    <li class="blure blure-yacht-one"></li>
+    <li class="blure blure-yacht-two"></li>
+    <li class="blure blure-services"></li>
+    <li class="blure blure-form"></li>
+    <li class="blure blure-footer"></li>
+  </ul>
+</header>
+<!-- Mobile menu -->
+<div class="modal-menu-container is-open" data-menu>
+  <div class="modal-menu-header container">
+    <div class="modal-menu-logo">
+      <a
+        class="header-logo"
+        href="./index.html"
+        aria-label="Yacht Adventure logo"
+      >
+        <svg class="header-icon" width="16" height="18">
+          <use href="../public/sprite.svg#logo-site"></use>
+        </svg>
+        <p class="logo-text">yaht adventure</p>
+      </a>
+    </div>
+    <button class="modal-menu-btn-close" data-menu-close>
+      <svg class="close-icon" width="24" height="24" aria-label="Close button">
+        <use href="../public/sprite.svg#menu-close"></use>
       </svg>
     </button>
   </div>
-</header>
-
-<!-- Mobile menu -->
-<div class="modal-menu-container is-open" data-menu>
-  <div>
-    <svg class="" width="" height="">
-      <use href=""></use>
-    </svg>
-  </div>
-  <button class="modal-menu-btn-close" data-menu-close>
-    <svg class="close-icon" width="24" height="24" aria-label="Close button">
-      <use href="../public/sprite(new).svg#close-icon"></use>
-    </svg>
-  </button>
   <ul class="modal-menu-list">
     <li class="modal-menu-item">
-      <a class="modal-menu-link" href=""></a>
+      <a class="modal-menu-link" href="index.html#about">ABOUT</a>
     </li>
     <li class="modal-menu-item">
-      <a class="modal-menu-link" href=""></a>
+      <a class="modal-menu-link" href="index.html#yahts">YAHTS</a>
     </li>
     <li class="modal-menu-item">
-      <a class="modal-menu-link" href=""></a>
+      <a class="modal-menu-link" href="index.html#reviews">REVIEWS</a>
     </li>
   </ul>
+  <!-- Blure Mobile Menu -->
+  <ul>
+    <li class="blure blure-mobile-one"></li>
+    <li class="blure blure-mobile-two"></li>
+  </ul>
 </div>
+
+
 
     <main>
       <!-- Loads the specified .html file -->
@@ -310,7 +331,7 @@
   </div>
 </section>
 
-      <section class="section-about">
+      <section class="section-about" id="about">
   <div class="about-container container">
     <div class="about-block">
       <h2 class="about-title">
@@ -343,57 +364,39 @@
           <picture>
             <source
               media="(min-width: 1280px)"
-              srcset="
-                ../img/about/yaht1-desktop@1x.webp 1x,
-                ../img/about/yaht1-desktop@2x.webp 2x
-              "
+              srcset="/project-begin/assets/yaht1-desktop@1x-61674299.webp 1x, /project-begin/assets/yaht1-desktop@2x-4bb3903e.webp 2x"
               type="image/webp"
             />
             <source
               media="(min-width: 1280px)"
-              srcset="
-                ../img/about/yaht1-desktop@1x.png 1x,
-                ../img/about/yaht1-desktop@2x.png 2x
-              "
+              srcset="/project-begin/assets/yaht1-desktop@1x-2c1f8c14.png 1x, /project-begin/assets/yaht1-desktop@2x-540c2016.png 2x"
               type="image/png"
             />
             <!-- tablet -->
             <source
               media="(min-width: 768px)"
-              srcset="
-                ../img/about/yaht-tablet@1x.webp 1x,
-                ../img/about/yaht-tablet@2x.webp 2x
-              "
+              srcset="/project-begin/assets/yaht-tablet@1x-e32da513.webp 1x, /project-begin/assets/yaht-tablet@2x-e407e878.webp 2x"
               type="image/webp"
             />
             <source
               media="(min-width: 768px)"
-              srcset="
-                ../img/about/yaht-tablet@1x.png 1x,
-                ../img/about/yaht-tablet@2x.png 2x
-              "
+              srcset="/project-begin/assets/yaht-tablet@1x-8702a8c7.png 1x, /project-begin/assets/yaht-tablet@2x-1828e216.png 2x"
               type="image/png"
             />
             <!-- mobile -->
             <source
               media="(max-width: 767px)"
-              srcset="
-                ../img/about/yaht-mobile@1x.webp 1x,
-                ../img/about/yaht-mobile@2x.webp 2x
-              "
+              srcset="/project-begin/assets/yaht-mobile@1x-e60f55df.webp 1x, /project-begin/assets/yaht-mobile@2x-0838a6f7.webp 2x"
               type="image/webp"
             />
             <source
               media="(max-width: 767px)"
-              srcset="
-                ../img/about/yaht-mobile@1x.png 1x,
-                ../img/about/yaht-mobile@2x.png 2x
-              "
+              srcset="/project-begin/assets/yaht-mobile@1x-5df7dd5f.png 1x, /project-begin/assets/yaht-mobile@2x-a8f46191.png 2x"
               type="image/png"
             />
             <img
               class="about-image-1"
-              src="../img/about/yaht-tablet@1x.png"
+              src="/project-begin/assets/yaht-tablet@1x-8702a8c7.png"
               alt="yach upper-deck"
               width="704"
               height="631"
@@ -406,57 +409,39 @@
           <picture>
             <source
               media="(min-width: 1280px)"
-              srcset="
-                ../img/about/yaht2-desktop@1x.webp 1x,
-                ../img/about/yaht2-desktop@2x.webp 2x
-              "
+              srcset="/project-begin/assets/yaht2-desktop@1x-b649851a.webp 1x, /project-begin/assets/yaht2-desktop@2x-d59998e5.webp 2x"
               type="image/webp"
             />
             <source
               media="(min-width: 1280px)"
-              srcset="
-                ../img/about/yaht2-desktop@1x.png 1x,
-                ../img/about/yaht2-desktop@2x.png 2x
-              "
+              srcset="/project-begin/assets/yaht2-desktop@1x-f0e2c6bf.png 1x, /project-begin/assets/yaht2-desktop@2x-f6c44a33.png 2x"
               type="image/png"
             />
             <!-- tablet -->
             <source
               media="(min-width: 768px)"
-              srcset="
-                ../img/about/yaht2-tablet@1x.webp 1x,
-                ../img/about/yaht2-tablet@2x.webp 2x
-              "
+              srcset="/project-begin/assets/yaht2-desktop@1x-b649851a.webp 1x, /project-begin/assets/yaht2-desktop@2x-d59998e5.webp 2x"
               type="image/webp"
             />
             <source
               media="(min-width: 768px)"
-              srcset="
-                ../img/about/yaht2-tablet@1x.png 1x,
-                ../img/about/yaht2-tablet@2x.png 2x
-              "
+              srcset="/project-begin/assets/yaht2-desktop@1x-f0e2c6bf.png 1x, /project-begin/assets/yaht2-desktop@2x-f6c44a33.png 2x"
               type="image/png"
             />
             <!-- mobile -->
             <source
               media="(max-width: 767px)"
-              srcset="
-                ../img/about/yaht2-mobile@1x.webp 1x,
-                ../img/about/yaht2-mobile@2x.webp 2x
-              "
+              srcset="/project-begin/assets/yaht2-mobile@1x-e496bb3d.webp 1x, /project-begin/assets/yaht2-mobile@2x-1816bfbc.webp 2x"
               type="image/webp"
             />
             <source
               media="(max-width: 767px)"
-              srcset="
-                ../img/about/yaht2-mobile@1x.png 1x,
-                ../img/about/yaht2-mobile@2x.png 2x
-              "
+              srcset="/project-begin/assets/yaht2-mobile@1x-699adf8c.png 1x, /project-begin/assets/yaht2-mobile@2x-5eed1f84.png 2x"
               type="image/png"
             />
             <img
               class="about-image-2"
-              src="../img/about/yaht2-mobile@1x.png"
+              src="/project-begin/assets/yaht2-mobile@1x-699adf8c.png"
               alt="open-deck restaurant"
               width="335"
               height="289"
@@ -469,57 +454,39 @@
           <picture>
             <source
               media="(min-width: 1280px)"
-              srcset="
-                ../img/about/yaht3-mobile@1x.webp 1x,
-                ../img/about/yaht3-mobile@2x.webp 2x
-              "
+              srcset="/project-begin/assets/yaht3-mobile@1x-54706882.webp 1x, /project-begin/assets/yaht3-mobile@2x-0f1acd5f.webp 2x"
               type="image/webp"
             />
             <source
               media="(min-width: 1280px)"
-              srcset="
-                ../img/about/yaht3-mobile@1x.png 1x,
-                ../img/about/yaht3-mobile@2x.png 2x
-              "
+              srcset="/project-begin/assets/yaht3-mobile@1x-16bd8e1a.png 1x, /project-begin/assets/yaht3-mobile@2x-ab4340f5.png 2x"
               type="image/png"
             />
             <!-- tablet -->
             <source
               media="(min-width: 768px)"
-              srcset="
-                ../img/about/yaht3-mobile@1x.webp 1x,
-                ../img/about/yaht3-mobile@2x.webp 2x
-              "
+              srcset="/project-begin/assets/yaht3-mobile@1x-54706882.webp 1x, /project-begin/assets/yaht3-mobile@2x-0f1acd5f.webp 2x"
               type="image/webp"
             />
             <source
               media="(min-width: 768px)"
-              srcset="
-                ../img/about/yaht3-mobile@1x.png 1x,
-                ../img/about/yaht3-mobile@2x.png 2x
-              "
+              srcset="/project-begin/assets/yaht3-mobile@1x-16bd8e1a.png 1x, /project-begin/assets/yaht3-mobile@2x-ab4340f5.png 2x"
               type="image/png"
             />
             <!-- mobile -->
             <source
               media="(max-width: 767px)"
-              srcset="
-                ../img/about/yaht3-mobile@1x.webp 1x,
-                ../img/about/yaht3-mobile@2x.webp 2x
-              "
+              srcset="/project-begin/assets/yaht3-mobile@1x-54706882.webp 1x, /project-begin/assets/yaht3-mobile@2x-0f1acd5f.webp 2x"
               type="image/webp"
             />
             <source
               media="(max-width: 767px)"
-              srcset="
-                ../img/about/yaht3-mobile@1x.png 1x,
-                ../img/about/yaht3-mobile@2x.png 2x
-              "
+              srcset="/project-begin/assets/yaht3-mobile@1x-16bd8e1a.png 1x, /project-begin/assets/yaht3-mobile@2x-ab4340f5.png 2x"
               type="image/png"
             />
             <img
               class="about-image-3"
-              src="../img/about/yaht3-mobile@1x.png"
+              src="/project-begin/assets/yaht3-mobile@1x-16bd8e1a.png"
               alt="photo of yacht from drone"
               width="260"
               height="244"
@@ -531,1787 +498,1156 @@
     </div>
   </div>
 </section>
-<!-- Section example for positioning image -->
-<!-- <section class="section-yacht">
-  <div class="yacht-container container">
-    <h2 class="title-yacht">
-      Choose your dream yacht and sail away into the sunset
-    </h2>
-    <button>send</button>
-  </div>
-</section> -->
 
       <section class="yahtblock">
-    <div class="yablock-centered container">
-        <div class="yablock-header-style">
-            <h2 class="yablock-header"> Choose your dream yacht and sail away into the sunset</h2>
-            <button class="yablock-button" type="button">Yaht rental</button>
-        </div>   
-        <ul class="yablock-list list">
-                <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ I ~~~ ================== -->
-                <li class="yahtblock-item">
-                    <div class="yablock-picture-style">   
-                        <picture>
-                                <!-- =========== D - E - S - K - T - O - P =========== -->
-                                <source 
-                                media="(min-width: 1280px)" 
-                                srcset="../img/yahts/yaht1-desktop@1x.webp 1x, ../img/yahts/yaht1-desktop@2x.webp 2x" 
-                                type="image/webp">
-                                <source 
-                                media="(min-width: 1280px)" 
-                                srcset="../img/yahts/yaht1-desktop@1x.png 1x, ../img/yahts/yaht1-desktop@2x.png 2x" 
-                                type="image/png">
-                                <!-- =========== T - A - B - L - E - T =============== -->
-                                <source 
-                                media="(min-width: 768px)" 
-                                srcset="../img/yahts/yaht1-tablet@1x.webp 1x, ../img/yahts/yaht1-tablet@2x.webp 2x" 
-                                type="image/webp">
-                                <source 
-                                media="(min-width: 768px)"
-                                srcset="../img/yahts/yaht1-tablet@1x.png 2x, ../img/yahts/yaht1-tablet@2x.png 2x" 
-                                type="image/webp">
-                                <!-- =========== M - O - B - I - L - E =============== -->
-                                <source 
-                                media="(min-width: 375px)" 
-                                srcset="../img/yahts/yaht1-mobile@1x.webp 1x, ../img/yahts/yaht1-mobile@1x.webp 2x" 
-                                type="image/webp">
-                                <source 
-                                media="(min-width: 375px)" 
-                                srcset="../img/yahts/yaht1-mobile@2x.png 1x, ../img/yahts/yaht1-mobile@2x.png 2x" 
-                                type="image/webp">
-                                <!-- ================ I - M - G================= -->
-                                <img class="yablock-card-picture"
-                                src="../img/yahts/yaht1-mobile@1x.png" 
-                                alt="Yaht photo"
-                                width="300"
-                                height="250"
-                                loading="lazy">
-                        </picture>
-                    </div>
-                        <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-                        <div class="yablock-under-picture-style">   
-                            <div class="yablock-identification">
-                                <h3 class="yablock-name">Arrow</h3>
-                                <p class="yablock-type">luxury yahts</p>
-                            </div>
-                            <div class="yablock-tech-info-style">
-                                <ul class="yablock-attribute-list">
-                                    <li class="yablock-atrbt-item">
-                                        <p class="yablock-text-info">length</p>
-                                    </li>
-                                    <li class="yablock-atrbt-item">
-                                        <p class="yablock-text-info">builder</p>
-                                    </li>
-                                    <li class="yablock-atrbt-item">
-                                        <p class="yablock-text-info">built</p>
-                                    </li>
-                                    <li class="yablock-atrbt-item">
-                                        <p class="yablock-text-info">guests</p>
-                                    </li>
-                                    <li class="yablock-atrbt-item">
-                                        <p class="yablock-text-info">price</p>
-                                    </li>
-                                </ul>
-                                <ul class="yablock-atrbt-dscrptn">
-                                    <li class="yablock-atrbt-dscrptn-item">
-                                        <p class="yablock-text">48m(115ft)</p>
-                                    </li>
-                                    <li class="yablock-atrbt-dscrptn-item">
-                                        <p class="yablock-text">Admiral</p>
-                                    </li>
-                                    <li class="yablock-atrbt-dscrptn-item">
-                                        <p class="yablock-text">2021</p>
-                                    </li>
-                                    <li class="yablock-atrbt-dscrptn-item">
-                                        <p class="yablock-text">11 in 5 cabins</p>
-                                    </li>
-                                    <li class="yablock-atrbt-dscrptn-item">
-                                        <p class="yablock-text">&#8364;33,500,000</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>    
-                </li>
-                <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ II ~~~ ================== -->
-                <li class="yahtblock-item">
-                    <div class="yablock-picture-style">
-                        <picture>
-                            <!-- =========== D - E - S - K - T - O - P =========== -->
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht2-desktop@1x.webp 1x, ../img/yahts/yaht2-desktop@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht2-desktop@1x.png 1x, ../img/yahts/yaht2-desktop@2x.png 2x" 
-                            type="image/png">
-                            <!-- =========== T - A - B - L - E - T =============== -->
-                            <source 
-                            media="(min-width: 768px)" 
-                            srcset="../img/yahts/yaht2-tablet@1x.webp 1x, ../img/yahts/yaht2-tablet@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 768px)"
-                            srcset="../img/yahts/yaht2-tablet@1x.png 2x, ../img/yahts/yaht2-tablet@2x.png 2x" 
-                            type="image/webp">
-                            <!-- =========== M - O - B - I - L - E =============== -->
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht2-mobile@1x.webp 1x, ../img/yahts/yaht2-mobile@1x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht2-mobile@2x.png 1x, ../img/yahts/yaht2-mobile@2x.png 2x" 
-                            type="image/webp">
-                            <!-- ================ I - M - G================= -->
-                            <img class="yablock-card-picture"
-                            src="../img/yahts/yaht2-mobile@1x.png" 
-                            alt="Yaht photo"
-                            width="300"
-                            height="250"
-                            loading="lazy">
-                        </picture>
-                    </div>
-                    <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->                                       
-                    <div class="yablock-under-picture-style">    
-                        <div class="yablock-identification">
-                            <h3 class="yablock-name yablock-third-header-max">Benetti Oasis 40M BO122</h3>
-                            <p class="yablock-type">luxury yahts</p>
-                        </div>
-                        <div class="yablock-tech-info-style">
-                            <ul class="yablock-attribute-list list">
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">length</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">shipyard</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">built</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">guests</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">price</p>
-                                </li>
-                            </ul>
-                            <ul class="yablock-atrbt-dscrptn">
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">41m(133ft)</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">Benetti</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">2025</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">10 in 5 cabins</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">&#8364;23,210,000</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ III ~~~ ================== -->
-                <li class="yahtblock-item"> 
-                    <div class="yablock-picture-style">    
-                            <picture>
-                                <!-- =========== D - E - S - K - T - O - P =========== -->
-                                <source 
-                                media="(min-width: 1280px)" 
-                                srcset="../img/yahts/yaht3-desktop@1x.webp 1x, ../img/yahts/yaht3-desktop@2x.webp 2x" 
-                                type="image/webp">
-                                <source 
-                                media="(min-width: 1280px)" 
-                                srcset="../img/yahts/yaht3-desktop@1x.png 1x, ../img/yahts/yaht3-desktop@2x.png 2x" 
-                                type="image/png">
-                                <!-- =========== T - A - B - L - E - T =============== -->
-                                <source 
-                                media="(min-width: 768px)" 
-                                srcset="../img/yahts/yaht3-tablet@1x.webp 1x, ../img/yahts/yaht3-tablet@2x.webp 2x" 
-                                type="image/webp">
-                                <source 
-                                media="(min-width: 768px)"
-                                srcset="../img/yahts/yaht3-tablet@1x.png 2x, ../img/yahts/yaht3-tablet@2x.png 2x" 
-                                type="image/webp">
-                                <!-- =========== M - O - B - I - L - E =============== -->
-                                <source 
-                                media="(min-width: 375px)" 
-                                srcset="../img/yahts/yaht3-mobile@1x.webp 1x, ../img/yahts/yaht3-mobile@1x.webp 2x" 
-                                type="image/webp">
-                                <source 
-                                media="(min-width: 375px)" 
-                                srcset="../img/yahts/yaht3-mobile@2x.png 1x, ../img/yahts/yaht3-mobile@2x.png 2x" 
-                                type="image/webp">
-                                <!-- ================ I - M - G================= -->
-                                <img class="yablock-card-picture"
-                                src="../img/yahts/yaht3-mobile@1x.png" 
-                                alt="Yaht photo"
-                                width="300"
-                                height="250"
-                                loading="lazy">
-                            </picture>
-                    </div>  
-                    <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-                    <div class="yablock-under-picture-style">
-                        <div class="yablock-identification">
-                            <h3 class="yablock-name">Belle Anna</h3>
-                            <p class="yablock-type">luxury yahts</p>
-                        </div>
-                        <div class="yablock-tech-info-style">
-                            <ul class="yablock-attribute-list list">
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">length</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">shipyard</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">built</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">guests</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">price</p>
-                                </li>
-                            </ul>
-                            <ul class="yablock-atrbt-dscrptn">
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">50m(155ft)</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">ISA</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">2012</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">12 in 6 cabins</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">&#8364;21,500,000</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ IV ~~~ ================== -->
-                <li class="yahtblock-item">
-                    <div class="yablock-picture-style">    
-                        <picture>
-                            <!-- =========== D - E - S - K - T - O - P =========== -->
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht4-desktop@1x.webp 1x, ../img/yahts/yaht4-desktop@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht4-desktop@1x.png 1x, ../img/yahts/yaht4-desktop@2x.png 2x" 
-                            type="image/png">
-                            <!-- =========== T - A - B - L - E - T =============== -->
-                            <source 
-                            media="(min-width: 768px)" 
-                            srcset="../img/yahts/yaht4-tablet@1x.webp 1x, ../img/yahts/yaht4-tablet@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 768px)"
-                            srcset="../img/yahts/yaht4-tablet@1x.png 2x, ../img/yahts/yaht4-tablet@2x.png 2x" 
-                            type="image/webp">
-                            <!-- =========== M - O - B - I - L - E =============== -->
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht4-mobile@1x.webp 1x, ../img/yahts/yaht4-mobile@1x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht1-mobile@2x.png 1x, ../img/yahts/yaht4-mobile@2x.png 2x" 
-                            type="image/webp">
-                            <!-- ================ I - M - G================= -->
-                            <img class="yablock-card-picture"
-                            src="../img/yahts/yaht4-mobile@1x.png" 
-                            alt="Yaht photo"
-                            width="300"
-                            height="250"
-                            loading="lazy">
-                        </picture>
-                    </div>
-                    <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-                    <div class="yablock-under-picture-style">
-                        <div class="yablock-identification">
-                            <h3 class="yablock-name">Ellen</h3>
-                            <p class="yablock-type">Luxury yahts</p>
-                        </div>
-                        <div class="yablock-tech-info-style">
-                            <ul class="yablock-attribute-list list">
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">length</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">shipyard</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">built</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">guests</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">price</p>
-                                </li>
-                            </ul>
-                            <ul class="yablock-atrbt-dscrptn">
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">40m(132ft)</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">Perini Navi</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">2001 / 2016 (refitted)</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">9 in 4 cabins</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">&#8364;9,300,000</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ V ~~~ ================== -->
-                <li class="yahtblock-item">
-                    <div class="yablock-picture-style">
-                        <picture>
-                            <!-- =========== D - E - S - K - T - O - P =========== -->
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht5-desktop@1x.webp 1x, ../img/yahts/yaht5-desktop@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht5-desktop@1x.png 1x, ../img/yahts/yaht5-desktop@2x.png 2x" 
-                            type="image/png">
-                            <!-- =========== T - A - B - L - E - T =============== -->
-                            <source 
-                            media="(min-width: 768px)" 
-                            srcset="../img/yahts/yaht5-tablet@1x.webp 1x, ../img/yahts/yaht5-tablet@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 768px)"
-                            srcset="../img/yahts/yaht5-tablet@1x.png 2x, ../img/yahts/yaht5-tablet@2x.png 2x" 
-                            type="image/webp">
-                            <!-- =========== M - O - B - I - L - E =============== -->
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht5-mobile@1x.webp 1x, ../img/yahts/yaht5-mobile@1x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht5-mobile@2x.png 1x, ../img/yahts/yaht5-mobile@2x.png 2x" 
-                            type="image/webp">
-                            <!-- ================ I - M - G================= -->
-                            <img class="yablock-card-picture"
-                            src="../img/yahts/yaht5-mobile@1x.png" 
-                            alt="Yaht photo"
-                            width="300"
-                            height="250"
-                            loading="lazy">
-                        </picture>
-                    </div>
-                    <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-                    <div class="yablock-under-picture-style">
-                        <div class="yablock-identification">
-                            <h3 class="yablock-name">Mirage 401</h3>
-                            <p class="yablock-type">luxury yahts</p>
-                        </div>
-                        <div class="yablock-tech-info-style">
-                            <ul class="yablock-attribute-list list">
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">length</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">shipyard</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">built</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">guests</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">price</p>
-                                </li>
-                            </ul>
-                            <ul class="yablock-atrbt-dscrptn">
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">38m(125ft)</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">Gianetti Custom Yachts</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">2024</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">10 in 5 cabins</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">&#8364;13,500,000</p>
-                                </li>
-                            </ul>
-                        </div>    
-                    </div>
-                </li>
-                <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ VI ~~~ ================== -->
-                <li class="yahtblock-item">
-                    <div class="yablock-picture-style">    
-                        <picture>
-                            <!-- =========== D - E - S - K - T - O - P =========== -->
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht6-desktop@1x.webp 1x, ../img/yahts/yaht6-desktop@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht6-desktop@1x.png 1x, ../img/yahts/yaht6-desktop@2x.png 2x" 
-                            type="image/png">
-                            <!-- =========== T - A - B - L - E - T =============== -->
-                            <source 
-                            media="(min-width: 768px)" 
-                            srcset="../img/yahts/yaht6-tablet@1x.webp 1x, ../img/yahts/yaht6-tablet@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 768px)"
-                            srcset="../img/yahts/yaht6-tablet@1x.png 2x, ../img/yahts/yaht6-tablet@2x.png 2x" 
-                            type="image/webp">
-                            <!-- =========== M - O - B - I - L - E =============== -->
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht6-mobile@1x.webp 1x, ../img/yahts/yaht6-mobile@1x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht6-mobile@2x.png 1x, ../img/yahts/yaht6-mobile@2x.png 2x" 
-                            type="image/webp">
-                            <!-- ================ I - M - G================= -->
-                            <img class="yablock-card-picture"
-                            src="../img/yahts/yaht6-mobile@1x.png" 
-                            alt="Yaht photo"
-                            width="300"
-                            height="250"
-                            loading="lazy">
-                        </picture>
-                    </div>
-                    <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-                    <div class="yablock-under-picture-style">
-                        <div class="yablock-identification">
-                            <h3 class="yablock-name">King</h3>
-                            <p class="yablock-type">luxury yahts</p>
-                        </div>
-                        <div class="yablock-tech-info-style">
-                            <ul class="yablock-attribute-list list">
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">length</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">shipyard</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">built</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">guests/p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">price</p>
-                                </li>
-                            </ul>
-                            <ul class="yablock-atrbt-dscrptn">
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">33m(109ft)</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">Overmarine</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">2004 / 2018 (refitted)</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">9 in 4 cabins</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">&#8364;1,850,000</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ VII ~~~ ================== -->
-                <li class="yahtblock-item">
-                    <div class="yablock-picture-style">    
-                        <picture>
-                            <!-- =========== D - E - S - K - T - O - P =========== -->
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht7-desktop@1x.webp 1x, ../img/yahts/yaht1-desktop@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht7-desktop@1x.png 1x, ../img/yahts/yaht7-desktop@2x.png 2x" 
-                            type="image/png">
-                            <!-- =========== T - A - B - L - E - T =============== -->
-                            <source 
-                            media="(min-width: 768px)" 
-                            srcset="../img/yahts/yaht7-tablet@1x.webp 1x, ../img/yahts/yaht7-tablet@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 768px)"
-                            srcset="../img/yahts/yaht7-tablet@1x.png 2x, ../img/yahts/yaht7-tablet@2x.png 2x" 
-                            type="image/webp">
-                            <!-- =========== M - O - B - I - L - E =============== -->
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht7-mobile@1x.webp 1x, ../img/yahts/yaht7-mobile@1x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht7-mobile@2x.png 1x, ../img/yahts/yaht7-mobile@2x.png 2x" 
-                            type="image/webp">
-                            <!-- ================ I - M - G================= -->
-                            <img class="yablock-card-picture"
-                            src="../img/yahts/yaht7-mobile@1x.png" 
-                            alt="Yaht photo"
-                            width="300"
-                            height="250"
-                            loading="lazy">
-                        </picture>
-                    </div>
-                    <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-                    <div class="yablock-under-picture-style">
-                        <div class="yablock-identification">
-                            <h3 class="yablock-name">Salt</h3>
-                            <p class="yablock-type">luxury yahts</p>
-                        </div>
-                        <div class="yablock-tech-info-style">
-                            <ul class="yablock-attribute-list list">
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">length</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">builder</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">built</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">guests</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">price</p>
-                                </li>
-                            </ul>
-                            <ul class="yablock-atrbt-dscrptn">
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">32m(105ft)</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">SanLorenzo</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">2019</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">11 in 5 cabins</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">&#8364;7,800,000</p>
-                                </li>
-                            </ul>
-                        </div>    
-                    </div>
-                </li>
-                <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ VIII ~~~ ================== -->
-                <li class="yahtblock-item">
-                    <div class="yablock-picture-style">    
-                        <picture>
-                            <!-- =========== D - E - S - K - T - O - P =========== -->
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht8-desktop@1x.webp 1x, ../img/yahts/yaht8-desktop@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht8-desktop@1x.png 1x, ../img/yahts/yaht8-desktop@2x.png 2x" 
-                            type="image/png">
-                            <!-- =========== T - A - B - L - E - T =============== -->
-                            <source 
-                            media="(min-width: 768px)" 
-                            srcset="../img/yahts/yaht8-tablet@1x.webp 1x, ../img/yahts/yaht8-tablet@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 768px)"
-                            srcset="../img/yahts/yaht8-tablet@1x.png 2x, ../img/yahts/yaht8-tablet@2x.png 2x" 
-                            type="image/webp">
-                            <!-- =========== M - O - B - I - L - E =============== -->
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht8-mobile@1x.webp 1x, ../img/yahts/yaht8-mobile@1x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht8-mobile@2x.png 1x, ../img/yahts/yaht8-mobile@2x.png 2x" 
-                            type="image/webp">
-                            <!-- ================ I - M - G================= -->
-                            <img class="yablock-card-picture"
-                            src="../img/yahts/yaht8-mobile@1x.png" 
-                            alt="Yaht photo"
-                            width="300"
-                            height="250"
-                            loading="lazy">
-                        </picture>
-                    </div>
-                    <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-                    <div class="yablock-under-picture-style">
-                        <div class="yablock-identification">
-                            <h3 class="yablock-name">Storm</h3>
-                            <p class="yablock-type">luxury yahts</p>
-                        </div>
-                        <div class="yablock-tech-info-style">
-                            <ul class="yablock-attribute-list list">
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">length</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">shipyard</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">built</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">gests</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">price</p>
-                                </li>
-                            </ul>
-                            <ul class="yablock-atrbt-dscrptn">
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">32m(103ft)</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">overmarine</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">2005 / 2022 (refitted)</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">9 in 4 cabins</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">&#8364;2,900,000</p>
-                                </li>
-                            </ul>
-                        </div>    
-                    </div>
-                </li>
-                <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ IX ~~~ ================== -->
-                <li class="yahtblock-item">
-                    <div class="yablock-picture-style">    
-                        <picture>
-                            <!-- =========== D - E - S - K - T - O - P =========== -->
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht9-desktop@1x.webp 1x, ../img/yahts/yaht9-desktop@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 1280px)" 
-                            srcset="../img/yahts/yaht9-desktop@1x.png 1x, ../img/yahts/yaht9-desktop@2x.png 2x" 
-                            type="image/png">
-                            <!-- =========== T - A - B - L - E - T =============== -->
-                            <source 
-                            media="(min-width: 768px)" 
-                            srcset="../img/yahts/yaht9-tablet@1x.webp 1x, ../img/yahts/yaht9-tablet@2x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 768px)"
-                            srcset="../img/yahts/yaht9-tablet@1x.png 2x, ../img/yahts/yaht9-tablet@2x.png 2x" 
-                            type="image/webp">
-                            <!-- =========== M - O - B - I - L - E =============== -->
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht9-mobile@1x.webp 1x, ../img/yahts/yaht9-mobile@1x.webp 2x" 
-                            type="image/webp">
-                            <source 
-                            media="(min-width: 375px)" 
-                            srcset="../img/yahts/yaht9-mobile@2x.png 1x, ../img/yahts/yaht9-mobile@2x.png 2x" 
-                            type="image/webp">
-                            <!-- ================ I - M - G================= -->
-                            <img class="yablock-card-picture"
-                            src="../img/yahts/yaht9-mobile@1x.png" 
-                            alt="Yaht photo"
-                            width="300"
-                            height="250"
-                            loading="lazy">
-                        </picture>
-                    </div>
-                    <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-                    <div class="yablock-under-picture-style">
-                        <div class="yablock-identification">
-                            <h3 class="yablock-name">Collu</h3>
-                            <p class="yablock-type">luxury yahts</p>
-                        </div>
-                        <div class="yablock-tech-info-style">
-                            <ul class="yablock-attribute-list list">
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">length</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">shipyard</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">built</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">guests</p>
-                                </li>
-                                <li class="yablock-atrbt-item">
-                                    <p class="yablock-text-info">price</p>
-                                </li>
-                            </ul>
-                            <ul class="yablock-atrbt-dscrptn">
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">29m(96ft)</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">Ferretti</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">2014</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">10 in 5 cabins</p>
-                                </li>
-                                <li class="yablock-atrbt-dscrptn-item">
-                                    <p class="yablock-text">&#8364;4,300,000</p>
-                                </li>
-                            </ul>
-                        </div>    
-                    </div>
-                </li>
-            </ul>
-            <!-- ================ S - W - I - P - E - R ~~~~ B - U - T - T - O - N ========= -->
-        <ul class="yablock-btn-swiper-style">
-            <li class="yablock-btn-left-swipper">
-                <button class="yablock-btn-swiper">
-                    <svg class="yablock-btns-svg" width="18px" height="8px">
-                        <use href="../public/sprite(new).svg#left-arrow"></use>
-                    </svg>
-                </button>
-            </li> 
-            <li class="yablock-btn-right-swipper">
-                <button class="yablock-btn-swiper">
-                    <svg class="yablock-btns-svg" width="18" height="8">
-                        <use href="../public/sprite(new).svg#right-arrow"></use>
-                    </svg>
-                </button>
-            </li>
-        </ul>
-    </div>
-    <ul class="yablock-list list">
-      <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ I ~~~ ================== -->
-      <li class="yahtblock-item">
-        <picture>
-          <!-- =========== D - E - S - K - T - O - P =========== -->
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht1-desktop@1x.webp 1x,
-              ../img/yahts/yaht1-desktop@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht1-desktop@1x.png 1x,
-              ../img/yahts/yaht1-desktop@2x.png 2x
-            "
-            type="image/png"
-          />
-          <!-- =========== T - A - B - L - E - T =============== -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht1-tablet@1x.webp 1x,
-              ../img/yahts/yaht1-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht1-tablet@1x.png 2x,
-              ../img/yahts/yaht1-tablet@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- =========== M - O - B - I - L - E =============== -->
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht1-mobile@1x.webp 1x,
-              ../img/yahts/yaht1-mobile@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht1-mobile@2x.png 1x,
-              ../img/yahts/yaht1-mobile@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- ================ I - M - G================= -->
-          <img
-            class="yablock-card-picture"
-            src="../img/yahts/yaht1-mobile@1x.png"
-            alt="Yaht photo"
-            width="300"
-            height="250"
-            loading="lazy"
-          />
-        </picture>
-        <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-        <div class="yablock-identification">
-          <h3 class="yablock-name">Arrow</h3>
-          <p class="yablock-type">luxury yahts</p>
-        </div>
-        <div class="yablock-tech-info-style">
-          <ul class="yablock-attribute-list">
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">length</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">builder</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">built</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">guests</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">price</p>
-            </li>
-          </ul>
-          <ul class="yablock-atrbt-dscrptn">
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">48m(115ft)</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">Admiral</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">2021</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">11 in 5 cabins</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">&#8364;33,500,000</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ II ~~~ ================== -->
-      <li class="yahtblock-item">
-        <picture>
-          <!-- =========== D - E - S - K - T - O - P =========== -->
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht2-desktop@1x.webp 1x,
-              ../img/yahts/yaht2-desktop@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht2-desktop@1x.png 1x,
-              ../img/yahts/yaht2-desktop@2x.png 2x
-            "
-            type="image/png"
-          />
-          <!-- =========== T - A - B - L - E - T =============== -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht2-tablet@1x.webp 1x,
-              ../img/yahts/yaht2-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht2-tablet@1x.png 2x,
-              ../img/yahts/yaht2-tablet@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- =========== M - O - B - I - L - E =============== -->
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht2-mobile@1x.webp 1x,
-              ../img/yahts/yaht2-mobile@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht2-mobile@2x.png 1x,
-              ../img/yahts/yaht2-mobile@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- ================ I - M - G================= -->
-          <img
-            class="yablock-card-picture"
-            src="../img/yahts/yaht2-mobile@1x.png"
-            alt="Yaht photo"
-            width="300"
-            height="250"
-            loading="lazy"
-          />
-        </picture>
-        <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-        <div class="yablock-identification">
-          <h3 class="yablock-name yablock-third-header-max">
-            Benetti Oasis 40M BO122
-          </h3>
-          <p class="yablock-type">luxury yahts</p>
-        </div>
-        <div class="yablock-tech-info-style">
-          <ul class="yablock-attribute-list list">
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">length</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">shipyard</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">built</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">guests</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">price</p>
-            </li>
-          </ul>
-          <ul class="yablock-atrbt-dscrptn">
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">41m(133ft)</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">Benetti</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">2025</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">10 in 5 cabins</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">&#8364;23,210,000</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ III ~~~ ================== -->
-      <li class="yahtblock-item">
-        <picture>
-          <!-- =========== D - E - S - K - T - O - P =========== -->
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht3-desktop@1x.webp 1x,
-              ../img/yahts/yaht3-desktop@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht3-desktop@1x.png 1x,
-              ../img/yahts/yaht3-desktop@2x.png 2x
-            "
-            type="image/png"
-          />
-          <!-- =========== T - A - B - L - E - T =============== -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht3-tablet@1x.webp 1x,
-              ../img/yahts/yaht3-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht3-tablet@1x.png 2x,
-              ../img/yahts/yaht3-tablet@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- =========== M - O - B - I - L - E =============== -->
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht3-mobile@1x.webp 1x,
-              ../img/yahts/yaht3-mobile@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht3-mobile@2x.png 1x,
-              ../img/yahts/yaht3-mobile@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- ================ I - M - G================= -->
-          <img
-            class="yablock-card-picture"
-            src="../img/yahts/yaht3-mobile@1x.png"
-            alt="Yaht photo"
-            width="300"
-            height="250"
-            loading="lazy"
-          />
-        </picture>
-        <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-
-        <div class="yablock-identification">
-          <h3 class="yablock-name">Belle Anna</h3>
-          <p class="yablock-type">luxury yahts</p>
-        </div>
-        <div class="yablock-tech-info-style">
-          <ul class="yablock-attribute-list list">
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">length</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">shipyard</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">built</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">guests</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">price</p>
-            </li>
-          </ul>
-          <ul class="yablock-atrbt-dscrptn">
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">50m(155ft)</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">ISA</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">2012</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">12 in 6 cabins</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">&#8364;21,500,000</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ IV ~~~ ================== -->
-      <li class="yahtblock-item">
-        <picture>
-          <!-- =========== D - E - S - K - T - O - P =========== -->
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht4-desktop@1x.webp 1x,
-              ../img/yahts/yaht4-desktop@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht4-desktop@1x.png 1x,
-              ../img/yahts/yaht4-desktop@2x.png 2x
-            "
-            type="image/png"
-          />
-          <!-- =========== T - A - B - L - E - T =============== -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht4-tablet@1x.webp 1x,
-              ../img/yahts/yaht4-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht4-tablet@1x.png 2x,
-              ../img/yahts/yaht4-tablet@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- =========== M - O - B - I - L - E =============== -->
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht4-mobile@1x.webp 1x,
-              ../img/yahts/yaht4-mobile@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht1-mobile@2x.png 1x,
-              ../img/yahts/yaht4-mobile@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- ================ I - M - G================= -->
-          <img
-            class="yablock-card-picture"
-            src="../img/yahts/yaht4-mobile@1x.png"
-            alt="Yaht photo"
-            width="300"
-            height="250"
-            loading="lazy"
-          />
-        </picture>
-        <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-
-        <div class="yablock-identification">
-          <h3 class="yablock-name">Ellen</h3>
-          <p class="yablock-type">Luxury yahts</p>
-        </div>
-        <div class="yablock-tech-info-style">
-          <ul class="yablock-attribute-list list">
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">length</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">shipyard</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">built</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">guests</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">price</p>
-            </li>
-          </ul>
-          <ul class="yablock-atrbt-dscrptn">
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">40m(132ft)</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">Perini Navi</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">2001 / 2016 (refitted)</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">9 in 4 cabins</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">&#8364;9,300,000</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ V ~~~ ================== -->
-      <li class="yahtblock-item">
-        <picture>
-          <!-- =========== D - E - S - K - T - O - P =========== -->
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht5-desktop@1x.webp 1x,
-              ../img/yahts/yaht5-desktop@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht5-desktop@1x.png 1x,
-              ../img/yahts/yaht5-desktop@2x.png 2x
-            "
-            type="image/png"
-          />
-          <!-- =========== T - A - B - L - E - T =============== -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht5-tablet@1x.webp 1x,
-              ../img/yahts/yaht5-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht5-tablet@1x.png 2x,
-              ../img/yahts/yaht5-tablet@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- =========== M - O - B - I - L - E =============== -->
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht5-mobile@1x.webp 1x,
-              ../img/yahts/yaht5-mobile@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht5-mobile@2x.png 1x,
-              ../img/yahts/yaht5-mobile@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- ================ I - M - G================= -->
-          <img
-            class="yablock-card-picture"
-            src="../img/yahts/yaht5-mobile@1x.png"
-            alt="Yaht photo"
-            width="300"
-            height="250"
-            loading="lazy"
-          />
-        </picture>
-        <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-
-        <div class="yablock-identification">
-          <h3 class="yablock-name">Mirage 401</h3>
-          <p class="yablock-type">luxury yahts</p>
-        </div>
-        <div class="yablock-tech-info-style">
-          <ul class="yablock-attribute-list list">
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">length</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">shipyard</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">built</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">guests</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">price</p>
-            </li>
-          </ul>
-          <ul class="yablock-atrbt-dscrptn">
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">38m(125ft)</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">Gianetti Custom Yachts</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">2024</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">10 in 5 cabins</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">&#8364;13,500,000</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ VI ~~~ ================== -->
-      <li class="yahtblock-item">
-        <picture>
-          <!-- =========== D - E - S - K - T - O - P =========== -->
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht6-desktop@1x.webp 1x,
-              ../img/yahts/yaht6-desktop@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht6-desktop@1x.png 1x,
-              ../img/yahts/yaht6-desktop@2x.png 2x
-            "
-            type="image/png"
-          />
-          <!-- =========== T - A - B - L - E - T =============== -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht6-tablet@1x.webp 1x,
-              ../img/yahts/yaht6-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht6-tablet@1x.png 2x,
-              ../img/yahts/yaht6-tablet@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- =========== M - O - B - I - L - E =============== -->
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht6-mobile@1x.webp 1x,
-              ../img/yahts/yaht6-mobile@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht6-mobile@2x.png 1x,
-              ../img/yahts/yaht6-mobile@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- ================ I - M - G================= -->
-          <img
-            class="yablock-card-picture"
-            src="../img/yahts/yaht6-mobile@1x.png"
-            alt="Yaht photo"
-            width="300"
-            height="250"
-            loading="lazy"
-          />
-        </picture>
-        <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-
-        <div class="yablock-identification">
-          <h3 class="yablock-name">King</h3>
-          <p class="yablock-type">luxury yahts</p>
-        </div>
-        <div class="yablock-tech-info-style">
-          <ul class="yablock-attribute-list list">
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">length</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">shipyard</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">built</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">guests/p></p>
-            </li>
-
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">price</p>
-            </li>
-          </ul>
-          <ul class="yablock-atrbt-dscrptn">
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">33m(109ft)</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">Overmarine</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">2004 / 2018 (refitted)</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">9 in 4 cabins</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">&#8364;1,850,000</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ VII ~~~ ================== -->
-      <li class="yahtblock-item">
-        <picture>
-          <!-- =========== D - E - S - K - T - O - P =========== -->
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht7-desktop@1x.webp 1x,
-              ../img/yahts/yaht1-desktop@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht7-desktop@1x.png 1x,
-              ../img/yahts/yaht7-desktop@2x.png 2x
-            "
-            type="image/png"
-          />
-          <!-- =========== T - A - B - L - E - T =============== -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht7-tablet@1x.webp 1x,
-              ../img/yahts/yaht7-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht7-tablet@1x.png 2x,
-              ../img/yahts/yaht7-tablet@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- =========== M - O - B - I - L - E =============== -->
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht7-mobile@1x.webp 1x,
-              ../img/yahts/yaht7-mobile@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht7-mobile@2x.png 1x,
-              ../img/yahts/yaht7-mobile@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- ================ I - M - G================= -->
-          <img
-            class="yablock-card-picture"
-            src="../img/yahts/yaht7-mobile@1x.png"
-            alt="Yaht photo"
-            width="300"
-            height="250"
-            loading="lazy"
-          />
-        </picture>
-        <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-
-        <div class="yablock-identification">
-          <h3 class="yablock-name">Salt</h3>
-          <p class="yablock-type">luxury yahts</p>
-        </div>
-        <div class="yablock-tech-info-style">
-          <ul class="yablock-attribute-list list">
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">length</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">builder</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">built</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">guests</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">price</p>
-            </li>
-          </ul>
-          <ul class="yablock-atrbt-dscrptn">
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">32m(105ft)</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">SanLorenzo</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">2019</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">11 in 5 cabins</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text">&#8364;7,800,000</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ VIII ~~~ ================== -->
-      <li class="yahtblock-item">
-        <picture>
-          <!-- =========== D - E - S - K - T - O - P =========== -->
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht8-desktop@1x.webp 1x,
-              ../img/yahts/yaht8-desktop@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht8-desktop@1x.png 1x,
-              ../img/yahts/yaht8-desktop@2x.png 2x
-            "
-            type="image/png"
-          />
-          <!-- =========== T - A - B - L - E - T =============== -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht8-tablet@1x.webp 1x,
-              ../img/yahts/yaht8-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht8-tablet@1x.png 2x,
-              ../img/yahts/yaht8-tablet@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- =========== M - O - B - I - L - E =============== -->
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht8-mobile@1x.webp 1x,
-              ../img/yahts/yaht8-mobile@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht8-mobile@2x.png 1x,
-              ../img/yahts/yaht8-mobile@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- ================ I - M - G================= -->
-          <img
-            class="yablock-card-picture"
-            src="../img/yahts/yaht8-mobile@1x.png"
-            alt="Yaht photo"
-            width="300"
-            height="250"
-            loading="lazy"
-          />
-        </picture>
-        <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-
-        <div class="yablock-identification">
-          <h3 class="yablock-name">Storm</h3>
-          <p class="yablock-type">luxury yahts</p>
-        </div>
-        <div class="yablock-tech-info-style">
-          <ul class="yablock-attribute-list list">
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">length</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">shipyard</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">built</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">gests</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">price</p>
-            </li>
-          </ul>
-          <ul class="yablock-atrbt-dscrptn">
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">32m(103ft)</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">overmarine</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">2005 / 2022 (refitted)</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">9 in 4 cabins</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">&#8364;2,900,000</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ IX ~~~ ================== -->
-      <li class="yahtblock-item">
-        <picture>
-          <!-- =========== D - E - S - K - T - O - P =========== -->
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht9-desktop@1x.webp 1x,
-              ../img/yahts/yaht9-desktop@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ../img/yahts/yaht9-desktop@1x.png 1x,
-              ../img/yahts/yaht9-desktop@2x.png 2x
-            "
-            type="image/png"
-          />
-          <!-- =========== T - A - B - L - E - T =============== -->
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht9-tablet@1x.webp 1x,
-              ../img/yahts/yaht9-tablet@2x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-              ../img/yahts/yaht9-tablet@1x.png 2x,
-              ../img/yahts/yaht9-tablet@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- =========== M - O - B - I - L - E =============== -->
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht9-mobile@1x.webp 1x,
-              ../img/yahts/yaht9-mobile@1x.webp 2x
-            "
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 375px)"
-            srcset="
-              ../img/yahts/yaht9-mobile@2x.png 1x,
-              ../img/yahts/yaht9-mobile@2x.png 2x
-            "
-            type="image/webp"
-          />
-          <!-- ================ I - M - G================= -->
-          <img
-            class="yablock-card-picture"
-            src="../img/yahts/yaht9-mobile@1x.png"
-            alt="Yaht photo"
-            width="300"
-            height="250"
-            loading="lazy"
-          />
-        </picture>
-        <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
-
-        <div class="yablock-identification">
-          <h3 class="yablock-name">Collu</h3>
-          <p class="yablock-type">luxury yahts</p>
-        </div>
-        <div class="yablock-tech-info-style">
-          <ul class="yablock-attribute-list list">
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">length</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">shipyard</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">built</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">guests</p>
-            </li>
-            <li class="yablock-atrbt-item">
-              <p class="yablock-text-info">price</p>
-            </li>
-          </ul>
-          <ul class="yablock-atrbt-dscrptn">
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">29m(96ft)</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">Ferretti</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">2014</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">10 in 5 cabins</p>
-            </li>
-            <li class="yablock-atrbt-dscrptn-item">
-              <p class="yablock-text-info">&#8364;4,300,000</p>
-            </li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-    <!-- ================ S - W - I - P - E - R ~~~~ B - U - T - T - O - N ========= -->
-    <ul class="yablock-btn-swiper-style">
-      <li class="yablock-btn-left-swipper">
-        <button class="yablock-btn-swiper">
-          <svg class="yablock-btns-svg" width="18px" height="8px">
-            <use href="../public/sprite.svg#left-arrow"></use>
-          </svg>
-        </button>
-      </li>
-      <li class="yablock-btn-right-swipper">
-        <button class="yablock-btn-swiper">
-          <svg class="yablock-btns-svg" width="18" height="8">
-            <use href="../public/sprite.svg#right-arrow"></use>
-          </svg>
-        </button>
-      </li>
-    </ul>
+  <div class="yablock-centered container">
     <div class="mask-group"></div>
+    <div class="yablock-header-style">
+      <h2 class="yablock-header">
+        Choose your dream yacht and sail away into the sunset
+      </h2>
+      <button class="yablock-button" type="button">Yaht rental</button>
+    </div>
+    <div class="yachts-slider swiper-container">
+      <ul class="yablock-list list swiper-wrapper">
+        <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ I ~~~ ================== -->
+        <li class="yahtblock-item swiper-slide">
+          <picture>
+            <!-- =========== D - E - S - K - T - O - P =========== -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht1-desktop@1x.webp 1x,
+                ../img/yahts/yaht1-desktop@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht1-desktop@1x.png 1x,
+                ../img/yahts/yaht1-desktop@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- =========== T - A - B - L - E - T =============== -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht1-tablet@1x.webp 1x,
+                ../img/yahts/yaht1-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht1-tablet@1x.png 2x,
+                ../img/yahts/yaht1-tablet@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- =========== M - O - B - I - L - E =============== -->
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht1-mobile@1x.webp 1x,
+                ../img/yahts/yaht1-mobile@1x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht1-mobile@2x.png 1x,
+                ../img/yahts/yaht1-mobile@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- ================ I - M - G================= -->
+            <img
+              class="yablock-card-picture"
+              src="../img/yahts/yaht1-mobile@1x.png"
+              alt="Yaht photo"
+              width="300"
+              height="250"
+              loading="lazy"
+            />
+          </picture>
+          <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
+          <div class="yablock-identification">
+            <h3 class="yablock-name">Arrow</h3>
+            <p class="yablock-type">luxury yahts</p>
+          </div>
+          <div class="yablock-tech-info-style">
+            <ul class="yablock-attribute-list">
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">length</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">builder</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">built</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">guests</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">price</p>
+              </li>
+            </ul>
+            <ul class="yablock-atrbt-dscrptn">
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">48m(115ft)</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">Admiral</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">2021</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">11 in 5 cabins</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">&#8364;33,500,000</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ II ~~~ ================== -->
+        <li class="yahtblock-item swiper-slide">
+          <picture>
+            <!-- =========== D - E - S - K - T - O - P =========== -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht2-desktop@1x.webp 1x,
+                ../img/yahts/yaht2-desktop@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht2-desktop@1x.png 1x,
+                ../img/yahts/yaht2-desktop@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- =========== T - A - B - L - E - T =============== -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht2-tablet@1x.webp 1x,
+                ../img/yahts/yaht2-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht2-tablet@1x.png 2x,
+                ../img/yahts/yaht2-tablet@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- =========== M - O - B - I - L - E =============== -->
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht2-mobile@1x.webp 1x,
+                ../img/yahts/yaht2-mobile@1x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht2-mobile@2x.png 1x,
+                ../img/yahts/yaht2-mobile@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- ================ I - M - G================= -->
+            <img
+              class="yablock-card-picture"
+              src="../img/yahts/yaht2-mobile@1x.png"
+              alt="Yaht photo"
+              width="300"
+              height="250"
+              loading="lazy"
+            />
+          </picture>
+          <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
+          <div class="yablock-identification">
+            <h3 class="yablock-name yablock-third-header-max">
+              Benetti Oasis 40M BO122
+            </h3>
+            <p class="yablock-type">luxury yahts</p>
+          </div>
+          <div class="yablock-tech-info-style">
+            <ul class="yablock-attribute-list list">
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">length</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">shipyard</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">built</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">guests</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">price</p>
+              </li>
+            </ul>
+            <ul class="yablock-atrbt-dscrptn">
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">41m(133ft)</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">Benetti</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">2025</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">10 in 5 cabins</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">&#8364;23,210,000</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ III ~~~ ================== -->
+        <li class="yahtblock-item swiper-slide">
+          <picture>
+            <!-- =========== D - E - S - K - T - O - P =========== -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht3-desktop@1x.webp 1x,
+                ../img/yahts/yaht3-desktop@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht3-desktop@1x.png 1x,
+                ../img/yahts/yaht3-desktop@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- =========== T - A - B - L - E - T =============== -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht3-tablet@1x.webp 1x,
+                ../img/yahts/yaht3-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht3-tablet@1x.png 2x,
+                ../img/yahts/yaht3-tablet@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- =========== M - O - B - I - L - E =============== -->
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht3-mobile@1x.webp 1x,
+                ../img/yahts/yaht3-mobile@1x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht3-mobile@2x.png 1x,
+                ../img/yahts/yaht3-mobile@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- ================ I - M - G================= -->
+            <img
+              class="yablock-card-picture"
+              src="../img/yahts/yaht3-mobile@1x.png"
+              alt="Yaht photo"
+              width="300"
+              height="250"
+              loading="lazy"
+            />
+          </picture>
+          <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
+
+          <div class="yablock-identification">
+            <h3 class="yablock-name">Belle Anna</h3>
+            <p class="yablock-type">luxury yahts</p>
+          </div>
+          <div class="yablock-tech-info-style">
+            <ul class="yablock-attribute-list list">
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">length</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">shipyard</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">built</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">guests</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">price</p>
+              </li>
+            </ul>
+            <ul class="yablock-atrbt-dscrptn">
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">50m(155ft)</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">ISA</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">2012</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">12 in 6 cabins</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">&#8364;21,500,000</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ IV ~~~ ================== -->
+        <li class="yahtblock-item swiper-slide">
+          <picture>
+            <!-- =========== D - E - S - K - T - O - P =========== -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht4-desktop@1x.webp 1x,
+                ../img/yahts/yaht4-desktop@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht4-desktop@1x.png 1x,
+                ../img/yahts/yaht4-desktop@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- =========== T - A - B - L - E - T =============== -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht4-tablet@1x.webp 1x,
+                ../img/yahts/yaht4-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht4-tablet@1x.png 2x,
+                ../img/yahts/yaht4-tablet@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- =========== M - O - B - I - L - E =============== -->
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht4-mobile@1x.webp 1x,
+                ../img/yahts/yaht4-mobile@1x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht1-mobile@2x.png 1x,
+                ../img/yahts/yaht4-mobile@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- ================ I - M - G================= -->
+            <img
+              class="yablock-card-picture"
+              src="../img/yahts/yaht4-mobile@1x.png"
+              alt="Yaht photo"
+              width="300"
+              height="250"
+              loading="lazy"
+            />
+          </picture>
+          <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
+
+          <div class="yablock-identification">
+            <h3 class="yablock-name">Ellen</h3>
+            <p class="yablock-type">Luxury yahts</p>
+          </div>
+          <div class="yablock-tech-info-style">
+            <ul class="yablock-attribute-list list">
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">length</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">shipyard</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">built</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">guests</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">price</p>
+              </li>
+            </ul>
+            <ul class="yablock-atrbt-dscrptn">
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">40m(132ft)</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">Perini Navi</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">2001 / 2016 (refitted)</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">9 in 4 cabins</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">&#8364;9,300,000</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ V ~~~ ================== -->
+        <li class="yahtblock-item swiper-slide">
+          <picture>
+            <!-- =========== D - E - S - K - T - O - P =========== -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht5-desktop@1x.webp 1x,
+                ../img/yahts/yaht5-desktop@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht5-desktop@1x.png 1x,
+                ../img/yahts/yaht5-desktop@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- =========== T - A - B - L - E - T =============== -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht5-tablet@1x.webp 1x,
+                ../img/yahts/yaht5-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht5-tablet@1x.png 2x,
+                ../img/yahts/yaht5-tablet@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- =========== M - O - B - I - L - E =============== -->
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht5-mobile@1x.webp 1x,
+                ../img/yahts/yaht5-mobile@1x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht5-mobile@2x.png 1x,
+                ../img/yahts/yaht5-mobile@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- ================ I - M - G================= -->
+            <img
+              class="yablock-card-picture"
+              src="../img/yahts/yaht5-mobile@1x.png"
+              alt="Yaht photo"
+              width="300"
+              height="250"
+              loading="lazy"
+            />
+          </picture>
+          <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
+
+          <div class="yablock-identification">
+            <h3 class="yablock-name">Mirage 401</h3>
+            <p class="yablock-type">luxury yahts</p>
+          </div>
+          <div class="yablock-tech-info-style">
+            <ul class="yablock-attribute-list list">
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">length</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">shipyard</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">built</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">guests</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">price</p>
+              </li>
+            </ul>
+            <ul class="yablock-atrbt-dscrptn">
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">38m(125ft)</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">Gianetti Custom Yachts</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">2024</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">10 in 5 cabins</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">&#8364;13,500,000</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ VI ~~~ ================== -->
+        <li class="yahtblock-item swiper-slide">
+          <picture>
+            <!-- =========== D - E - S - K - T - O - P =========== -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht6-desktop@1x.webp 1x,
+                ../img/yahts/yaht6-desktop@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht6-desktop@1x.png 1x,
+                ../img/yahts/yaht6-desktop@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- =========== T - A - B - L - E - T =============== -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht6-tablet@1x.webp 1x,
+                ../img/yahts/yaht6-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht6-tablet@1x.png 2x,
+                ../img/yahts/yaht6-tablet@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- =========== M - O - B - I - L - E =============== -->
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht6-mobile@1x.webp 1x,
+                ../img/yahts/yaht6-mobile@1x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht6-mobile@2x.png 1x,
+                ../img/yahts/yaht6-mobile@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- ================ I - M - G================= -->
+            <img
+              class="yablock-card-picture"
+              src="../img/yahts/yaht6-mobile@1x.png"
+              alt="Yaht photo"
+              width="300"
+              height="250"
+              loading="lazy"
+            />
+          </picture>
+          <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
+
+          <div class="yablock-identification">
+            <h3 class="yablock-name">King</h3>
+            <p class="yablock-type">luxury yahts</p>
+          </div>
+          <div class="yablock-tech-info-style">
+            <ul class="yablock-attribute-list list">
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">length</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">shipyard</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">built</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">guests/p></p>
+              </li>
+
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">price</p>
+              </li>
+            </ul>
+            <ul class="yablock-atrbt-dscrptn">
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">33m(109ft)</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">Overmarine</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">2004 / 2018 (refitted)</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">9 in 4 cabins</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">&#8364;1,850,000</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ VII ~~~ ================== -->
+        <li class="yahtblock-item swiper-slide">
+          <picture>
+            <!-- =========== D - E - S - K - T - O - P =========== -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht7-desktop@1x.webp 1x,
+                ../img/yahts/yaht1-desktop@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht7-desktop@1x.png 1x,
+                ../img/yahts/yaht7-desktop@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- =========== T - A - B - L - E - T =============== -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht7-tablet@1x.webp 1x,
+                ../img/yahts/yaht7-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht7-tablet@1x.png 2x,
+                ../img/yahts/yaht7-tablet@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- =========== M - O - B - I - L - E =============== -->
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht7-mobile@1x.webp 1x,
+                ../img/yahts/yaht7-mobile@1x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht7-mobile@2x.png 1x,
+                ../img/yahts/yaht7-mobile@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- ================ I - M - G================= -->
+            <img
+              class="yablock-card-picture"
+              src="../img/yahts/yaht7-mobile@1x.png"
+              alt="Yaht photo"
+              width="300"
+              height="250"
+              loading="lazy"
+            />
+          </picture>
+          <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
+
+          <div class="yablock-identification">
+            <h3 class="yablock-name">Salt</h3>
+            <p class="yablock-type">luxury yahts</p>
+          </div>
+          <div class="yablock-tech-info-style">
+            <ul class="yablock-attribute-list list">
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">length</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">builder</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">built</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">guests</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">price</p>
+              </li>
+            </ul>
+            <ul class="yablock-atrbt-dscrptn">
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">32m(105ft)</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">SanLorenzo</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">2019</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">11 in 5 cabins</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text">&#8364;7,800,000</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ VIII ~~~ ================== -->
+        <li class="yahtblock-item swiper-slide">
+          <picture>
+            <!-- =========== D - E - S - K - T - O - P =========== -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht8-desktop@1x.webp 1x,
+                ../img/yahts/yaht8-desktop@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht8-desktop@1x.png 1x,
+                ../img/yahts/yaht8-desktop@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- =========== T - A - B - L - E - T =============== -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht8-tablet@1x.webp 1x,
+                ../img/yahts/yaht8-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht8-tablet@1x.png 2x,
+                ../img/yahts/yaht8-tablet@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- =========== M - O - B - I - L - E =============== -->
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht8-mobile@1x.webp 1x,
+                ../img/yahts/yaht8-mobile@1x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht8-mobile@2x.png 1x,
+                ../img/yahts/yaht8-mobile@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- ================ I - M - G================= -->
+            <img
+              class="yablock-card-picture"
+              src="../img/yahts/yaht8-mobile@1x.png"
+              alt="Yaht photo"
+              width="300"
+              height="250"
+              loading="lazy"
+            />
+          </picture>
+          <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
+
+          <div class="yablock-identification">
+            <h3 class="yablock-name">Storm</h3>
+            <p class="yablock-type">luxury yahts</p>
+          </div>
+          <div class="yablock-tech-info-style">
+            <ul class="yablock-attribute-list list">
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">length</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">shipyard</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">built</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">gests</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">price</p>
+              </li>
+            </ul>
+            <ul class="yablock-atrbt-dscrptn">
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">32m(103ft)</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">overmarine</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">2005 / 2022 (refitted)</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">9 in 4 cabins</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">&#8364;2,900,000</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- ========================== Y - A - H - T ~~ C - A - R - D ~~~ IX ~~~ ================== -->
+        <li class="yahtblock-item swiper-slide">
+          <picture>
+            <!-- =========== D - E - S - K - T - O - P =========== -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht9-desktop@1x.webp 1x,
+                ../img/yahts/yaht9-desktop@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ../img/yahts/yaht9-desktop@1x.png 1x,
+                ../img/yahts/yaht9-desktop@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- =========== T - A - B - L - E - T =============== -->
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht9-tablet@1x.webp 1x,
+                ../img/yahts/yaht9-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ../img/yahts/yaht9-tablet@1x.png 2x,
+                ../img/yahts/yaht9-tablet@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- =========== M - O - B - I - L - E =============== -->
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht9-mobile@1x.webp 1x,
+                ../img/yahts/yaht9-mobile@1x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../img/yahts/yaht9-mobile@2x.png 1x,
+                ../img/yahts/yaht9-mobile@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <!-- ================ I - M - G================= -->
+            <img
+              class="yablock-card-picture"
+              src="../img/yahts/yaht9-mobile@1x.png"
+              alt="Yaht photo"
+              width="300"
+              height="250"
+              loading="lazy"
+            />
+          </picture>
+          <!-- ============= U - N - D - E - R - P - I - C - T - U - R - E - S ============= -->
+
+          <div class="yablock-identification">
+            <h3 class="yablock-name">Collu</h3>
+            <p class="yablock-type">luxury yahts</p>
+          </div>
+          <div class="yablock-tech-info-style">
+            <ul class="yablock-attribute-list list">
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">length</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">shipyard</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">built</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">guests</p>
+              </li>
+              <li class="yablock-atrbt-item">
+                <p class="yablock-text-info">price</p>
+              </li>
+            </ul>
+            <ul class="yablock-atrbt-dscrptn">
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">29m(96ft)</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">Ferretti</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">2014</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">10 in 5 cabins</p>
+              </li>
+              <li class="yablock-atrbt-dscrptn-item">
+                <p class="yablock-text-info">&#8364;4,300,000</p>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="slider-buttons">
+        <div class="swiper-button-prev">
+          <svg width="18px" height="8px">
+            <use href="/project-begin/assets/sprite-261beb2c.svg#left-arrow" />
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg width="18px" height="8px">
+            <use href="/project-begin/assets/sprite-261beb2c.svg#right-arrow" />
+          </svg>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-      
-      
+      <!-----------------------
+    BLOCK SERVICES
+------------------------->
+<section class="services" id="services">
+    <div class="services-container">
+        <ul class="services-list">
+            <li class="services-sample sample-diving">
+                <picture class="services-img services-fishing">
+                     <source srcset="
+                     ../img/services/ser1-desktop@1x.webp 1x,
+                     ../img/services/ser1-desktop@2x.webp 2x,
+                     ../img/services/ser1-tablet@1x.webp 1x,
+                     ../img/services/ser1-tablet@2x.webp 2x,
+                     ../img/services/ser1-mob@1x.webp 1x,
+                     ../img/services/ser1-mob@2x.webp 2x" type="image/webp" />
+                    <source srcset="
+                    ../img/services/ser1-desktop@1x.png 1x,
+                    ../img/services/ser1-desktop@2x.png 2x,
+                    ../img/services/ser1-tablet@1x.png 1x,
+                    ../img/services/ser1-tablet@2x.png 2x,
+                    ../img/services/ser1-mob@1x.png 1x,
+                    ../img/services/ser1-mob@2x.png 2x"
+                    type="image/png" />
+                    <img class= "img-diving" src="../img/services/ser1-desktop@1x.png" alt="a diving man wearing diving mask under the water" />
+                </picture>
+                <p class="services-text">Diving</p>
+            </li>
+            <li class="services-sample sample-fishing">
+                <picture class="services-img services-fishing">
+                    <source srcset="
+                    ../img/services/ser2-desktop@1x.png 1x,
+                    ../img/services/ser2-desktop@2x.png 2x,
+                    ../img/services/ser2-tablet@1x.png 1x,
+                    ../img/services/ser2-tablet@2x.png 2x,
+                    ../img/services/ser2-mob@1x.png 1x,
+                    ../img/services/ser2-mob@2x.png 2x"
+                    type="image/png" />
+                    <source srcset="
+                    ../img/services/ser2-desktop@1x.png 1x,
+                    ../img/services/ser2-desktop@2x.png 2x,
+                    ../img/services/ser2-tablet@1x.png 1x,
+                    ../img/services/ser2-tablet@2x.png 2x,
+                    ../img/services/ser2-mob@1x.png 1x,
+                    ../img/services/ser2-mob@2x.png 2x"
+                    type="image/png" />
+        
+                <img src="../img/services/ser2-desktop@1x.png" alt="Hands of man holding a fishing rod in the sea" />
+                </picture>
+                <p class="services-text text-fishing">Fishing</p>
+            </li>
+            <li class="services-sample sample-sunbathing">
+                <picture class="services-img services-sunbathing">
+                    <source srcset="
+                     ../img/services/ser3-desktop@1x.webp 1x,
+                     ../img/services/ser3-desktop@2x.webp 2x,
+                     ../img/services/ser3-tablet@1x.webp 1x,
+                     ../img/services/ser3-tablet@2x.webp 2x,
+                     ../img/services/ser3-mob@1x.webp 1x,
+                     ../img/services/ser3-mob@2x.webp 2x" type="image/webp" />
+                    <source srcset="
+                    ../img/services/ser3-desktop@1x.png 1x,
+                    ../img/services/ser3-desktop@2x.png 2x,
+                    ../img/services/ser3-tablet@1x.png 1x,
+                    ../img/services/ser3-tablet@2x.png 2x,
+                    ../img/services/ser3-mob@1x.png 1x,
+                    ../img/services/ser3-mob@2x.png 2x" type="image/png" />
+        
+                    <img src="../img/services/ser3-desktop@1x.png" alt="Pink sun umbrellas against blue sky" />
+                </picture>
+                <p class="services-text text-sunbathing">Sunbathing</p>
+            </li>
+        </ul>
+    </div>
+</section>
+      <!------------
+    RENT BLOCK
+-------------->
+<section class="section-rent">
+<div class="rent-all">
+    <div class="rent-title-part">
+        <h2 class="rent-title">Rent a yaht now</h2>
+        <picture class="rent-img">
+            <source srcset="
+            ../img/rent/yaht-desktop@1x.webp 1x,
+            ../img/rent/yaht-desktop@2x.webp 2x,
+            ../img/rent/yaht-mob@1x.webp 1x,
+            ../img/rent/yaht-mob@2x.webp 2x"
+            type="image/webp" />
+            <source srcset="
+            ../img/rent/yaht-desktop@1x.png 1x,
+            ../img/rent/yaht-desktop@2x.png 2x,
+            ../img/rent/yaht-mob@1x.png 1x,
+            ../img/rent/yaht-mob@2x.png 2x"
+            type="image/jpeg" />
+            <img src="../img/rent/yaht-desktop@1x.png" alt="A sailboat navigating a sea" />
+        </picture>
+    </div>
+    
+    <div class="rent-request">
+        <form class="rent-form" action="">
+            <ul class="rent-form-list">
+                <li class="rent-list-item">
+                    <input class="rent-form-input" type="text" name="user_name" id="user_name" required pattern="^[a-zA-Z]+\s[a-zA-Z]+$" title="Full name must be two words separated by space" />
+                    <label class="rent-form-label" for="user_name">Full Name</label>
+                </li>
+
+                <li class="rent-list-item">
+                    <input class="rent-form-input" type="email" name="user_email" id="user_email" required pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" title="Unvalid email" />
+                    <label class="rent-form-label" for="user_email">Email</label>
+                </li>
+
+                <li class="rent-list-item">
+                    <input class="rent-form-input" type="tel" name="user_phone" id="user-phone" required pattern="/^(?:(?:\+|00)33[\s.-]{0,3}(?:\(0\)[\s.-]{0,3})?|0)[1-9](?:(?:[\s.-]?\d{2}){4}|\d{2}(?:[\s.-]?\d{3}){2})$/" title="Unvalid phone number" />
+                    <label class="rent-form-label" for="user_phone">Phone number</label>
+                </li>
+
+                <li class="rent-list-item">
+                    <textarea class="rent-form-comment" name="user_comment" id="user_comment" rows="5"></textarea>
+                    <label class="rent-form-label" for="user_comment">Comment</label>
+                </li>
+            </ul>
+        </form>
+    
+        <button class="rent-btnsend" type="submit" data-modal-open>Send
+            <svg class="rent-send-button" width="18" height="8.66">
+                <use href="../public/sprite.svg#right-arrow"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+</section>
+<!-- RENT MODAL WINDOW -->
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="rent-modal">
+        <button class="rent-modalbtn" type="button" aria-label="Close modal window button" data-modal-close>
+            <svg class="rent-close-icon" width="20" height="20">
+                <use href="../public/sprite.svg#close-icon"></use>
+            </svg>
+        </button>
+        <picture class="rent-imgmodal">
+            <source srcset="
+            ../img/rent/pop-tablet@1x.webp 1x,
+            ../img/rent/pop-tablet@2x.webp 2x,
+            ../img/rent/pop-mob@1x.webp 1x,
+            ../img/rent/pop-mob@2x.webp 2x" type="image/webp" />
+            <source srcset="
+            ../img/rent/pop-tablet@1x.png 1x,
+            ../img/rent/pop-tablet@2x.png 2x,
+            ../img/rent/pop-mob@1x.png 1x,
+            ../img/rent/pop-mob@2x.png 2x" type="image/jpeg" />
+            <img src="../img/rent/pop-tablet@1x.png" alt="A picture of yacht" />
+        </picture>
+        <h3 class="rent-modal-title">Thank you</h3>
+        <p class="rent-modal-text">Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in touch shortly to confirm your reservation and provide any additional information or assistance you may need.</p>
+    </div>
+</div>
       <section class="reviews-section">
   <div class="container reviews-container">
     <div class="reviews-header">
@@ -2459,8 +1795,10 @@
 
     </main>
     <footer>
+  <div class="footer-line"></div>
+  <div class="footer-info">
   <div class="footer-logo-container">
-    <svg class="logo-footer" width="26" height="26">
+    <svg class="logo-footer">
       <use href="../public/sprite.svg#logo-site"></use>
     </svg>
     <p class="footer-logo-text">yaht Adventures</p>
@@ -2513,8 +1851,9 @@
       </li>
     </ul>
   </div>
+  </div>
 
-  <span class="police-footer">2023. Yaht Adventures Privacy Police</span>
+  <span class="police-footer">2023. Yaht Adventures  Privacy Police</span>
 </footer>
 
 
