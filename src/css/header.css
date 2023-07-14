@@ -14,12 +14,12 @@
 }
 .header-logotype {
   display: inline-block;
-  padding-top: 26px;
-  padding-bottom: 26px;
 }
 .header-logo {
   display: flex;
   align-items: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
   gap: 8px;
 }
@@ -71,7 +71,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-toggle {
+.hamburger {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +80,7 @@
   border: none;
 }
 @media only screen and (min-width: 768px) {
-  .menu-toggle {
+  .hamburger {
     display: none;
   }
 }
