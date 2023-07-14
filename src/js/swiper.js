@@ -23,3 +23,28 @@ new Swiper('.comment-swiper', {
     },
 
 });
+
+new Swiper('.yachts-slider', {
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+
+    spaceBetween: 32,
+
+    breakpoints: {
+        100: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+        },
+        768: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+        },
+        1280: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+        }
+    },
+});
