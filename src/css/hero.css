@@ -144,7 +144,38 @@
 }
 
 .hero-wrapper {
+    width: 335px;
+    height: 427px;
     position: relative;
+    background-image: url(../../img/hero/group-mobile@1x.png);
+    background-repeat: no-repeat;
+    background-size: 335px 427px
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-wrapper {
+        background-image: url(../../img/hero/group-mobile@2x.png);
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-wrapper {
+        width: 426px;
+        height: 598px;
+        background-image: url(../../img/hero/group-tablet@1x.png);
+        background-size: 426px 598px
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero-wrapper {
+            background-image: url(../../img/hero/group-tablet@2x.png);
+        }
+    }
 }
 
 .customers-block {
@@ -216,14 +247,13 @@
     .ceo {
         top: 32px;
         left: 339px;
+        width: 100%;
     }
 }
 
 @media screen and (min-width:1280px) {
     .ceo {
         left: 305px;
-        min-width: 100%;
-        min-height: 100%;
     }
 }
 
