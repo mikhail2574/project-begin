@@ -201,7 +201,6 @@
         width: 153px;
     }
 
-}
 .yablock-header-style{
     padding-right: 0;
         width: 882px;
@@ -209,6 +208,7 @@
         margin-right: auto;
         margin-bottom: 164px;
             }
+}
 .yablock-header {
     @media screen and (max-width: 767px) {
         font-size: 36px;
@@ -242,6 +242,7 @@
 
 @media screen and (min-width: 1280px) {
     .mask-group {
+        display: none;
         position: absolute;
 
         width: 1700px;
