@@ -156,6 +156,13 @@
         color: var(--light-green, #93ABAE);
         border: 1px solid var(--light-green, #93ABAE);}
 
+ @media screen and (max-width: 376px) {
+    .small {
+        font-size: 12px;
+        white-space: nowrap;
+    } 
+}      
+
 @media screen and (min-width: 768px){
     .yahtblock {
         margin-bottom: 100px;
@@ -252,7 +259,7 @@
     padding-bottom: 32px; 
     }
 .yablock-card-picture {
-    width: 332px;
+    width: calc(100% - 32px);
     height: 268px;
             }
 
