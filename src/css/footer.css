@@ -177,6 +177,10 @@
   .container-foot-elemenets {
     margin-top: 64px;
   }
+
+  .footer-list-elements{
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -190,6 +194,7 @@
     width: 32px;
     height: 32px;
     fill: var(--white);
+    margin-right: 4px;
   }
   .footer-items {
     display: flex;
