@@ -4,18 +4,19 @@
   | default @import url()
   |============================
 */
-@import url('./normalize.css');
-@import url('./reset.css');
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./aboutBlock.css');
-@import url('./yachtsBlock.css');
-@import url('./servicesBlock.css');
-@import url('./rentBlock.css');
-@import url('./reviewsBlock.css');
-@import url('./footer.css');
-@import url('./fonts.css');
-@import url('./uptotop.css');
+@import url('./css/normalize.css');
+@import url('./css/reset.css');
+@import url('./css/header.css');
+@import url('./css/hero.css');
+@import url('./css/aboutBlock.css');
+@import url('./css/yachtsBlock.css');
+@import url('./css/servicesBlock.css');
+@import url('./css/rentBlock.css');
+@import url('./css/reviewsBlock.css');
+@import url('./css/footer.css');
+@import url('./css/fonts.css');
+@import url('./css/uptotop.css');
+@import url('./css/swiper-bundle.min.css');
 
 :root {
 
