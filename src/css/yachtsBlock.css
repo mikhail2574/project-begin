@@ -212,9 +212,15 @@
 .yablock-header {
     @media screen and (max-width: 767px) {
         font-size: 36px;
+        max-width: 310px;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 70px;
+        max-width: 641px;
     }
     @media screen and (min-width: 1280px) {
         font-size: 100px;
+        max-width: 882px;
     }
         letter-spacing: -4,5px;
          margin-bottom: 64px;
