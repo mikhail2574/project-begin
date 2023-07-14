@@ -32,8 +32,8 @@ new Swiper('.comment-swiper', {
 new Swiper('.yachts-slider', {
   modules: [Navigation],
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next, .under-button-next',
+    prevEl: '.swiper-button-prev, .under-button-prev',
   },
 
   spaceBetween: 32,
