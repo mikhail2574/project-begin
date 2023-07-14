@@ -1,6 +1,6 @@
 <!-- Header -->
 <header class="header">
-  <div class="header-container container">
+  <div class="container header-container">
     <div class="header-logotype">
       <a
         class="header-logo"
@@ -8,7 +8,7 @@
         aria-label="Yacht Adventure logo"
       >
         <svg class="header-icon" width="16" height="18">
-          <use href="../public/sprite.svg#logo-site"></use>
+          <use href="./public/sprite.svg#logo-site"></use>
         </svg>
         <p class="logo-text">yaht adventure</p>
       </a>
@@ -16,25 +16,35 @@
     <nav class="header-nav">
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link" href="#ABOUT">ABOUT</a>
+          <a class="nav-link" href="#about">ABOUT</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#YAHTS">YAHTS</a>
+          <a class="nav-link" href="#yahts">YAHTS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#REVIEWS">REVIEWS</a>
+          <a class="nav-link" href="#reviews">REVIEWS</a>
         </li>
       </ul>
     </nav>
-    <button class="menu-toggle" type="button" data-menu-open>
+    <button class="hamburger js-open-menu" type="button">
       <svg class="menu-icon" width="24" height="24">
-        <use href="../public/sprite.svg#vector-menu"></use>
+        <use href="./public/sprite.svg#vector-menu"></use>
       </svg>
     </button>
+    <!-- Blure -->
+    <ul>
+      <li class="blure blure-header-one"></li>
+      <li class="blure blure-header-two"></li>
+      <li class="blure blure-yacht-one"></li>
+      <li class="blure blure-yacht-two"></li>
+      <li class="blure blure-services"></li>
+      <li class="blure blure-form"></li>
+      <li class="blure blure-footer"></li>
+    </ul>
   </div>
 </header>
 <!-- Mobile menu -->
-<div class="modal-menu-container is-open" data-menu>
+<div class="modal-menu-container is-open js-menu-container">
   <div class="modal-menu-header container">
     <div class="modal-menu-logo">
       <a
@@ -43,14 +53,14 @@
         aria-label="Yacht Adventure logo"
       >
         <svg class="header-icon" width="16" height="18">
-          <use href="../public/sprite.svg#logo-site"></use>
+          <use href="./public/sprite.svg#logo-site"></use>
         </svg>
         <p class="logo-text">yaht adventure</p>
       </a>
     </div>
-    <button class="modal-menu-btn-close" data-menu-close>
+    <button class="modal-menu-btn-close js-close-menu">
       <svg class="close-icon" width="24" height="24" aria-label="Close button">
-        <use href="../public/sprite.svg#menu-close"></use>
+        <use href="./public/sprite.svg#menu-close"></use>
       </svg>
     </button>
   </div>
@@ -62,9 +72,15 @@
       <a class="modal-menu-link" href="#yahts">YAHTS</a>
     </li>
     <li class="modal-menu-item">
-      <a class="modal-menu-link" href="./#reviews">REVIEWS</a>
+      <a class="modal-menu-link" href="#reviews">REVIEWS</a>
     </li>
+  </ul>
+  <!-- Blure Mobile Menu -->
+  <ul>
+    <li class="blure blure-mobile-one"></li>
+    <li class="blure blure-mobile-two"></li>
   </ul>
 </div>
 
-<script src="../js/menu.js" type="module"></script>
+<script src="./js/modal.js" type="module"></script>
+<script src="./js/mobile-menu.js" type="module"></script>
