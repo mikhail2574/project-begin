@@ -18,14 +18,15 @@
 @import url('./uptotop.css');
 
 :root {
-
-  --body-bg-color: #11131F;
-  --white: #F6F5EF;
-  --normal-state: #93ABAE;
-  --card-bg: #1F212D;
-  --pressed-state: #88B3B9;
-  --secondary-title-color: #BEC7C2;
-
+  --body-bg-color: #11131f;
+  --white: #f6f5ef;
+  --normal-state: #93abae;
+  --card-bg: #1f212d;
+  --pressed-state: #88b3b9;
+  --secondary-title-color: #bec7c2;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
