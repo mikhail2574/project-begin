@@ -52,7 +52,7 @@
     border-radius: 40px;
     margin-bottom: 24px;
     overflow: hidden;
-    height: 100%;
+    width: 100%;
 }
 
 .services-sample > .services-text {
@@ -67,6 +67,7 @@
     font-weight: 700;
     line-height: 110%;
     letter-spacing: -0.63px;
+    
 }
 
 .services-img {
@@ -85,15 +86,21 @@
 
   .services-sample.sample-fishing {
     width: 100%;
+   
   }
 
   .services-sample.sample-fishing .services-img {
     width: 400px;
     height: 389px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: relative;
+    float: right;
   }
+
+  .services-sample.sample-fishing .services-text {
+    position: absolute;
+    bottom: 32px;
+    left: 334px;
+    }
 
   .services-sample.sample-sunbathing {
     width: 100%;
@@ -102,10 +109,15 @@
   .services-sample.sample-sunbathing .services-img {
     width: 380px;
     height: 352px;
-    position: absolute;
-    left: 32px;
-    top: 0;
+    position: relative;
   }
+
+  .services-sample.sample-sunbathing .services-img img {
+      margin-left: 32px;
+    }
+  .services-sample.services-sample.sample-sunbathing .services-text {
+    left: 64px;
+}
 }
 
 
