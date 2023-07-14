@@ -14,12 +14,12 @@
 }
 .header-logotype {
   display: inline-block;
-  padding-top: 26px;
-  padding-bottom: 26px;
 }
 .header-logo {
   display: flex;
   align-items: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
 
   gap: 8px;
 }
