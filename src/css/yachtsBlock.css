@@ -242,6 +242,7 @@
 
 @media screen and (min-width: 1280px) {
     .mask-group {
+        display: none;
         position: absolute;
 
         width: 1700px;

@@ -128,6 +128,7 @@
 }
 
 .blure-form {
+  display: none;
   top: 4754px;
   right: -179px;
 
@@ -136,6 +137,7 @@
 }
 
 .blure-footer {
+  display: none;
   top: 5833px;
   right: -159px;
 
