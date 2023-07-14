@@ -196,27 +196,36 @@
 @media screen and (min-width: 1280px){
     .mask-group {
         position: absolute;
+        top: 0;
+       
 
-        width: 1700px;
-        height: 1590px;
-        transform: rotate(7.5deg);
+        width: 1500px;
+        height: 1610px;
+        rotate: X(7deg);
+     
         background-color: #F6F5EF;
-        opacity: 0.7;
+        opacity: 0.3;
 
         -webkit-mask-image: url(../public/mask-group.svg);
         -webkit-mask-repeat: no-repeat;
-        -webkit-mask-position: top, left;
+        -webkit-mask-position: top left;
         -webkit-mask-size: contain;
 
         mask-image: url(../public/mask-group.svg);
         mask-repeat: no-repeat;
-        mask-position: top, left;
+        mask-position: top left;
         mask-size: contain;
 
-        z-index: -10;
-        }
-   
-/* .yablock-btn-left-swipper{
+        /* z-index: -10; */
+
+        transition: opacity 500ms cubic-bezier(.17, .67, .83, .67);
+    }
+
+    .mask-group:hover {
+        opacity: 1;
+    }
+ }
+.yablock-btn-left-swipper{
     position: relative;
     top: -300px;
     left: 0;
