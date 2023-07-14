@@ -1,7 +1,9 @@
 .header {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 .header-container {
+  position: relative;
+
   display: flex;
   align-items: center;
   padding-top: 26px;
@@ -71,6 +73,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .hamburger {
   display: flex;
   justify-content: center;
@@ -79,6 +82,7 @@
   margin-left: auto;
   border: none;
 }
+
 @media only screen and (min-width: 768px) {
   .hamburger {
     display: none;
@@ -176,7 +180,9 @@
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
+  color: #747bff;
 }
+
 .modal-menu-container {
   position: fixed;
 
@@ -189,6 +195,7 @@
 
   background-color: var(--body-bg-color);
 }
+
 .modal-menu-header {
   display: flex;
   align-items: center;
@@ -198,6 +205,7 @@
   border-bottom: 1px solid;
   border-color: rgba(246, 245, 239, 0.2);
 }
+
 .modal-menu-btn-close {
   display: flex;
   justify-content: center;
@@ -206,6 +214,7 @@
   margin-left: auto;
   border: none;
 }
+
 .modal-menu-list {
   display: flex;
   flex-direction: column;
@@ -214,6 +223,7 @@
   gap: 14px;
   margin-top: 140px;
 }
+
 .modal-menu-link {
   font-size: 14px;
   font-weight: 700;
@@ -223,6 +233,7 @@
 
   color: var(--white);
 }
+
 .modal-menu-link:hover,
 .modal-menu-link:focus {
   color: var(--secondary-title-color);

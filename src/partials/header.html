@@ -1,6 +1,6 @@
 <!-- Header -->
 <header class="header">
-  <div class="header-container container">
+  <div class="container header-container">
     <!-- blure -->
     <ul>
       <li class="blure blure-header-one"></li>
@@ -18,7 +18,7 @@
         aria-label="Yacht Adventure logo"
       >
         <svg class="header-icon" width="16" height="18">
-          <use href="../public/sprite.svg#logo-site"></use>
+          <use href="./public/sprite.svg#logo-site"></use>
         </svg>
         <p class="logo-text">yaht adventure</p>
       </a>
@@ -36,15 +36,25 @@
         </li>
       </ul>
     </nav>
-    <button class="hamburger" type="button" data-menu-open>
+    <button class="hamburger js-open-menu" type="button">
       <svg class="menu-icon" width="24" height="24">
-        <use href="../public/sprite.svg#vector-menu"></use>
+        <use href="./public/sprite.svg#vector-menu"></use>
       </svg>
     </button>
+    <!-- Blure -->
+    <ul>
+      <li class="blure blure-header-one"></li>
+      <li class="blure blure-header-two"></li>
+      <li class="blure blure-yacht-one"></li>
+      <li class="blure blure-yacht-two"></li>
+      <li class="blure blure-services"></li>
+      <li class="blure blure-form"></li>
+      <li class="blure blure-footer"></li>
+    </ul>
   </div>
 </header>
 <!-- Mobile menu -->
-<div class="modal-menu-container is-open" data-menu>
+<div class="modal-menu-container is-open js-menu-container">
   <div class="modal-menu-header container">
     <div class="modal-menu-logo">
       <a
@@ -53,26 +63,26 @@
         aria-label="Yacht Adventure logo"
       >
         <svg class="header-icon" width="16" height="18">
-          <use href="../public/sprite.svg#logo-site"></use>
+          <use href="./public/sprite.svg#logo-site"></use>
         </svg>
         <p class="logo-text">yaht adventure</p>
       </a>
     </div>
-    <button class="modal-menu-btn-close" data-menu-close>
+    <button class="modal-menu-btn-close js-close-menu">
       <svg class="close-icon" width="24" height="24" aria-label="Close button">
-        <use href="../public/sprite.svg#menu-close"></use>
+        <use href="./public/sprite.svg#menu-close"></use>
       </svg>
     </button>
   </div>
   <ul class="modal-menu-list">
     <li class="modal-menu-item">
-      <a class="modal-menu-link" href="index.html#about">ABOUT</a>
+      <a class="modal-menu-link" href="#about">ABOUT</a>
     </li>
     <li class="modal-menu-item">
-      <a class="modal-menu-link" href="index.html#yahts">YAHTS</a>
+      <a class="modal-menu-link" href="#yahts">YAHTS</a>
     </li>
     <li class="modal-menu-item">
-      <a class="modal-menu-link" href="index.html#reviews">REVIEWS</a>
+      <a class="modal-menu-link" href="#reviews">REVIEWS</a>
     </li>
   </ul>
   <!-- Blure Mobile Menu -->
@@ -82,4 +92,5 @@
   </ul>
 </div>
 
-<script src="../js/menu.js" type="module"></script>
+<script src="./js/modal.js" type="module"></script>
+<script src="./js/mobile-menu.js" type="module"></script>
