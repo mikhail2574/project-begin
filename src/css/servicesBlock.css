@@ -4,28 +4,43 @@
 
 @media only screen and (max-width: 767px) {
    .services-container {
-    max-width: 335px;
-    padding: 0 20px;
+    min-width: 320px;
+    max-width: 375px;
+    padding: 0 32px;
+    margin: 0 auto;
   }
 }
 
 @media only screen and (min-width: 768px) {
    .services-container {
-    max-width: 704px;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
+    max-width: 768px;
+    padding: 0 32px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
    .services-container {
-    max-width: 1216px;
+    max-width: 1280px;
   }
 }
 
 .services-list {
-    padding-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+   .services-list {
+    gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .services-list {
+    gap: 64px;
+  }
 }
 
 .services-sample {
@@ -127,11 +142,6 @@
     width: 440px;
     height: 428px;
   }
-
-  .services-sample.sample-fishing {
-    margin-top: 245px;
-  }
-  
   .services-sample.sample-sunbathing {
     margin-top: 64px;
     margin-left: 340px;
