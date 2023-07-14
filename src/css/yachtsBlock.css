@@ -563,20 +563,20 @@
 }
 
 .slider-buttons {
-  margin-top: 44px;
-  height: 46px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+    margin-top: 44px;
+    height: 46px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  padding: 14px;
-  width: 46px !important;
-  height: 36px !important;
-  border: 1px solid var(--white);
-  border-radius: 60px;
-  fill: white;
-  position: static !important;
+    padding: 14px;
+    width: 46px !important;
+    height: 36px !important;
+    border: 1px solid var(--white);
+    border-radius: 60px;
+    fill: white;
+    position: static !important;
 }
