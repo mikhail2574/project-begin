@@ -87,6 +87,13 @@
     gap: 24px;
   }
 }
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--secondary-title-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .container-icon {
   margin-bottom: 40px;
 }
@@ -120,6 +127,13 @@
   fill: var(--white);
   stroke-width: 1px;
   stroke: rgba(246, 245, 239, 0.5);
+}
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  fill: var(--secondary-title-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 768px) {
   .footer-icon-link {
