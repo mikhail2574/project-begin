@@ -1,3 +1,37 @@
+.roll-in-left {
+    -webkit-animation: roll-in-right 1s ease-out both;
+    animation: roll-in-right 1s ease-out both;
+}
+
+@-webkit-keyframes roll-in-right {
+    0% {
+        -webkit-transform: translateX(1000px) rotate(540deg);
+        transform: translateX(1000px) rotate(540deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes roll-in-right {
+    0% {
+        -webkit-transform: translateX(1000px) rotate(540deg);
+        transform: translateX(1000px) rotate(540deg);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0) rotate(0deg);
+        transform: translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+
+}
+
 .hero {
     padding-bottom: 80px;
 }
@@ -147,7 +181,7 @@
     width: 335px;
     height: 427px;
     position: relative;
-    background-image: url(./img/hero/group-mobile@1x.png);
+    background-image: url(../img/hero/group-mobile@1x.png);
     background-repeat: no-repeat;
     background-size: 335px 427px
 }
@@ -156,7 +190,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero-wrapper {
-        background-image: url(./img/hero/group-mobile@2x.png);
+        background-image: url(../img/hero/group-mobile@2x.png);
 
     }
 }
@@ -165,7 +199,7 @@
     .hero-wrapper {
         width: 426px;
         height: 598px;
-        background-image: url(./img/hero/group-tablet@1x.png);
+        background-image: url(../img/hero/group-tablet@1x.png);
         background-size: 426px 598px
     }
 
@@ -173,7 +207,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero-wrapper {
-            background-image: url(./img/hero/group-tablet@2x.png);
+            background-image: url(../img/hero/group-tablet@2x.png);
         }
     }
 }
