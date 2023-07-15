@@ -10,6 +10,7 @@ menuLinks.forEach(menuLink => {
 });
 openMenuBtn.addEventListener('click', toggleMenu);
 closeMenuBtn.addEventListener('click', toggleMenu);
+
 function toggleMenu() {
   const isMenuOpen =
     openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -21,11 +22,3 @@ function toggleMenu() {
     : 'enableBodyScroll';
   bodyScrollLock[scrollLockMethod](document.body);
 }
-
-// Close the mobile menu on wider screens if the device orientation changes
-window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-  if (!e.matches) return;
-  mobileMenu.classList.remove('is-open');
-  openMenuBtn.setAttribute('aria-expanded', false);
-  bodyScrollLock.enableBodyScroll(document.body);
-});

@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 .header-container {
   position: relative;
@@ -73,7 +73,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hamburger {
+.menu-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +83,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .hamburger {
+  .menu-toggle {
     display: none;
   }
 }
@@ -170,7 +170,11 @@
   opacity: 0;
   visibility: hidden;
 }
-
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
 .mobile-menu-container {
   position: fixed;
 

@@ -36,7 +36,12 @@
         </li>
       </ul>
     </nav>
-    <button class="hamburger js-open-menu" type="button">
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="mobile-menu"
+    >
       <svg class="menu-icon" width="24" height="24">
         <use href="./public/sprite.svg#vector-menu"></use>
       </svg>
@@ -54,7 +59,7 @@
   </div>
 </header>
 <!-- Mobile menu -->
-<div class="mobile-menu-container is-open js-menu-container" id="mobile-menu">
+<div class="mobile-menu-container js-menu-container is-open" id="mobile-menu">
   <div class="mobile-menu-header container">
     <div class="modal-menu-logo">
       <a
@@ -68,7 +73,11 @@
         <p class="logo-text">yaht adventure</p>
       </a>
     </div>
-    <button class="mobile-menu-btn-close js-close-menu">
+    <button
+      class="mobile-menu-btn-close hamburger js-close-menu"
+      type="button"
+      aria-label="close modal btn"
+    >
       <svg class="close-icon" width="24" height="24" aria-label="Close button">
         <use href="./public/sprite.svg#menu-close"></use>
       </svg>
