@@ -179,7 +179,9 @@
 }
 
 .rent-form-input:focus~.rent-form-label,
-.rent-form-input:valid~.rent-form-label {
+.rent-form-input:valid~.rent-form-label,
+.rent-form-comment:focus~.rent-label-form,
+.rent-form-comment:not(:placeholder-shown)~.rent-label-form {
   top: -18px;
   left: 0;
   color: var(--normal-state);
@@ -202,6 +204,7 @@
   padding-top: 24px;
   outline: none;
   color: var(--white);
+  resize: none;
 }
 
 .rent-label-form {
@@ -216,22 +219,6 @@
   pointer-events: none;
   transition: .5s;
 }
-
-.rent-form-comment:focus~.rent-form-label,
-.rent-form-comment:valid~.rent-form-label {
-  top: -18px;
-  left: 0;
-  color: var(--normal-state);
-  font-size: 10px;
-}
-
-/*.rent-form-comment:focus ~ .rent-form-label,
-.rent-form-comment:valid ~ .rent-form-label {
-  top: -18px;
-  left: 0;
-  color: var(--normal-state);
-  font-size: 10px;
-}*/
 
 
 .rent-btnsend {
