@@ -30,22 +30,34 @@
   }
 }
 
+.rent-all {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+   .rent-all {
+    max-width: 335px;
+    
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-   .rent-all.container {   
+   .rent-all {   
     max-width: 704px;
     margin: 0 auto;
-
   }
 }
 
 
-.rent-all {
-    margin: 0 auto;
-}
-
 @media only screen and (min-width: 768px) {
    .rent-all {
     display: flex;  
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+   .rent-all {
+    max-width: 913px;
   }
 }
 
@@ -116,19 +128,27 @@ padding-bottom: 16px;
 
 .rent-form {
   width: 100%;
-  margin-bottom: 24px;
 }
 
 @media only screen and (min-width: 768px) {
    .rent-form {
     width: 100%;
     max-height: 266px;
+  }
+}
+
+.rent-form-list {
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+   .rent-form-list {
     margin-bottom: 32px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-   .rent-form {
+   .rent-form-list {
     margin-bottom: 64px;
   }
 }
@@ -151,7 +171,7 @@ padding-bottom: 16px;
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 16px;
+  padding-top: 22px;
   font-size: 14px;
   font-weight: 500;
   line-height: 120%;
@@ -176,6 +196,7 @@ padding-bottom: 16px;
   padding-top: 24px;
   outline: none;
   color: var(--white);
+  padding-bottom: 15px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -192,6 +213,13 @@ padding-bottom: 16px;
   font-size: 10px;
 }
 
+.rent-list-item-comment {
+  position: relative;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.63px;
+}
+
 .rent-form-comment {
     width: 100%;
     background-color: transparent;
@@ -203,6 +231,19 @@ padding-bottom: 16px;
     color: var(--white);
 }
 
+.rent-label-form {
+position: absolute;
+top: 0;
+left: 0;
+padding-top: 22px;
+font-size: 14px;
+font-weight: 500;
+line-height: 120%;
+letter-spacing: -0.63px;
+pointer-events: none;
+transition: .5s;
+}
+
 .rent-form-comment:focus ~ .rent-form-label,
 .rent-form-comment:valid ~ .rent-form-label {
   top: -18px;
@@ -210,6 +251,14 @@ padding-bottom: 16px;
   color: var(--normal-state);
   font-size: 10px;
 }
+
+/*.rent-form-comment:focus ~ .rent-form-label,
+.rent-form-comment:valid ~ .rent-form-label {
+  top: -18px;
+  left: 0;
+  color: var(--normal-state);
+  font-size: 10px;
+}*/
 
 
 .rent-btnsend {
@@ -243,87 +292,93 @@ padding-bottom: 16px;
 RENT MODAL WINDOW 
 *****************/
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    background-color: transparent;
-    opacity: 1;
-    pointer-events: initial;
-    visibility: visible;
+  background-color: transparent;
+  opacity: 1;
+  pointer-events: initial;
+  visibility: visible;
 
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .rent-modal {
-    position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
     
-        width: 335px;
-        height: 396px;
-        padding: 40px 24px;
+  width: 335px;
+  height: 396px;
+  padding: 40px 24px;
     
-        background-color: var(--card-bg);
-        border-radius: 20px;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+
+  z-index: 99;
+
 }
 
 @media only screen and (min-width: 768px) {
-    .rent-modal {
-        width: 570px;
-        height: 522px;
-        padding: 97px 64px 64px 64px;
-        border-radius: 40px;
+  .rent-modal {
+    width: 570px;
+    height: 522px;
+    padding: 97px 64px 64px 64px;
+    border-radius: 40px;
   }
 }
 
 .rent-modalbtn {
-    background-color: transparent;
-    border: transparent;
-    position: absolute;
+  background-color: transparent;
+  border: transparent;
+  position: absolute;
     
-    top: 14px;
-    right: 14px;
+  top: 14px;
+  right: 14px;
     
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
     
-    border-radius: 50%;
+  border-radius: 50%;
     
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
     
-    fill: var(--white);
+  fill: var(--white);
+  stroke: var(--white);
     
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .rent-modalbtn:hover,
 .rent-modalbtn:focus {
     fill: var(--normal-state);
+    stroke: var(--normal-state);
 }
 
 .rent-close-icon:hover,
 .rent-close-icon:focus {
     fill: var(--normal-state);
+    stroke: var(--normal-state);
 }
 
 .rent-imgmodal {
-    display: flex;
-    max-width: 287px;
-    max-height: 149px;
-    margin: 40px 24px 24px 24px;
+  display: flex;
+  max-width: 287px;
+  max-height: 149px;
+  margin: 40px 24px 24px 24px;
 }
 
 @media only screen and (min-width: 768px) {
