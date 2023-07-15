@@ -1,0 +1,69 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./css/normalize.css');
+@import url('./css/reset.css');
+@import url('./css/header.css');
+@import url('./css/hero.css');
+@import url('./css/aboutBlock.css');
+@import url('./css/yachtsBlock.css');
+@import url('./css/servicesBlock.css');
+@import url('./css/rentBlock.css');
+@import url('./css/reviewsBlock.css');
+@import url('./css/footer.css');
+@import url('./css/fonts.css');
+@import url('./css/uptotop.css');
+@import url('./css/swiper-bundle.min.css');
+
+:root {
+  --body-bg-color: #11131f;
+  --white: #f6f5ef;
+  --normal-state: #93abae;
+  --card-bg: #1f212d;
+  --pressed-state: #88b3b9;
+  --secondary-title-color: #bec7c2;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  color: var(--white);
+
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.28px;
+}
+
+.container {
+  @media screen and (max-width: 767px) {
+    max-width: 335px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 704px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1216px;
+  }
+
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  opacity: 0;
+}
