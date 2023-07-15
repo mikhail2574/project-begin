@@ -4,9 +4,9 @@
     margin-bottom: 80px;
     }
 
-.yablock-centered{
+/* .yablock-centered{
     overflow: hidden;
-}    
+}     */
     .yablock-header-style{
         margin-bottom: 80px;
     }
@@ -200,30 +200,43 @@
             } 
 }   */
 /* =================== */
+
+
+
 @media screen and (min-width: 1280px){
     .mask-group {
         position: absolute;
+        top: 0;
+       
 
-        width: 1700px;
-        height: 1590px;
-        transform: rotate(7.5deg);
+        width: 1500px;
+        height: 1610px;
+        rotate: X(7deg);
+     
         background-color: #F6F5EF;
-        opacity: 0.7;
+        opacity: 0.3;
 
         -webkit-mask-image: url(../public/mask-group.svg);
         -webkit-mask-repeat: no-repeat;
-        -webkit-mask-position: top, left;
+        -webkit-mask-position: top left;
         -webkit-mask-size: contain;
 
         mask-image: url(../public/mask-group.svg);
         mask-repeat: no-repeat;
-        mask-position: top, left;
+        mask-position: top left;
         mask-size: contain;
 
         z-index: -10;
         }
    
 /* .yablock-btn-left-swipper{
+        /* z-index: -10; */
+
+
+    .mask-group:hover {
+        opacity: 1;
+    }
+.yablock-btn-left-swipper{
     position: relative;
     top: -300px;
     left: 0;
@@ -271,9 +284,6 @@
     /* margin-right: 32px;
     margin-left: 32px; */
     }
-<<<<<<< HEAD
-} 
-=======
 }  
 .yablock-header-style {
   padding-right: 25px;
@@ -402,19 +412,6 @@
   line-height: 118%;
   letter-spacing: 0.42px;
 }
-/* .yablock-btn-swiper-list {
-    } */
-/* .yablock-btn-left-swipper{
-    
-    } */
-/* .yablock-btn-right-swipper{
-    
-    .yablock-btn-swiper-style {
-    } */
-
-.yablock-btns-svg {
-  fill: currentColor;
-}
 
 @media screen and (min-width: 768px) {
   .yahtblock {
@@ -513,12 +510,12 @@
 
 @media screen and (min-width: 1280px) {
   .mask-group {
-    display: none;
+    /* display: none; */
     position: absolute;
 
     width: 1700px;
     height: 1590px;
-    /* transform: rotate(7.5deg); */
+    transform: rotate(7.5deg);
     background-color: #f6f5ef;
     opacity: 0.7;
 
@@ -554,21 +551,36 @@
 }
 
 .slider-buttons {
-  margin-top: 44px;
-  height: 46px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+    width: inherit;
+    margin-top: 25px;
+    height: 36px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  padding: 14px;
-  width: 46px !important;
-  height: 36px !important;
-  border: 1px solid var(--white);
-  border-radius: 60px;
-  fill: white;
-  position: static !important;
+    padding: 14px;
+    width: 46px !important;
+    height: 36px !important;
+    border: 1px solid var(--white);
+    border-radius: 60px;
+    fill: var(--white);
+    position: static !important;
+
+    display: flex;
 }
->>>>>>> main
+
+@media screen and (max-width:767px){
+  .slider-buttons{
+    width: 335px;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .slider-buttons {
+    margin-top: -280px;
+    gap: 1280px;
+  }
+}

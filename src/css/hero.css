@@ -147,7 +147,7 @@
     width: 335px;
     height: 427px;
     position: relative;
-    background-image: url(../../img/hero/group-mobile@1x.png);
+    background-image: url(./img/hero/group-mobile@1x.png);
     background-repeat: no-repeat;
     background-size: 335px 427px
 }
@@ -156,7 +156,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero-wrapper {
-        background-image: url(../../img/hero/group-mobile@2x.png);
+        background-image: url(./img/hero/group-mobile@2x.png);
 
     }
 }
@@ -165,7 +165,7 @@
     .hero-wrapper {
         width: 426px;
         height: 598px;
-        background-image: url(../../img/hero/group-tablet@1x.png);
+        background-image: url(./img/hero/group-tablet@1x.png);
         background-size: 426px 598px
     }
 
@@ -173,7 +173,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero-wrapper {
-            background-image: url(../../img/hero/group-tablet@2x.png);
+            background-image: url(./img/hero/group-tablet@2x.png);
         }
     }
 }
