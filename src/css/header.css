@@ -6,8 +6,7 @@
 
   display: flex;
   align-items: center;
-  padding-top: 26px;
-  padding-bottom: 26px;
+
   width: 335px;
 
   border-bottom: 1px solid;
@@ -226,7 +225,7 @@
 
 .blure-footer {
   top: 5680px;
- left: 15px;
+  left: 15px;
 
   width: 420px;
   height: 420px;
