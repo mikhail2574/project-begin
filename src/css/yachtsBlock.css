@@ -273,6 +273,10 @@
   /* ========= after 1280 px ( desktop ) ======== */
   
   @media screen and (min-width: 1280px){
+    .swiper-container{
+      width: 1094px;
+    }
+
     .mask-group {
       position: absolute;
       top: 0;
