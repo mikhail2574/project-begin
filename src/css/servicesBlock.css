@@ -86,7 +86,6 @@
 
   .services-sample.sample-fishing {
     width: 100%;
-   
   }
 
   .services-sample.sample-fishing .services-img {
@@ -121,67 +120,18 @@
 }
 
 
-
-/*@media only screen and (min-width: 768px) {
-   .services-sample {
-    width: 704px;
-    margin-bottom: 32px;
-    position: relative
-  }
-
- .services-list {
-   position: relative;
- }
-
- .services-sample.sample-diving {
-   height: 632px;
- }
-
- .services-sample.sample-fishing {
-   height: 389px;
- }
-
- .services-sample.sample-sunbathing {
-   height: 352px;
- }
-
- .services-list .services-sample:nth-child(2) .services-img {
-   position: absolute;
-   top: 0;
-   right: 0;
- }
-
- .services-sample.sample-fishing>.services-text.text-fishing {
-   left: 336px;
- }
-
- .services-list .services-sample:nth-child(3) .services-img {
-   position: absolute;
-   top: 0;
-   left: 32px;
- }
-
- .services-sample.sample-sunbathing>.services-text.text-sunbathing {
-   left: 64px;
- }
-}
-
-
 @media only screen and (min-width: 1280px) {
   .services-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 64px;
   }
 
-  .services-sample.sample-diving {
-    flex: 0 0 712px;
-    }
-  
-  .services-sample.sample-fishing {
-   flex: 0 0 440px;
-    }
+  .services-sample.sample-diving,
+  .services-sample.sample-fishing,
+  .services-sample.sample-sunbathing {
+    position: relative;
+  }
 
   .services-sample.sample-diving .services-img {
     width: 712px;
@@ -191,19 +141,32 @@
   .services-sample.sample-fishing .services-img {
     width: 440px;
     height: 428px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
+
+  .services-sample.sample-fishing .services-text,
+  .services-sample.sample-sunbathing .services-text {
+    bottom: 24px;
+    left: 24px;
+  }
+
   .services-sample.sample-sunbathing {
-    margin-top: 64px;
-    margin-left: 340px;
-    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 2;
   }
 
   .services-sample.sample-sunbathing .services-img {
-    width: 100%;
+    width: 436px;
+    height: 352px;
   }
 
-  .services-sample.sample-fishing>.services-text.text-fishing {
-    left: 32px;
-    
+  .services-sample.sample-sunbathing .services-img img {
+    margin-left: 280px;
   }
-}*/
+
+  .services-sample.services-sample.sample-sunbathing .services-text {
+    left: 312px;   
+  }
+}
