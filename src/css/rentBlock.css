@@ -365,4 +365,12 @@ RENT MODAL WINDOW
     letter-spacing: -0.32px;    
   }
 }
+/* Blure Rent Modal */
+.blure-rent-modal {
+  top: 60px;
+  left: 150px;
+
+  width: 265px;
+  height: 265px;
+}
  
