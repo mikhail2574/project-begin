@@ -10,8 +10,8 @@
 @import url('./css/hero.css');
 @import url('./css/about.css');
 @import url('./css/yachtsBlock.css');
-@import url('./css/servicesBlock.css');
-@import url('./css/rentBlock.css');
+@import url('./css/services.css');
+@import url('./css/rent.css');
 @import url('./css/reviewsBlock.css');
 @import url('./css/footer.css');
 @import url('./css/fonts.css');
@@ -26,6 +26,7 @@
   --pressed-state: #88b3b9;
   --secondary-title-color: #bec7c2;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -42,27 +43,28 @@ body {
   letter-spacing: -0.28px;
 }
 
-.container{
-  margin: 0 auto;
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 767px) {
   .container {
-    margin-right: 20px;
-    margin-left: 20px;
-    width: calc(100vw - 40px);
+    max-width: 367px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .container{
-    width: 704px;
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 736px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1216px;
+    max-width: 1248px;
   }
 }
 
@@ -76,6 +78,6 @@ body {
   opacity: 0;
 }
 
-.page{
+.page {
   overflow: hidden;
 }
