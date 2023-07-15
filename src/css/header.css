@@ -238,10 +238,11 @@
 .blure {
   position: absolute;
 
-  transform: rotate(-45deg);
   background-color: var(--normal-state);
   opacity: 0.6;
   border-radius: 420px;
+  transform: rotate(-45deg);
+  
   filter: blur(100px);
   /* backdrop-filter: blur(200px); */
 }
@@ -287,7 +288,6 @@
 }
 
 .blure-form {
-  display: none;
   top: 4754px;
   right: -179px;
 
@@ -296,7 +296,6 @@
 }
 
 .blure-footer {
-  display: none;
   top: 5833px;
   right: -159px;
 

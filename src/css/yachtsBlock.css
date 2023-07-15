@@ -509,12 +509,12 @@
 
 @media screen and (min-width: 1280px) {
   .mask-group {
-    display: none;
+    /* display: none; */
     position: absolute;
 
     width: 1700px;
     height: 1590px;
-    /* transform: rotate(7.5deg); */
+    transform: rotate(7.5deg);
     background-color: #f6f5ef;
     opacity: 0.7;
 
