@@ -90,78 +90,6 @@
 
 /**
   |============================
-  | Blure
-  |============================
-*/
-.blure {
-  position: absolute;
-
-  transform: rotate(-45deg);
-  background-color: var(--normal-state);
-  opacity: 0.6;
-  /* border-radius: 420px; */
-  /* filter: blur(100px); */
-  backdrop-filter: blur(200px);
-}
-
-.blure-header-one {
-  top: 480px;
-  right: 352px;
-
-  width: 279px;
-  height: 279px;
-}
-
-.blure-header-two {
-  top: 480px;
-  left: -125px;
-
-  width: 279px;
-  height: 279px;
-}
-
-.blure-yacht-one {
-  top: 2360px;
-  left: -85px;
-
-  width: 255px;
-  height: 255px;
-}
-
-.blure-yacht-two {
-  top: 2380px;
-  left: 195px;
-
-  width: 195px;
-  height: 195px;
-}
-
-.blure-services {
-  top: 3560px;
-  right: 265px;
-
-  width: 323px;
-  height: 323px;
-}
-
-.blure-form {
-  top: 4754px;
-  left: 121px;
-
-  width: 283px;
-  height: 283px;
-}
-
-.blure-footer {
-  top: 5833px;
-  right: -159px;
-
-  width: 420px;
-  height: 420px;
-}
-
-/**
-  |============================
   | Mobile menu
   |============================
 */
@@ -237,11 +165,10 @@
 .blure {
   position: absolute;
 
+  transform: rotate(-45deg);
   background-color: var(--normal-state);
   opacity: 0.6;
   border-radius: 420px;
-  transform: rotate(-45deg);
-  
   filter: blur(100px);
   /* backdrop-filter: blur(200px); */
 }
@@ -272,31 +199,31 @@
 
 .blure-yacht-two {
   top: 2380px;
-  left: 200px;
+  left: 195px;
 
   width: 195px;
   height: 195px;
 }
 
 .blure-services {
-  top: 3519px;
-  right: 205px;
+  top: 3560px;
+  right: 265px;
 
   width: 323px;
   height: 323px;
 }
 
 .blure-form {
-  top: 4754px;
-  right: -179px;
+  top: 4630px;
+  left: 190px;
 
   width: 283px;
   height: 283px;
 }
 
 .blure-footer {
-  top: 5833px;
-  right: -159px;
+  top: 5680px;
+ left: 15px;
 
   width: 420px;
   height: 420px;
