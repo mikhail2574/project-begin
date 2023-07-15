@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 .header-container {
   position: relative;
@@ -73,7 +73,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hamburger {
+.menu-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +83,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .hamburger {
+  .menu-toggle {
     display: none;
   }
 }
@@ -97,10 +97,13 @@
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
-  color: #747bff;
 }
-
-.modal-menu-container {
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.mobile-menu-container {
   position: fixed;
 
   flex-direction: column;
@@ -113,7 +116,7 @@
   background-color: var(--body-bg-color);
 }
 
-.modal-menu-header {
+.mobile-menu-header {
   display: flex;
   align-items: center;
   width: 335px;
@@ -123,7 +126,7 @@
   border-color: rgba(246, 245, 239, 0.2);
 }
 
-.modal-menu-btn-close {
+.mobile-menu-btn-close {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +135,7 @@
   border: none;
 }
 
-.modal-menu-list {
+.mobile-menu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,7 +144,7 @@
   margin-top: 140px;
 }
 
-.modal-menu-link {
+.mobile-menu-link {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.4;
@@ -151,8 +154,8 @@
   color: var(--white);
 }
 
-.modal-menu-link:hover,
-.modal-menu-link:focus {
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
   color: var(--secondary-title-color);
   transition-duration: 250ms;
 }
