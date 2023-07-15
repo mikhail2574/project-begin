@@ -4,9 +4,9 @@
     margin-bottom: 80px;
     }
 
-.yablock-centered{
+/* .yablock-centered{
     overflow: hidden;
-}    
+}     */
     .yablock-header-style{
         margin-bottom: 80px;
     }
@@ -199,6 +199,9 @@
             } 
 }   */
 /* =================== */
+
+
+
 @media screen and (min-width: 1280px){
     .mask-group {
         position: absolute;
@@ -408,19 +411,6 @@
   line-height: 118%;
   letter-spacing: 0.42px;
 }
-/* .yablock-btn-swiper-list {
-    } */
-/* .yablock-btn-left-swipper{
-    
-    } */
-/* .yablock-btn-right-swipper{
-    
-    .yablock-btn-swiper-style {
-    } */
-
-.yablock-btns-svg {
-  fill: currentColor;
-}
 
 @media screen and (min-width: 768px) {
   .yahtblock {
@@ -560,8 +550,9 @@
 }
 
 .slider-buttons {
-    margin-top: 44px;
-    height: 46px;
+    width: inherit;
+    margin-top: 25px;
+    height: 36px;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -574,6 +565,21 @@
     height: 36px !important;
     border: 1px solid var(--white);
     border-radius: 60px;
-    fill: white;
+    fill: var(--white);
     position: static !important;
+
+    display: flex;
+}
+
+@media screen and (max-width:767px){
+  .slider-buttons{
+    width: 335px;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .slider-buttons {
+    margin-top: -280px;
+    gap: 1280px;
+  }
 }
