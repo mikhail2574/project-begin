@@ -173,6 +173,10 @@
   border-radius: 420px;
   filter: blur(100px);
   /* backdrop-filter: blur(200px); */
+  transition: opacity 500ms cubic-bezier(.17, .67, .83, .67);
+}
+.blure:hover{
+  opacity: 1;
 }
 
 .blure-header-one {
@@ -182,6 +186,22 @@
   width: 279px;
   height: 279px;
 }
+@media only screen and (min-width: 768px) {
+  .blure-header-one {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+    .blure-header-one {
+      display: block;
+
+      top: 270px ;
+      left: -300px;
+
+      width: 414px;
+      height: 414px;
+    }
+  }
 
 .blure-header-two {
   top: 480px;
@@ -189,6 +209,27 @@
 
   width: 279px;
   height: 279px;
+}
+@media only screen and (min-width: 768px) {
+  .blure-header-two {
+  top: 600px;
+  left: -200px;
+
+  width: 414px;
+  height: 414px;
+  opacity: 0.89;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .blure-header-two {
+  top: 270px;
+  left: 180px;
+
+  width: 316px;
+  height: 316px;
+
+  opacity: 0.3;
+  }
 }
 
 .blure-yacht-one {
@@ -198,6 +239,25 @@
   width: 255px;
   height: 255px;
 }
+@media only screen and (min-width: 768px) {
+  .blure-yacht-one {
+    top: 2750px;
+    left: -50px;
+
+    width: 399px;
+    height: 399px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .blure-yacht-one {
+  top: 1720px;
+  left: 240px;
+
+  width: 414px;
+  height: 414px;
+  }
+}
 
 .blure-yacht-two {
   top: 2380px;
@@ -206,13 +266,50 @@
   width: 195px;
   height: 195px;
 }
+@media only screen and (min-width: 768px) {
+  .blure-yacht-two {
+    top: 2700px;
+    left: 390px;
+
+    width: 304px;
+    height: 304px;
+    opacity: 0.3;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .blure-yacht-two {
+    top: 1750px;
+    left: 720px;
+
+    width: 316px;
+    height: 316px;
+    opacity: 0.3;
+  }
+}
 
 .blure-services {
   top: 3560px;
-  right: 265px;
+  left: -270px;
 
   width: 323px;
   height: 323px;
+}
+@media only screen and (min-width: 768px) {
+  .blure-services {
+    top: 4420px;
+    left: -320px;
+
+    width: 414px;
+    height: 414px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .blure-services {
+    top: 3280px;
+    left: -300px;
+  }
 }
 
 .blure-form {
@@ -223,12 +320,56 @@
   height: 283px;
 }
 
+@media only screen and (min-width: 768px) {
+  .blure-form {
+    top: 5550px;
+    left: 550px;
+
+    width: 413px;
+    height: 413px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .blure-form {
+    top: 4250px;
+    left: 1000px;
+  }
+}
+
 .blure-footer {
-  top: 5680px;
+  top: 5860px;
   left: 15px;
 
   width: 420px;
   height: 420px;
+}
+@media only screen and (min-width: 768px) {
+  .blure-footer {
+    top: 7000px;
+    left: 200px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .blure-footer {
+    top: 5600px;
+    left: 200px;
+  }
+}
+.blure-footer-dekstop {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .blure-footer-dekstop {
+    display: block;
+    top: 5650px;
+    left: 700px;
+
+    width: 317px;
+    height: 317px;
+    opacity: 0.3;
+  }
 }
 
 /**
