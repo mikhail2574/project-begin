@@ -15,7 +15,11 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "block": "^0.2.1",
+    "body": "^5.1.0",
+    "body-scroll-lock": "^4.0.0-beta.0",
     "hamburgers": "^1.2.1",
+    "scroll": "^3.0.1",
     "swiper": "^10.0.4",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
