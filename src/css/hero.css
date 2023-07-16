@@ -163,7 +163,7 @@
 }
 
 .hero-wrapper {
-    width: 335px;
+    max-width: 335px;
     height: 427px;
     position: relative;
     background-image: url(../img/hero/group-mobile@1x.png);
