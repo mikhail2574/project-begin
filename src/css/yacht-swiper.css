@@ -1,0 +1,395 @@
+.yahtblock {
+  position: relative; 
+  margin-bottom: 140px;
+  }
+  
+  .yablock-header-style{
+    margin-bottom: 80px;
+  }
+  
+  .yablock-header {
+    color: var(--white, #F6F5EF);
+    margin-top: -40px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -1.62px; 
+    margin-bottom: 40px;
+  }
+  
+  .yablock-button {
+    padding: 14px 28px;
+    color: var(--white, #F6F5EF);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.63px;
+    border-radius: 60px;
+    border: 1px solid var(--white, #F6F5EF);
+    cursor: pointer;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .yablock-button:hover,
+  .yablock-button:focus{
+    color: var(--light-green, #93ABAE);
+    border: 1px solid var(--light-green, #93ABAE);
+  }
+  
+  /* ========================== Y - A - H - T ~~ C - A - R - D ================== */
+  
+  .yahtblock-item {
+    background: var(--blue-2, #1F212D);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    padding-top: 18px;
+    padding-bottom: 24px; 
+  }
+     
+  .yablock-card-picture {
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
+  } 
+       
+  .yablock-identification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 287px;
+    margin: 24px;
+  }
+  /*  ============= hidden~dotted~header====================  */
+  .yablock-third-header-max {
+    white-space: nowrap; 
+    overflow: hidden; 
+    width: 147px;
+    text-overflow: ellipsis;
+  }
+  /* =================================  */
+      
+  .yablock-name {
+    color: var(--white, #F6F5EF);
+    font-family: inherit;
+    font-size: 16px;;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+  }
+      
+  .yablock-type {
+    color: var(--white, #F6F5EF);
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 118%;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    opacity: 0.5;
+  }
+  
+  .yablock-tech-info-style{
+    display: flex;
+    gap: 34px;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+      
+  .yablock-attribute-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+      
+  .yablock-text-info {
+    color: var(--white, #F6F5EF);
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 118%;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+  
+  .yablock-atrbt-dscrptn {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+      
+  .yablock-text {
+    color: var(--white, #F6F5EF);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 118%;
+    letter-spacing: 0.42px;
+  }
+  
+  .yablock-btn-swiper-style {
+    display: block;
+    position: absolute;
+  }
+  .slider-buttons {
+    width: 335px; 
+    margin-top: 50px;
+    height: 36px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+     
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    display: none;
+  }
+      
+  .swiper-button-prev,
+  .swiper-button-next {
+    padding: 14px;
+    width: 46px !important;
+    height: 36px !important;
+    border: 1px solid var(--white);
+    border-radius: 60px;
+    fill: var(--white);
+    position: static !important;
+    display: flex;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  } 
+  
+  .swiper-button-next:hover,
+  .swiper-button-next:focus {
+    color: var(--light-green, #93ABAE);
+    border: 1px solid var(--light-green, #93ABAE);
+    fill:var(--light-green, #93ABAE);
+  } 
+  
+  .swiper-button-prev:hover,
+  .swiper-button-prev:focus{
+    color: var(--light-green, #93ABAE);
+    border: 1px solid var(--light-green, #93ABAE);
+    fill:var(--light-green, #93ABAE);
+  }
+  
+  /* ====== All media ======= */
+  
+  @media screen and (max-width: 374px) {
+    .yablock-header{
+      font-size: 34px;
+    }
+  
+    .yablock-card-picture {
+      width: 240px;
+      height: 200px;
+    }
+  
+    .yablock-name{
+      font-size: 14px;
+    }
+  
+    .yablock-third-header-max{
+      width: 125px;
+    }
+  
+    .yablock-type{
+      font-size: 10px;
+      letter-spacing: 0.24px;
+    }
+  
+    .small {
+      font-size: 12px;
+      white-space: nowrap;
+    } 
+  
+    .yablock-text-info{
+      font-size: 12px;
+    }
+  
+    .yablock-text{
+      font-size: 12px;
+    }
+  
+    .slider-buttons {
+      width: 280px;
+    }
+  
+  }
+  
+  /* @media screen and (max-width:767px){ */
+    /* .slider-buttons {
+      width: 704px;
+    } */
+      
+    /* .swiper-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      transition-property: transform;
+      transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+      box-sizing: content-box; */
+      
+  /* }  */
+  /* ========== after 768 px ( tablet ) ======= */
+  
+  @media screen and (min-width: 768px){
+    .yahtblock {
+      margin-bottom: 168px;
+    }
+    .slider-buttons {
+      width: 704px;
+    }
+        
+    .yablock-header-style{
+      padding-left: 32px;
+      margin-bottom: 100px;
+    }
+  
+    .yablock-header {
+      font-size: 70px;
+      letter-spacing: -3.15px;
+      margin-bottom: 64px;
+    }
+          
+    .yablock-button {
+      font-size: 18px;
+      letter-spacing: -0.81px;
+    }     
+      
+    .yablock-card-picture {
+      width: 312px;
+      height: 268px;
+    } 
+
+    .slider-buttons {
+      gap: 32px;
+    }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+      padding: 14px 16px;
+    }
+  
+  } 
+  /* ========= after 1280 px ( desktop ) ======== */
+  
+  @media screen and (min-width: 1280px){
+    .swiper-container{
+      width: 1094px;
+    }
+
+    .mask-group {
+      position: absolute;
+      top: 150px;
+         
+  
+      width: 1500px;
+      height: 1610px;
+      rotate: X(7deg);
+       
+      background-color: #F6F5EF;
+      opacity: 0.3;
+  
+      -webkit-mask-image: url(../public/mask-group.svg);
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: top left;
+      -webkit-mask-size: contain;
+  
+      mask-image: url(../public/mask-group.svg);
+      mask-repeat: no-repeat;
+      mask-position: top left;
+      mask-size: contain;
+  
+      z-index: -10;
+    }
+     
+    .mask-group:hover {
+      opacity: 1;
+    }
+  
+    .yahtblock {
+      margin-bottom: 164px;
+    }
+  
+    .yablock-header-style{
+      width: 882px;
+      padding-left: 0;
+      margin-left: auto;
+      margin-right: auto; 
+      margin-bottom: 164px;
+    }
+  
+    .yablock-header {
+      font-size: 100px;
+      letter-spacing: -4.5px;
+    }
+/*        
+    .yablock-list{
+      margin-left: 61px;
+      
+    
+    } */
+
+    /* .yahtblock-item {
+      width: 354px !important;
+      margin-right: 16px !important;
+      padding-top: 16px;
+      padding-bottom: 32px; 
+    }  */
+  
+    .yablock-card-picture {
+      width: 332px;
+      height: 268px;
+    }
+  
+    .yablock-identification {
+      width: 290px;
+      margin: 32px;
+    }
+  
+    .yablock-tech-info-style{
+      margin: 0 32px;
+    }
+  
+    .slider-buttons {
+      margin-top: -245px;
+     display: flex;
+     margin-left: 0;
+     width: 1216px;
+     justify-content: space-between;
+    }
+
+    /* .yablock-list > li{
+      width: 354px;
+      margin-right: 16px;
+    } */
+
+
+    /* .swiper-wrapper {
+      position: relative;
+      width: 3282px;
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      margin-right: 0;
+      gap: 16px;
+      transition-property: transform;
+      transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+      box-sizing: content-box;
+    } */
+  
+    /* .swiper-button-next > svg, 
+    .swiper-button-prev > svg { */
+      /* width: 100%; 
+      height: 100%;
+      object-fit: contain;
+      transform-origin: center; */
+    /* } */
+  
+  }  
+  
+  
+  
+  
+  

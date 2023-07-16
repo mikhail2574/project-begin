@@ -9,10 +9,10 @@
 @import url('./css/header.css');
 @import url('./css/hero.css');
 @import url('./css/about.css');
-@import url('./css/yachtsBlock.css');
+@import url('./css/yacht-swiper.css');
 @import url('./css/services.css');
 @import url('./css/rent.css');
-@import url('./css/reviewsBlock.css');
+@import url('./css/reviews.css');
 @import url('./css/footer.css');
 @import url('./css/fonts.css');
 @import url('./css/uptotop.css');
@@ -41,6 +41,8 @@ body {
   font-weight: 400;
   line-height: 1.4;
   letter-spacing: -0.28px;
+
+  overflow-x: hidden;
 }
 
 .container {
@@ -48,13 +50,10 @@ body {
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 320px;
+  max-width: 374px;
 }
 
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: 367px;
-  }
-}
 
 @media screen and (min-width: 768px) {
   .container {
