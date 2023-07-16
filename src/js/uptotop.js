@@ -35,4 +35,4 @@ window.addEventListener('resize', function() {
 })
 
  // Initialize the width of the SVG image
-setSvgWidth();
+  setSvgWidth();
