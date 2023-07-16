@@ -1,4 +1,5 @@
 .yahtblock {
+  position: relative; 
   margin-bottom: 140px;
   }
   
@@ -279,7 +280,7 @@
 
     .mask-group {
       position: absolute;
-      top: 0;
+      top: 150px;
          
   
       width: 1500px;
