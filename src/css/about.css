@@ -2,9 +2,6 @@
   margin: 0 auto;
   padding-bottom: 146px;
 }
-.container {
-  outline: 1px solid tomato;
-}
 .about-block {
   display: flex;
   flex-direction: column;
