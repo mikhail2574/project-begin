@@ -15,24 +15,26 @@
 
 @media screen and (min-width: 1280px) {
     .reviews-section {
+  @media screen and (max-width: 767px) {
+    padding: 0 20px;
+  }
+
+.reviews-section {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 25px;
   }
 }
 
-/* reviews-header */
-
 .reviews-header {
+  @media screen and (max-width: 767px) {
     margin-bottom: 40px;
-}
+  }
 
   @media screen and (min-width: 768px) {
-    .reviews-header {
-    margin-bottom: 64px;  
-    }
-}
+    margin-bottom: 64px;
+  }
 
-@media screen and (min-width: 1280px) {
-    .reviews-header{
+  @media screen and (min-width: 1280px) {
     display: flex;
     justify-content: center;
   }
