@@ -4,14 +4,20 @@
   |============================
 */
 .reviews-container {
-  @media screen and (max-width: 767px) {
     padding: 0 20px;
   }
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .reviews-container {
     padding: 0 32px;
-  }
+    }
 }
+
+@media screen and (min-width: 1280px) {
+    .reviews-section {
+  @media screen and (max-width: 767px) {
+    padding: 0 20px;
+  }
 
 .reviews-section {
   @media screen and (min-width: 1280px) {
@@ -34,18 +40,24 @@
   }
 }
 
+/* reviews-title  */
+
 .reviews-title {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
+}
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 24px;
+@media screen and (max-width: 767px) { 
+  .reviews-title {
+  margin-bottom: 24px;
 
-    letter-spacing: -1.08px;
+  letter-spacing: -1.08px;
   }
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .reviews-title {
     margin-bottom: 32px;
     margin-right: auto;
     width: 497px;
@@ -60,109 +72,119 @@
   color: var(--secondary-title-color);
 }
 
-.reviews-subtitle {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 40px;
-  }
+/* reviews-subtitle  */
 
-  @media screen and (min-width: 768px) {
+.reviews-subtitle {
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    .reviews-subtitle {
     margin-bottom: 64px;
     margin-left: auto;
     width: 273px;
     font-size: 16px;
-    letter-spacing: -0.32px;
-  }
-  @media screen and (min-width: 1280px) {
-    line-height: 1.4;
-    font-weight: 400;
-  }
+    letter-spacing: -0.32px; 
+    }
 }
+
+@media screen and (min-width: 1280px) {
+    .reviews-subtitle {
+     line-height: 1.4;
+    font-weight: 400;  
+    }
+    #reviews-slider-container{
+      width: 1216px;
+    }
+}
+
+/* reviews-set */
 
 .reviews-set {
   display: flex;
   padding-bottom: 20px;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 14px;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    flex-wrap: nowrap;
-    gap: 32px;
-  }
 }
 
-.swiper-slide.reviews-card {
-  box-sizing: border-box;
+@media screen and (min-width: 1280px) {
+  .reviews-set {
+  flex-wrap: nowrap;
+  /* gap: 32px;   */
+  }  
+}
 
-  @media screen and (max-width: 767px) {
+/* reviews-card */
+
+.reviews-set .reviews-card {
     padding: 24px 17px;
+    margin-bottom: 14px;
 
     border-radius: 24px;
     background: var(--card-bg);
-    text-align: center;
-  }
+    text-align: center;   
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .reviews-set .reviews-card {
     width: calc((100% - 16px) / 2);
     padding: 24px 12px;
-    border-radius: 24px;
-    background: #1f212d;
-    text-align: center;
-  }
+    margin-bottom: 32px;
+    }
+}
 
-  @media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .reviews-set .reviews-card {
     width: calc((100% - 64px) / 3);
     padding: 32px;
-    margin: 0 !important;
-  }
+    margin: 0;
+    }
 }
 
+/* reviews-img */
 .reviews-img {
   margin: 0px auto 18px;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .reviews-img {
     width: 56px;
     height: 56px;
-    margin: 0px auto 24px;
-  }
+    margin: 0px auto 24px;  
+    }
 }
+
+/* card-title */
 
 .reviews-card .card-title {
   margin-bottom: 8px;
   font-weight: 500;
   line-height: 1.1;
+  font-size: 16px;
+  letter-spacing: -0.72px;
+}
 
-  @media screen and (max-width: 767px) {
-    font-size: 16px;
-    letter-spacing: -0.72px;
-  }
-
-  @media screen and (min-width: 768px) {
-    font-size: 18px;
-    letter-spacing: -0.81px;
+ @media screen and (min-width: 768px) {
+  .reviews-card .card-title {
+  font-size: 18px;
+  letter-spacing: -0.81px; 
   }
 }
+
+/* card-subtitle */
 
 .reviews-card .card-subtitle {
   color: rgba(246, 245, 239, 0.5);
-  width: 300px;
-  @media screen and (max-width: 767px) {
-    font-size: 12px;
-    letter-spacing: -0.24px;
+  font-size: 12px;
+  letter-spacing: -0.24px;
   }
 
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
+@media screen and (min-width: 768px) {
+    .reviews-card .card-subtitle {
+     font-size: 16px;
     letter-spacing: -0.32px;
-    width: 320px;
-  }
+    }
 }
 
+/*  Swiper */
 .swiper-pagination {
   display: flex;
   justify-content: center;
