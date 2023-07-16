@@ -194,6 +194,18 @@
   font-size: 10px;
 }
 
+.rent-form-input[title]:hover::after {
+content: attr(title);
+display: block;
+position: absolute;
+background-color: var(--body-bg-color);
+color: var(--white);
+padding: 4px;
+border-radius: 10px;
+white-space: nowrap;
+z-index: 1;
+}
+
 .rent-list-item-comment {
   position: relative;
   font-weight: 500;
