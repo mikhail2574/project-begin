@@ -1,6 +1,5 @@
 .section-about {
   margin: 0 auto;
-  /* min-width: 374px; */
   padding-bottom: 146px;
 }
 .container {
@@ -11,6 +10,9 @@
   flex-direction: column;
 }
 @media only screen and (min-width: 768px) {
+  .section-about {
+    min-width: 375px;
+  }
   .about-block {
     display: flex;
     flex-wrap: wrap;
@@ -70,9 +72,15 @@
     max-width: 400px;
   }
 }
-.about-item {
-  min-width: 160px;
+@media only screen and (max-width: 768px) {
+  .about-item {
+    max-width: 160px;
+  }
+  .section-about {
+    max-width: 375px;
+  }
 }
+
 @media only screen and (min-width: 768px) {
   .about-item {
     min-width: 185px;
