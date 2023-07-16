@@ -7,8 +7,6 @@
   padding-bottom: 40px;
 }
 
-
-
 @media only screen and (min-width: 768px) {
   .section-rent {
     padding-bottom: 100px;
@@ -180,6 +178,7 @@
 
 .rent-form-input:focus~.rent-form-label,
 .rent-form-input:valid~.rent-form-label,
+.rent-form-input:not(:placeholder-shown)~.rent-form-label,
 .rent-form-comment:focus~.rent-label-form,
 .rent-form-comment:not(:placeholder-shown)~.rent-label-form {
   top: -18px;

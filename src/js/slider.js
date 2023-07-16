@@ -36,7 +36,7 @@ new Swiper('.yachts-slider', {
     prevEl: '.swiper-button-prev, .under-button-prev',
   },
 
-  spaceBetween: 32,
+  spaceBetween: 16,
   
   breakpoints: {
     100: {
