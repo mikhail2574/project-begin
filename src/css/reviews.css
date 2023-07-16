@@ -13,11 +13,11 @@
     }
 }
 
-@media screen and (min-width: 1280px) {
-    .reviews-section {
   @media screen and (max-width: 767px) {
+    .reviews-section {
     padding: 0 20px;
   }
+}
 
 .reviews-section {
   @media screen and (min-width: 1280px) {
