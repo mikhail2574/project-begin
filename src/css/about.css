@@ -1,7 +1,10 @@
 .section-about {
   margin: 0 auto;
-  min-width: 375px;
+  /* min-width: 374px; */
   padding-bottom: 146px;
+}
+.container {
+  outline: 1px solid tomato;
 }
 .about-block {
   display: flex;
@@ -24,7 +27,7 @@
 .about-title {
   margin: auto;
   margin-bottom: 40px;
-  width: 335px;
+  max-width: 335px;
 
   font-size: 24px;
   font-weight: 500;
