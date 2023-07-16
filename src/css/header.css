@@ -126,8 +126,6 @@
 .mobile-menu-header {
   display: flex;
   align-items: center;
-  width: 335px;
-  height: 72px;
 
   border-bottom: 1px solid;
   border-color: rgba(246, 245, 239, 0.2);
