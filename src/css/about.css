@@ -7,9 +7,9 @@
   flex-direction: column;
 }
 @media only screen and (min-width: 768px) {
-  .section-about {
+  /* .section-about {
     min-width: 375px;
-  }
+  } */
   .about-block {
     display: flex;
     flex-wrap: wrap;
@@ -75,9 +75,9 @@
   .about-item {
     max-width: 160px;
   }
-  .section-about {
+  /* .section-about {
     max-width: 375px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 768px) {
