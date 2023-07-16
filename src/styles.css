@@ -52,7 +52,7 @@ body {
   margin-right: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .container {
     max-width: 367px;
   }
