@@ -16,13 +16,6 @@
     flex-direction: row;
   }
 }
-@media only screen and (min-width: 1280px) {
-  .about-block {
-    flex-direction: row;
-
-    justify-content: space-between;
-  }
-}
 .about-title {
   margin: auto;
   margin-bottom: 40px;
@@ -35,6 +28,15 @@
 
   color: var(--white);
 }
+
+@media only screen and (min-width: 1280px) {
+  .about-block {
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+}
+
 .about-title-cursive {
   font-style: italic;
 
@@ -42,7 +44,7 @@
 }
 @media only screen and (min-width: 768px) {
   .about-title {
-    width: 514px;
+    max-width: 514px;
     margin-left: 0;
     margin-bottom: 32px;
 
