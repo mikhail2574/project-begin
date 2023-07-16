@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yacht Adventure</title>
     
-    <script type="module" crossorigin src="/project-begin/assets/index-7addbf51.js"></script>
-    <link rel="stylesheet" href="/project-begin/assets/index-c269f9df.css">
+    <script type="module" crossorigin src="/project-begin/assets/index-b7e91ab7.js"></script>
+    <link rel="stylesheet" href="/project-begin/assets/index-73cd4126.css">
   </head>
 
   <body>
@@ -16,7 +16,7 @@
 <header class="header" id="header">
   <div class="container header-container">
     <!-- blure -->
-    <ul>
+    <!-- <ul>
       <li class="blure blure-header-one"></li>
       <li class="blure blure-header-two"></li>
       <li class="blure blure-yacht-one"></li>
@@ -25,7 +25,7 @@
       <li class="blure blure-form"></li>
       <li class="blure blure-footer"></li>
       <li class="blure blure-footer-dekstop"></li>
-    </ul>
+    </ul> -->
     <div class="header-logotype">
       <a
         class="header-logo"
@@ -1421,7 +1421,7 @@
     </div>
 
     <div class="rent-request">
-      <form class="rent-form">
+      <form class="rent-form" data-rent-form>
         <ul class="rent-form-list">
           <li class="rent-list-item">
             <input
@@ -1445,7 +1445,6 @@
               id="user_email"
               placeholder=" "
               required
-              pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}"
               title="Unvalid email"
             />
             <label class="rent-form-label" for="user_email">Email</label>
@@ -1477,7 +1476,7 @@
           </li>
         </ul>
 
-        <button class="rent-btnsend" type="submit" data-modal-open>
+        <button class="rent-btnsend" type="submit">
           Send
           <svg class="rent-send-button" width="18" height="8.66">
             <use href="/project-begin/assets/sprite-261beb2c.svg#right-arrow"></use>
@@ -1489,7 +1488,7 @@
 </section>
 
 <!-- RENT MODAL WINDOW -->
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-thanks-modal>
   <div class="rent-modal">
     <button
       class="rent-modalbtn"
@@ -1678,18 +1677,11 @@
   </div>
 </section>
 
-        <div class="uptotop-container">
-  <button
-    type="button"
-    class="d-none btn-up"
-    onclick="scrollToTop()"
-    id="back-to-up"
-  >
-    <svg class="arrow-up" width="8" height="16" id="uptotop-svg">
-      <use href="/project-begin/assets/sprite-261beb2c.svg#arrow-up"></use>
-    </svg>
-  </button>
-</div>
+        <button type="button" class="d-none btn-up" id="back-to-up">
+  <svg class="arrow-up" width="8" height="16" id="uptotop-svg">
+    <use href="/project-begin/assets/sprite-261beb2c.svg#arrow-up"></use>
+  </svg>
+</button>
 
       </main>
       <footer class="footer">
