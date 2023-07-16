@@ -1,14 +1,22 @@
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-open]"),
-    closeModalBtn: document.querySelector("[data-modal-close]"),
-    modal: document.querySelector("[data-modal]"),
-  };
+const closeModalBtn = document.querySelector('[data-modal-close]');
+const modal = document.querySelector('[data-thanks-modal]');
+const formEl = document.querySelector('[data-rent-form]');
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+formEl.addEventListener('submit', onFormSubmit);
+closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+function onFormSubmit(event) {
+  event.preventDefault();
+  const inputs = [...this.querySelectorAll('input')];
+  const isValid = inputs.map(input => input.value).includes('');
+
+  if (isValid) {
+    return;
   }
-})();
+
+  toggleModal();
+}
+
+function toggleModal() {
+  modal.classList.toggle('is-hidden');
+}
