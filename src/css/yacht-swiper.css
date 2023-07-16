@@ -294,19 +294,17 @@
     .swiper-container{
       width: 1094px;
     }
-
-    .mask-group {
+    .yablock-header::after{
+      content: "";
       position: absolute;
-      top: 150px;
-         
-  
+      top: 110px;
+    
+      z-index: -10; 
+      display: block;
       width: 1500px;
       height: 1610px;
       rotate: X(7deg);
-       
-      background-color: #F6F5EF;
-      opacity: 0.3;
-  
+
       -webkit-mask-image: url(../public/mask-group.svg);
       -webkit-mask-repeat: no-repeat;
       -webkit-mask-position: top left;
@@ -316,12 +314,11 @@
       mask-repeat: no-repeat;
       mask-position: top left;
       mask-size: contain;
-  
-      z-index: -10;
-    }
-     
-    .mask-group:hover {
-      opacity: 1;
+
+      background-color: var(--white);
+      opacity: 0.6;
+
+      transform: translateX(-150px);
     }
   
     .yahtblock {

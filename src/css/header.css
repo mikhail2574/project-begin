@@ -129,6 +129,32 @@
   transform: translateX(100%);
 }
 
+.mobile-menu-container::after {
+  content: '';
+  position: absolute;
+  top: 380px;
+  left: -200px;
+  z-index: -1;
+  display: block;
+  width: 650px;
+  height: 530px;
+
+  background-image: url(../img/blure/mobile-menu/img@1x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blure(200px);
+}
+
+ @media (min-device-pixel-ratio: 2),
+ (min-resolution: 192dpi),
+ (min-resolution: 2dppx) {
+   .mobile-menu-container::after {
+     background-image: url(../img/blure/mobile-menu/img@2x.png);
+   }
+ }
+
+
 .mobile-menu-header {
   display: flex;
   align-items: center;
@@ -389,7 +415,7 @@
   | Blure mobile menu
   |============================
 */
-.blure-mobile-one {
+/* .blure-mobile-one {
   top: 475px;
   left: -140px;
 
@@ -403,4 +429,4 @@
 
   width: 279px;
   height: 279px;
-}
+} */
