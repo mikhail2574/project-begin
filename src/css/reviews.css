@@ -91,6 +91,9 @@
      line-height: 1.4;
     font-weight: 400;  
     }
+    #reviews-slider-container{
+      width: 1216px;
+    }
 }
 
 /* reviews-set */

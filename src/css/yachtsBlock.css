@@ -9,6 +9,7 @@
   
   .yablock-header {
     color: var(--white, #F6F5EF);
+    margin-top: -40px;
     font-size: 36px;
     font-weight: 500;
     line-height: 110%;
