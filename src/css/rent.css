@@ -37,7 +37,6 @@
 .rent-title-part {
   display: block;
   padding-bottom: 16px;
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -97,13 +96,13 @@
   }
 }
 
-@media screen and (min-width:320px) and (max-width:374px) {
+@media screen and (min-width: 320px) and (max-width: 374px) {
   .rent-form {
     width: 85%;
   }
 }
 
-@media screen and (min-width:375px) {
+@media screen and (min-width: 375px) {
   .rent-form {
     width: 100%;
   }
@@ -156,7 +155,7 @@
   line-height: 120%;
   letter-spacing: -0.63px;
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 @media only screen and (min-width: 768px) {
@@ -184,11 +183,11 @@
   }
 }
 
-.rent-form-input:focus~.rent-form-label,
-.rent-form-input:valid~.rent-form-label,
-.rent-form-input:not(:placeholder-shown)~.rent-form-label,
-.rent-form-comment:focus~.rent-label-form,
-.rent-form-comment:not(:placeholder-shown)~.rent-label-form {
+.rent-form-input:focus ~ .rent-form-label,
+.rent-form-input:valid ~ .rent-form-label,
+.rent-form-input:not(:placeholder-shown) ~ .rent-form-label,
+.rent-form-comment:focus ~ .rent-label-form,
+.rent-form-comment:not(:placeholder-shown) ~ .rent-label-form {
   top: -18px;
   left: 0;
   color: var(--normal-state);
@@ -224,9 +223,8 @@
   line-height: 120%;
   letter-spacing: -0.63px;
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
-
 
 .rent-btnsend {
   display: flex;
@@ -270,7 +268,6 @@ RENT MODAL WINDOW
   opacity: 1;
   pointer-events: initial;
   visibility: visible;
-
 }
 
 .backdrop.is-hidden {
@@ -293,7 +290,6 @@ RENT MODAL WINDOW
   border-radius: 20px;
 
   z-index: 99;
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -354,7 +350,6 @@ RENT MODAL WINDOW
     min-width: 338px;
   }
 }
-
 
 .rent-modal-title {
   font-size: 24px;
