@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 @media only screen and (min-width: 768px) {
-.section-about {
+  .section-about {
     min-width: 375px;
   }
   .about-block {
