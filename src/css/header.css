@@ -129,6 +129,7 @@
   transform: translateX(100%);
 }
 
+/*  BLUR */
 .mobile-menu-container::before {
   position: absolute;
 
@@ -146,6 +147,7 @@
   opacity: 0.6;
   background: #91afba;
   filter: blur(100px);
+  /* backdrop-filter: blure(200px); */
 }
 
 .mobile-menu-container::after {

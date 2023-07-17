@@ -33,8 +33,47 @@
   opacity: 0.6;
   background: #93ABAE;
   filter: blur(100px);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-info::after {
+    top: 230px;
+    left: 240px;
+
+    width: 419px;
+    height: 419px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-info::before {
+   position: absolute;
     
-/* backdrop-filter: blure(200px); */
+   top: 250px;
+   left: 750px;
+   z-index: -1;
+    
+   content: '';
+   display: block;
+    
+   width: 317px;
+   height: 317px;
+   transform: rotate(-45deg);
+   border-radius: 50%;
+   opacity: 0.3;
+   background: #A6A9B2;
+   filter: blur(100px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-info::after {
+    top: 230px;
+    left: 240px;
+
+    width: 419px;
+    height: 419px;
+  }
 }
 
 
