@@ -401,6 +401,50 @@
     /* } */
   
   }  
+
+  
+.yablock-header-style::after {
+    position: absolute;
+    
+      top: -45px;
+      left: -70px;
+      z-index: -1;
+    
+      content: '';
+      display: block;
+    
+      width: 255px;
+      height: 255px;
+      transform: rotate(-45deg);
+      border-radius: 50%;
+      opacity: 0.6;
+      background: #91AFBA;
+      filter: blur(100px);
+    
+      /* backdrop-filter: blure(200px); */
+}
+.yablock-header-style::before {
+  position: absolute;
+
+  top: -60px;
+  left: 210px;
+  z-index: -1;
+    
+  content: '';
+  display: block;
+    
+  width: 195px;
+  height: 195px;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  opacity: 0.3;
+  background: #91AFBA;
+  filter: blur(100px);
+    
+/* backdrop-filter: blure(200px); */
+}
+
+  
   
   
   
