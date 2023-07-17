@@ -160,6 +160,7 @@
 .hero-wrapper {
   position: relative;
 }
+
 .hero-wrapper::before {
   position: absolute;
   
@@ -181,6 +182,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-wrapper::before {
+<<<<<<< Updated upstream
     display: none;
   }
 }
@@ -198,6 +200,11 @@
   }
 }
 
+=======
+  display: none;
+  }
+}
+>>>>>>> Stashed changes
 .hero-wrapper::after {
   position: absolute;
 
@@ -255,6 +262,16 @@
    opacity: 0.6;
    background: #939CAC;
    filter: blur(100px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-wrapper::after {
+    top: 160px;
+    left: -220px;
+
+    width: 414px;
+    height: 414px;  
   }
 }
 

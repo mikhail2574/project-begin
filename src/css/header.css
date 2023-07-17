@@ -129,8 +129,12 @@
   transform: translateX(100%);
 }
 
+<<<<<<< Updated upstream
 /* BLUR */
 
+=======
+/*  BLUR */
+>>>>>>> Stashed changes
 .mobile-menu-container::before {
   position: absolute;
 
@@ -148,6 +152,7 @@
   opacity: 0.6;
   background: #91AFBA;
   filter: blur(100px);
+  /* backdrop-filter: blure(200px); */
 }
 
 .mobile-menu-container::after {
@@ -167,6 +172,10 @@
   opacity: 0.89;
   background: #939CAC;
   filter: blur(100px);
+<<<<<<< Updated upstream
+=======
+  /* backdrop-filter: blure(200px); */
+>>>>>>> Stashed changes
 }
 
 .mobile-menu-header {

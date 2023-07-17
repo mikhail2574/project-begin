@@ -402,11 +402,18 @@
   
   }  
 
+<<<<<<< Updated upstream
   /* BLUR */
   
+=======
+/* BLUR */
+
+
+>>>>>>> Stashed changes
 .yablock-header-style::after {
-    position: absolute;
+  position: absolute;
     
+<<<<<<< Updated upstream
     top: -45px;
     left: -70px;
     z-index: -1;
@@ -421,6 +428,24 @@
     opacity: 0.6;
     background: #91AFBA;
     filter: blur(100px);
+=======
+  top: -45px;
+  left: -70px;
+  z-index: -1;
+    
+  content: '';
+  display: block;
+    
+  width: 255px;
+  height: 255px;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #91AFBA;
+  filter: blur(100px);
+    
+  /* backdrop-filter: blure(200px); */
+>>>>>>> Stashed changes
 }
 
 @media screen and (min-width: 768px) {
@@ -433,6 +458,7 @@
   }
 }
 
+<<<<<<< Updated upstream
 @media screen and (min-width: 1280px) {
   .yablock-header-style::after {
     top: -50px;
@@ -443,6 +469,8 @@
   }
 }
 
+=======
+>>>>>>> Stashed changes
 .yablock-header-style::before {
   position: absolute;
 
@@ -473,6 +501,7 @@
   }
 }
 
+<<<<<<< Updated upstream
 @media screen and (min-width: 1280px) {
   .yablock-header-style::before {
     top: -50px;
@@ -482,6 +511,9 @@
     height: 316px;
   }
 }
+=======
+
+>>>>>>> Stashed changes
   
   
   

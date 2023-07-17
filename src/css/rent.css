@@ -93,6 +93,16 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .rent-title-part::after {
+    top: 60px;
+    left: 550px;
+
+    width: 413px;
+    height: 413px;
+  }
+}
+
 
 
 .rent-title {
@@ -386,7 +396,10 @@ RENT MODAL WINDOW
 }
 
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .rent-modalbtn {
   background-color: transparent;
   border: transparent;

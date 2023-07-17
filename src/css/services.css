@@ -48,7 +48,11 @@
 }
 
 @media screen and (min-width: 768px) {
+<<<<<<< Updated upstream
   .services-container::after {
+=======
+.services-container::after {
+>>>>>>> Stashed changes
     top: 590px;
     left: -240px;
 
@@ -57,6 +61,7 @@
   }
 }
 
+<<<<<<< Updated upstream
 @media screen and (min-width: 1280px) {
   .services-container::after {
     top: 250px;
@@ -64,6 +69,8 @@
   }
 }
 
+=======
+>>>>>>> Stashed changes
 
 .services-list {
   display: flex;
