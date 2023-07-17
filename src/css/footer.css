@@ -12,6 +12,9 @@
     padding-top: 65px;
     padding-bottom: 16px;
   }
+  .footer {
+    overflow-y: hidden;
+  }
 }
 
 /* BLUR */
