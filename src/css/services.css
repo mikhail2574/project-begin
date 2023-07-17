@@ -3,7 +3,7 @@
 ****************** */
 
 @media only screen and (max-width: 767px) {
-   .services-container {
+  .services-container {
     min-width: 320px;
     max-width: 375px;
     padding: 0 32px;
@@ -12,14 +12,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-   .services-container {
+  .services-container {
     max-width: 768px;
     padding: 0 32px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-   .services-container {
+  .services-container {
     max-width: 1280px;
   }
 }
@@ -34,25 +34,21 @@
   top: 325px;
   left: -225px;
   z-index: -1;
-    
+
   content: '';
   display: block;
-    
+
   width: 323px;
   height: 323px;
   transform: rotate(-45deg);
   border-radius: 50%;
   opacity: 0.6;
-  background: #91AFBA;
+  background: #91afba;
   filter: blur(100px);
 }
 
 @media screen and (min-width: 768px) {
-<<<<<<< Updated upstream
   .services-container::after {
-=======
-.services-container::after {
->>>>>>> Stashed changes
     top: 590px;
     left: -240px;
 
@@ -61,16 +57,12 @@
   }
 }
 
-<<<<<<< Updated upstream
 @media screen and (min-width: 1280px) {
   .services-container::after {
     top: 250px;
     left: -250px;
   }
 }
-
-=======
->>>>>>> Stashed changes
 
 .services-list {
   display: flex;
@@ -84,7 +76,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-   .services-list {
+  .services-list {
     gap: 32px;
   }
 }
@@ -96,26 +88,25 @@
 }
 
 .services-sample {
-    position: relative;
-    border-radius: 40px;
-    margin-bottom: 24px;
-    overflow: hidden;
-    width: 100%;
+  position: relative;
+  border-radius: 40px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  width: 100%;
 }
 
 .services-sample > .services-text {
-    position: absolute;
-    bottom: 24px;
-    left: 24px;
-    margin: 0;
-    padding: 14px 28px;
-    border-radius: 60px;
-    background-color: var(--white);
-    color: var(--body-bg-color);
-    font-weight: 700;
-    line-height: 110%;
-    letter-spacing: -0.63px;
-    
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  margin: 0;
+  padding: 14px 28px;
+  border-radius: 60px;
+  background-color: var(--white);
+  color: var(--body-bg-color);
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -0.63px;
 }
 
 .services-img {
@@ -147,7 +138,7 @@
     position: absolute;
     bottom: 32px;
     left: 334px;
-    }
+  }
 
   .services-sample.sample-sunbathing {
     width: 100%;
@@ -160,13 +151,12 @@
   }
 
   .services-sample.sample-sunbathing .services-img img {
-      margin-left: 32px;
-    }
+    margin-left: 32px;
+  }
   .services-sample.services-sample.sample-sunbathing .services-text {
     left: 64px;
+  }
 }
-}
-
 
 @media only screen and (min-width: 1280px) {
   .services-list {
@@ -215,6 +205,6 @@
   }
 
   .services-sample.services-sample.sample-sunbathing .services-text {
-    left: 312px;   
+    left: 312px;
   }
 }

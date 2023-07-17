@@ -163,26 +163,25 @@
 
 .hero-wrapper::before {
   position: absolute;
-  
+
   top: -10px;
   left: -280px;
   z-index: -1;
-  
+
   content: '';
   display: block;
-  
+
   width: 279px;
   height: 279px;
   transform: rotate(-45deg);
   border-radius: 50%;
   opacity: 0.6;
-  background: #91AFBA;
+  background: #91afba;
   filter: blur(100px);
 }
 
 @media screen and (min-width: 768px) {
   .hero-wrapper::before {
-<<<<<<< Updated upstream
     display: none;
   }
 }
@@ -190,7 +189,7 @@
 @media screen and (min-width: 1280px) {
   .hero-wrapper::before {
     display: block;
-    
+
     top: 180px;
     left: 200px;
 
@@ -200,11 +199,6 @@
   }
 }
 
-=======
-  display: none;
-  }
-}
->>>>>>> Stashed changes
 .hero-wrapper::after {
   position: absolute;
 
@@ -220,7 +214,7 @@
   transform: rotate(-45deg);
   border-radius: 50%;
   opacity: 0.6;
-  background: #939CAC;
+  background: #939cac;
   filter: blur(100px);
 }
 
@@ -241,27 +235,27 @@
   }
 }
 
-.customers-block::after{
+.customers-block::after {
   display: none;
 }
 @media screen and (min-width: 1280px) {
   .customers-block::after {
-   position: absolute;
+    position: absolute;
 
-   top: 150px;
-   left: -100px;
-   z-index: -1;
+    top: 150px;
+    left: -100px;
+    z-index: -1;
 
-   content: '';
-   display: block;
+    content: '';
+    display: block;
 
-   width: 414px;
-   height: 414px;
-   transform: rotate(-45deg);
-   border-radius: 50%;
-   opacity: 0.6;
-   background: #939CAC;
-   filter: blur(100px);
+    width: 414px;
+    height: 414px;
+    transform: rotate(-45deg);
+    border-radius: 50%;
+    opacity: 0.6;
+    background: #939cac;
+    filter: blur(100px);
   }
 }
 
@@ -271,10 +265,9 @@
     left: -220px;
 
     width: 414px;
-    height: 414px;  
+    height: 414px;
   }
 }
-
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .hero-wrapper {
