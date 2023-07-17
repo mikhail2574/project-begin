@@ -28,6 +28,7 @@
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -53,7 +54,6 @@ body {
   min-width: 320px;
   max-width: 374px;
 }
-
 
 @media screen and (min-width: 768px) {
   .container {

@@ -446,6 +446,12 @@
   letter-spacing: -0.63px;
 }
 
+@media screen and (max-width: 374px) {
+  .hero-advertising-cta {
+    max-width: 145px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-advertising-cta {
     max-width: 208px;
