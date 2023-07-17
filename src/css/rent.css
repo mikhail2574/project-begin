@@ -74,8 +74,23 @@
   opacity: 0.6;
   background: #91AFBA;
   filter: blur(100px);
-    
-/* backdrop-filter: blure(200px); */
+}
+
+@media screen and (min-width: 768px) {
+  .rent-title-part::after {
+    top: 60px;
+    left: 550px;
+
+    width: 413px;
+    height: 413px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .rent-title-part::after {
+    top: 100px;
+    left: 900px;
+  }
 }
 
 
@@ -358,9 +373,19 @@ RENT MODAL WINDOW
   opacity: 0.6;
   background: #91AFBA;
   filter: blur(100px);
-    
-/* backdrop-filter: blure(200px); */
 }
+
+@media screen and (min-width: 768px) {
+  .rent-modal::after {
+    top: 50px;
+    left: 170px;
+
+    width: 265px;
+    height: 265px;
+  }
+}
+
+
 
 .rent-modalbtn {
   background-color: transparent;

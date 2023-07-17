@@ -45,9 +45,25 @@
   opacity: 0.6;
   background: #91AFBA;
   filter: blur(100px);
-    
-/* backdrop-filter: blure(200px); */
 }
+
+@media screen and (min-width: 768px) {
+  .services-container::after {
+    top: 590px;
+    left: -240px;
+
+    width: 414px;
+    height: 414px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .services-container::after {
+    top: 250px;
+    left: -250px;
+  }
+}
+
 
 .services-list {
   display: flex;
