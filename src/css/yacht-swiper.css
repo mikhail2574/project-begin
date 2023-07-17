@@ -303,7 +303,7 @@
       display: block;
       width: 1500px;
       height: 1610px;
-      rotate: X(7deg);
+      transform: rotate(7.506deg);
 
       -webkit-mask-image: url(../public/mask-group.svg);
       -webkit-mask-repeat: no-repeat;
@@ -402,27 +402,75 @@
   
   }  
 
+<<<<<<< Updated upstream
+  /* BLUR */
   
+=======
+/* BLUR */
+
+
+>>>>>>> Stashed changes
 .yablock-header-style::after {
-    position: absolute;
+  position: absolute;
     
-      top: -45px;
-      left: -70px;
-      z-index: -1;
+<<<<<<< Updated upstream
+    top: -45px;
+    left: -70px;
+    z-index: -1;
     
-      content: '';
-      display: block;
+    content: '';
+    display: block;
     
-      width: 255px;
-      height: 255px;
-      transform: rotate(-45deg);
-      border-radius: 50%;
-      opacity: 0.6;
-      background: #91AFBA;
-      filter: blur(100px);
+    width: 255px;
+    height: 255px;
+    transform: rotate(-45deg);
+    border-radius: 50%;
+    opacity: 0.6;
+    background: #91AFBA;
+    filter: blur(100px);
+=======
+  top: -45px;
+  left: -70px;
+  z-index: -1;
     
-      /* backdrop-filter: blure(200px); */
+  content: '';
+  display: block;
+    
+  width: 255px;
+  height: 255px;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #91AFBA;
+  filter: blur(100px);
+    
+  /* backdrop-filter: blure(200px); */
+>>>>>>> Stashed changes
 }
+
+@media screen and (min-width: 768px) {
+  .yablock-header-style::after {
+    top: -100px;
+    left: 30px;
+
+    width: 399px;
+    height: 399px;
+  }
+}
+
+<<<<<<< Updated upstream
+@media screen and (min-width: 1280px) {
+  .yablock-header-style::after {
+    top: -50px;
+    left: 280px;
+
+    width: 414px;
+    height: 414px;
+  }
+}
+
+=======
+>>>>>>> Stashed changes
 .yablock-header-style::before {
   position: absolute;
 
@@ -440,10 +488,32 @@
   opacity: 0.3;
   background: #91AFBA;
   filter: blur(100px);
-    
-/* backdrop-filter: blure(200px); */
 }
 
+@media screen and (min-width: 768px) {
+  .yablock-header-style::before {
+    top: -80px;
+    left: 450px;
+
+    width: 304px;
+    height: 304px;
+    background: #A6A9B2;
+  }
+}
+
+<<<<<<< Updated upstream
+@media screen and (min-width: 1280px) {
+  .yablock-header-style::before {
+    top: -50px;
+    left: 750px;
+
+    width: 316px;
+    height: 316px;
+  }
+}
+=======
+
+>>>>>>> Stashed changes
   
   
   
