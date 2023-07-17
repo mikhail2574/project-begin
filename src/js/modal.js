@@ -1,27 +1,53 @@
-const form = document.getElementById('rent-form'); // Замініть 'myForm' на id вашої форми
-const input1 = document.getElementById('user_name'); // Замініть 'input1' на id першого поля форми
-const input2 = document.getElementById('user_email');
-const input3 = document.getElementById('user_phone'); // Замініть 'input2' на id другого поля форми
-// Замініть 'input2' на id другого поля форми
-const submitBtn = document.getElementById('submitBtn'); // Замініть 'submitBtn' на id вашої кнопки
-let title1 = input1.title;
-// Додаємо обробник події "input" для полів форми
-input1.addEventListener('input', validateForm);
-input2.addEventListener('input', validateForm);
-input3.addEventListener('input', validateForm);
+let isScrollLocked = false;
+let scrollYPosition = 0;
 
-submitBtn.addEventListener('click', validateForm);
-
-// Функція для перевірки заповненості полів та вимкнення кнопки
-function validateForm(event) {
-  event.preventDefault();
-  const patern = /^[a-zA-Z]+\s[a-zA-Z]+$/;
-  if (patern.test(input1.value)) {
-    // input2.value.trim() !== '' &&
-    // input3.value.trim() !== ''
-    submitBtn.disabled = false;
+function toggleScrollLock() {
+  if (isScrollLocked) {
+    // Разблокируем прокрутку
+    isScrollLocked = false;
+    document.body.style.overflow = 'auto';
+    window.scrollTo(0, scrollYPosition);
   } else {
-    submitBtn.disabled = true;
-    input1.title = ' pppppp'; // Активуємо кнопку, якщо обидва поля заповнені // Вимикаємо кнопку, якщо хоча б одне поле не заповнене
+    // Блокируем прокрутку
+    isScrollLocked = true;
+    scrollYPosition = window.scrollY;
+    document.body.style.overflow = 'hidden';
   }
 }
+
+function unlockScroll() {
+  isScrollLocked = false;
+  document.body.style.overflow = 'auto';
+}
+
+// Добавляем обработчики событий для кнопок
+document
+  .querySelector('.scrollLockBtn')
+  .addEventListener('click', toggleScrollLock);
+document
+  .querySelector('.scrollUnlockBtn')
+  .addEventListener('click', unlockScroll);
+
+document
+  .querySelector('.scrollLockBtnBurger')
+  .addEventListener('click', toggleScrollLock);
+document
+  .querySelector('.scrollUnlockBtnBurger')
+  .addEventListener('click', unlockScroll);
+
+// Добавляем обработчики событий для предотвращения прокрутки
+function preventDefaultScroll(event) {
+  if (isScrollLocked) {
+    event.preventDefault();
+  }
+}
+
+document.addEventListener('touchmove', preventDefaultScroll, {
+  passive: false,
+});
+document.addEventListener('mousewheel', preventDefaultScroll, {
+  passive: false,
+});
+document.addEventListener('DOMMouseScroll', preventDefaultScroll, {
+  passive: false,
+});
