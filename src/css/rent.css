@@ -63,16 +63,16 @@
   top: 370px;
   left: 190px;
   z-index: -1;
-    
+
   content: '';
   display: block;
-    
+
   width: 283px;
   height: 283px;
   transform: rotate(-45deg);
   border-radius: 50%;
   opacity: 0.6;
-  background: #91AFBA;
+  background: #91afba;
   filter: blur(100px);
 }
 
@@ -95,15 +95,19 @@
 
 @media screen and (min-width: 768px) {
   .rent-title-part::after {
-    top: 60px;
-    left: 550px;
+    top: 40px;
+    left: 350px;
 
-    width: 413px;
-    height: 413px;
+    width: 300px;
+    height: 300px;
   }
 }
 
-
+@media screen and (max-width: 767px) {
+  .rent-title-part::after {
+    display: none;
+  }
+}
 
 .rent-title {
   font-size: 36px;
@@ -133,6 +137,12 @@
   display: flex;
   flex-wrap: wrap;
   width: 335px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .rent-request {
+    width: 320px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -247,15 +257,15 @@
 }
 
 .rent-form-input[title]:hover::after {
-content: attr(title);
-display: block;
-position: absolute;
-background-color: var(--body-bg-color);
-color: var(--white);
-padding: 4px;
-border-radius: 10px;
-white-space: nowrap;
-z-index: 1;
+  content: attr(title);
+  display: block;
+  position: absolute;
+  background-color: var(--body-bg-color);
+  color: var(--white);
+  padding: 4px;
+  border-radius: 10px;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 .rent-list-item-comment {
@@ -372,16 +382,16 @@ RENT MODAL WINDOW
   top: 100px;
   left: 100px;
   z-index: -1;
-    
+
   content: '';
   display: block;
-    
+
   width: 142px;
   height: 142px;
   transform: rotate(-45deg);
   border-radius: 50%;
   opacity: 0.6;
-  background: #91AFBA;
+  background: #91afba;
   filter: blur(100px);
 }
 
@@ -395,12 +405,7 @@ RENT MODAL WINDOW
   }
 }
 
-
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
-.rent-modalbtn {
+<<<<<<< Updated upstream =======>>>>>>>Stashed changes .rent-modalbtn {
   background-color: transparent;
   border: transparent;
   position: absolute;
@@ -481,4 +486,3 @@ RENT MODAL WINDOW
     letter-spacing: -0.32px;
   }
 }
-
