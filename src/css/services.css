@@ -24,6 +24,31 @@
   }
 }
 
+/* BLUR */
+.services-container {
+  position: relative;
+}
+.services-container::after {
+  position: absolute;
+
+  top: 325px;
+  left: -225px;
+  z-index: -1;
+    
+  content: '';
+  display: block;
+    
+  width: 323px;
+  height: 323px;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #91AFBA;
+  filter: blur(100px);
+    
+/* backdrop-filter: blure(200px); */
+}
+
 .services-list {
   display: flex;
   flex-wrap: wrap;

@@ -35,6 +35,8 @@
 }
 
 .rent-title-part {
+  position: relative;
+
   display: block;
   padding-bottom: 16px;
 }
@@ -52,6 +54,31 @@
     padding-bottom: 0;
   }
 }
+
+/* BLUR */
+
+.rent-title-part::after {
+  position: absolute;
+
+  top: 370px;
+  left: 190px;
+  z-index: -1;
+    
+  content: '';
+  display: block;
+    
+  width: 283px;
+  height: 283px;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #91AFBA;
+  filter: blur(100px);
+    
+/* backdrop-filter: blure(200px); */
+}
+
+
 
 .rent-title {
   font-size: 36px;
@@ -313,6 +340,28 @@ RENT MODAL WINDOW
   }
 }
 
+/* BLUR */
+.rent-modal::after {
+  position: absolute;
+
+  top: 100px;
+  left: 100px;
+  z-index: -1;
+    
+  content: '';
+  display: block;
+    
+  width: 142px;
+  height: 142px;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #91AFBA;
+  filter: blur(100px);
+    
+/* backdrop-filter: blure(200px); */
+}
+
 .rent-modalbtn {
   background-color: transparent;
   border: transparent;
@@ -395,11 +444,3 @@ RENT MODAL WINDOW
   }
 }
 
-/* Blure Rent Modal */
-.blure-rent-modal {
-  top: 60px;
-  left: 150px;
-
-  width: 265px;
-  height: 265px;
-}

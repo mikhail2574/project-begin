@@ -158,29 +158,47 @@
 .hero-wrapper {
   position: relative;
 }
-.hero-wrapper::after {
-  content: '';
+.hero-wrapper::before {
   position: absolute;
-  top: 0;
-  left: -320px;
+  
+  top: -10px;
+  left: -280px;
   z-index: -1;
+  
+  content: '';
   display: block;
-  width: 1166px;
-  height: 872px;
+  
+  width: 279px;
+  height: 279px;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #91AFBA;
+  filter: blur(100px);
 
-  background-image: url(../img/hero/blur@1x.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  backdrop-filter: blure(200px);
+  /* backdrop-filter: blure(200px); */
 }
- @media (min-device-pixel-ratio: 2),
- (min-resolution: 192dpi),
- (min-resolution: 2dppx) {
-   .hero-wrapper::after {
-     background-image: url(../img/hero/blur@2x.png);
-   }
- }
+.hero-wrapper::after {
+  position: absolute;
+
+  top: 40px;
+  left: -130px;
+  z-index: -1;
+
+  content: '';
+  display: block;
+
+  width: 279px;
+  height: 279px;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #939CAC;
+  filter: blur(100px);
+
+  /* backdrop-filter: blure(200px); */
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .hero-wrapper {
