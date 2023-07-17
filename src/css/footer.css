@@ -1,4 +1,6 @@
 .footer-info {
+  position: relative;
+
   padding-top: 41px;
   padding-bottom: 14px;
 
@@ -11,6 +13,31 @@
     padding-bottom: 16px;
   }
 }
+
+/* BLUR */
+
+.footer-info::after {
+  position: absolute;
+
+  top: 240px;
+  left: 40px;
+  z-index: -1;
+    
+  content: '';
+  display: block;
+    
+  width: 420px;
+  height: 420px;
+  transform: rotate(-45deg);
+  border-radius: 50%;
+  opacity: 0.6;
+  background: #93ABAE;
+  filter: blur(100px);
+    
+/* backdrop-filter: blure(200px); */
+}
+
+
 @media only screen and (min-width: 768px) {
   .footer-main {
     display: flex;
