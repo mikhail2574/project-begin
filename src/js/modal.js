@@ -28,6 +28,12 @@ document
   .querySelector('.scrollUnlockBtn')
   .addEventListener('click', unlockScroll);
 
+for (let i = 0; i < document.querySelectorAll('.scroll-unlock').length; i++) {
+  document
+    .querySelectorAll('.scroll-unlock')
+    [i].addEventListener('click', unlockScroll);
+}
+
 document
   .querySelector('.scrollLockBtnBurger')
   .addEventListener('click', toggleScrollLock);
